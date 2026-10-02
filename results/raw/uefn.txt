@@ -1,0 +1,824 @@
+[2026.10.02-21.54.33:496][ 28]LogVerse: VerseProfile: Native Sqrt 11.196800 ms
+[2026.10.02-21.54.33:496][ 28]LogVerse: VerseProfile: Fast Sqrt 159.686000 ms
+[2026.10.02-21.54.33:695][ 52]LogVerse: VerseProfile: Native Clamp 108.305200 ms
+[2026.10.02-21.54.33:695][ 52]LogVerse: VerseProfile: Fast Clamp 72.089900 ms
+[2026.10.02-21.54.33:829][ 68]LogVerse: VerseProfile: Native Min 29.696500 ms
+[2026.10.02-21.54.33:829][ 68]LogVerse: VerseProfile: Fast Min 29.516400 ms
+[2026.10.02-21.54.33:829][ 68]LogVerse: VerseProfile: Native Max 31.257800 ms
+[2026.10.02-21.54.33:846][ 70]LogVerse: VerseProfile: Fast Max 30.945900 ms
+[2026.10.02-21.54.33:929][ 80]LogVerse: VerseProfile: Native Sgn 36.425900 ms
+[2026.10.02-21.54.33:929][ 80]LogVerse: VerseProfile: Fast Sgn 24.198900 ms
+[2026.10.02-21.54.34:017][ 90]LogVerse: VerseProfile: Native Abs 7.274800 ms
+[2026.10.02-21.54.34:017][ 90]LogVerse: VerseProfile: Fast Abs 27.259500 ms
+[2026.10.02-21.54.34:017][ 90]LogVerse: VerseProfile: Native Lerp (float) 13.417800 ms
+[2026.10.02-21.54.34:017][ 90]LogVerse: VerseProfile: Fast Lerp (float) 18.625300 ms
+[2026.10.02-21.54.34:945][201]LogVerse: VerseProfile: Native Floor 15.322400 ms
+[2026.10.02-21.54.34:945][201]LogVerse: VerseProfile: Fast Floor 442.422600 ms
+[2026.10.02-21.54.34:946][201]LogVerse: VerseProfile: Native Round 14.832000 ms
+[2026.10.02-21.54.34:946][201]LogVerse: VerseProfile: Fast Round 429.744300 ms
+[2026.10.02-21.54.35:199][231]LogVerse: VerseProfile: Native Abs (int) 7.314000 ms
+[2026.10.02-21.54.35:199][231]LogVerse: VerseProfile: Fast Abs (int) 19.158100 ms
+[2026.10.02-21.54.35:199][231]LogVerse: VerseProfile: Native Min (int) 23.638900 ms
+[2026.10.02-21.54.35:199][231]LogVerse: VerseProfile: Fast Min (int) 21.072500 ms
+[2026.10.02-21.54.35:199][231]LogVerse: VerseProfile: Native Clamp (int) 13.065700 ms
+[2026.10.02-21.54.35:199][231]LogVerse: VerseProfile: Fast Clamp (int) 39.127800 ms
+[2026.10.02-21.54.35:200][231]LogVerse: VerseProfile: Native Quotient 17.536900 ms
+[2026.10.02-21.54.35:215][233]LogVerse: VerseProfile: Fast Quotient 34.642700 ms
+[2026.10.02-21.54.35:216][233]LogVerse: VerseProfile: Native Mod 17.875100 ms
+[2026.10.02-21.54.35:216][233]LogVerse: VerseProfile: Fast Mod 45.266800 ms
+[2026.10.02-21.54.39:211][709]LogVerse: VerseProfile: Native Find 286.772100 ms
+[2026.10.02-21.54.39:211][709]LogVerse: VerseProfile: Fast Find 237.883100 ms
+[2026.10.02-21.54.39:261][715]LogVerse: VerseProfile: Native RemoveFirstElement 735.348600 ms
+[2026.10.02-21.54.39:261][715]LogVerse: VerseProfile: Fast RemoveFirstElement 781.883800 ms
+[2026.10.02-21.54.39:261][715]LogVerse: VerseProfile: Native ReplaceFirstElement 745.824800 ms
+[2026.10.02-21.54.39:261][715]LogVerse: VerseProfile: Fast ReplaceFirstElement 740.682900 ms
+[2026.10.02-21.54.42:753][133]LogVerse: VerseProfile: Native RemoveElement 501.270400 ms
+[2026.10.02-21.54.42:753][133]LogVerse: VerseProfile: Fast RemoveElement 578.023300 ms
+[2026.10.02-21.54.42:753][133]LogVerse: VerseProfile: Native Slice 356.205400 ms
+[2026.10.02-21.54.42:753][133]LogVerse: VerseProfile: Fast Slice 327.686100 ms
+[2026.10.02-21.54.42:753][133]LogVerse: VerseProfile: Native Insert 645.610400 ms
+[2026.10.02-21.54.42:753][133]LogVerse: VerseProfile: Fast Insert 637.398900 ms
+[2026.10.02-21.54.44:395][329]LogVerse: VerseProfile: Native Concatenate 1124.202000 ms
+[2026.10.02-21.54.44:395][329]LogVerse: VerseProfile: Fast Concatenate 113.615600 ms
+[2026.10.02-21.54.45:545][466]LogVerse: VerseProfile: Native ReplaceAll 424.509600 ms
+[2026.10.02-21.54.45:545][466]LogVerse: VerseProfile: Fast ReplaceAll 517.680900 ms
+[2026.10.02-21.54.45:963][516]LogVerse: VerseProfile: Native ToString (int) 22.227300 ms
+[2026.10.02-21.54.45:963][516]LogVerse: VerseProfile: Fast ToString (int) 277.755000 ms
+[2026.10.02-21.54.46:046][526]LogVerse: VerseProfile: Native DegreesToRadians 18.223700 ms
+[2026.10.02-21.54.46:046][526]LogVerse: VerseProfile: Fast DegreesToRadians 14.645000 ms
+[2026.10.02-21.54.46:046][526]LogVerse: VerseProfile: Native RadiansToDegrees 18.358900 ms
+[2026.10.02-21.54.46:046][526]LogVerse: VerseProfile: Fast RadiansToDegrees 14.767100 ms
+[2026.10.02-21.54.46:131][536]LogVerse: VerseProfile: Native DotProduct 27.656400 ms
+[2026.10.02-21.54.46:131][536]LogVerse: VerseProfile: Fast DotProduct 24.665200 ms
+[2026.10.02-21.54.46:131][536]LogVerse: VerseProfile: Inline DotProduct 14.948100 ms
+[2026.10.02-21.54.47:103][652]LogVerse: VerseProfile: Native CrossProduct 336.134700 ms
+[2026.10.02-21.54.47:103][652]LogVerse: VerseProfile: Fast CrossProduct 304.956100 ms
+[2026.10.02-21.54.47:812][736]LogVerse: VerseProfile: Native Distance 419.104800 ms
+[2026.10.02-21.54.47:813][736]LogVerse: VerseProfile: Fast Distance 66.695100 ms
+[2026.10.02-21.54.48:476][811]LogVerse: VerseProfile: Native DistanceSquared 401.556500 ms
+[2026.10.02-21.54.48:476][811]LogVerse: VerseProfile: Fast DistanceSquared 32.326900 ms
+[2026.10.02-21.54.49:878][976]LogVerse: VerseProfile: Native DistanceXY 442.169200 ms
+[2026.10.02-21.54.49:878][976]LogVerse: VerseProfile: Fast DistanceXY 62.775000 ms
+[2026.10.02-21.54.49:878][976]LogVerse: VerseProfile: Native DistanceSquaredXY 422.397200 ms
+[2026.10.02-21.54.49:879][976]LogVerse: VerseProfile: Fast DistanceSquaredXY 33.594700 ms
+[2026.10.02-21.54.50:081][999]LogVerse: VerseProfile: Native Length 45.862900 ms
+[2026.10.02-21.54.50:081][999]LogVerse: VerseProfile: Fast Length 27.556100 ms
+[2026.10.02-21.54.50:082][999]LogVerse: VerseProfile: Native LengthXY 43.972300 ms
+[2026.10.02-21.54.50:082][999]LogVerse: VerseProfile: Fast LengthXY 25.844900 ms
+[2026.10.02-21.54.50:758][ 77]LogVerse: VerseProfile: Native IsFinite 418.327300 ms
+[2026.10.02-21.54.50:758][ 77]LogVerse: VerseProfile: Fast IsFinite 35.188000 ms
+[2026.10.02-21.54.52:583][283]LogVerse: VerseProfile: Native MakeUnitVector 909.979700 ms
+[2026.10.02-21.54.52:600][285]LogVerse: VerseProfile: Fast MakeUnitVector 316.826000 ms
+[2026.10.02-21.54.53:798][428]LogVerse: VerseProfile: Native Lerp 394.861400 ms
+[2026.10.02-21.54.53:798][428]LogVerse: VerseProfile: Fast Lerp 391.214400 ms
+[2026.10.02-21.54.56:942][802]LogVerse: VerseProfile: Native ReflectVector 1743.422400 ms
+[2026.10.02-21.54.56:942][802]LogVerse: VerseProfile: Fast ReflectVector 393.259100 ms
+[2026.10.02-21.54.58:893][ 35]LogVerse: VerseProfile: Native GetLocalForward 346.800700 ms
+[2026.10.02-21.54.58:893][ 35]LogVerse: VerseProfile: Fast GetLocalForward 36.166600 ms
+[2026.10.02-21.54.58:895][ 35]LogVerse: VerseProfile: Native GetLocalRight 441.976800 ms
+[2026.10.02-21.54.58:895][ 35]LogVerse: VerseProfile: Fast GetLocalRight 43.786700 ms
+[2026.10.02-21.54.58:895][ 35]LogVerse: VerseProfile: Native GetLocalUp 360.652400 ms
+[2026.10.02-21.54.58:927][ 39]LogVerse: VerseProfile: Fast GetLocalUp 44.920800 ms
+[2026.10.02-21.55.00:646][242]LogVerse: VerseProfile: Native ApplyLocalRotationY 452.823200 ms
+[2026.10.02-21.55.00:646][242]LogVerse: VerseProfile: Fast ApplyLocalRotationY 112.051900 ms
+[2026.10.02-21.55.00:679][246]LogVerse: VerseProfile: Native ApplyLocalRotationZ 485.735900 ms
+[2026.10.02-21.55.00:680][246]LogVerse: VerseProfile: Fast ApplyLocalRotationZ 119.850900 ms
+[2026.10.02-21.55.04:111][653]LogVerse: VerseProfile: Native TransformVector 839.593600 ms
+[2026.10.02-21.55.04:112][653]LogVerse: VerseProfile: Fast TransformVector 463.989900 ms
+[2026.10.02-21.55.04:206][662]LogVerse: VerseProfile: Native TransformVectorNoScale 514.677800 ms
+[2026.10.02-21.55.04:207][662]LogVerse: VerseProfile: Fast TransformVectorNoScale 445.044000 ms
+[2026.10.02-21.55.06:809][955]LogVerse: VerseProfile: Native TransformVector scaled 848.087100 ms
+[2026.10.02-21.55.06:842][959]LogVerse: VerseProfile: Fast TransformVector scaled 879.223500 ms
+[2026.10.02-21.55.08:045][102]LogVerse: VerseProfile: Native Distance (vector2) 342.712500 ms
+[2026.10.02-21.55.08:045][102]LogVerse: VerseProfile: Fast Distance (vector2) 38.560200 ms
+[2026.10.02-21.55.08:063][104]LogVerse: VerseProfile: Native DistanceSquared (vector2) 329.417600 ms
+[2026.10.02-21.55.08:063][104]LogVerse: VerseProfile: Fast DistanceSquared (vector2) 23.925300 ms
+[2026.10.02-21.55.08:064][104]LogVerse: VerseProfile: Native Length (vector2) 54.451900 ms
+[2026.10.02-21.55.08:064][104]LogVerse: VerseProfile: Fast Length (vector2) 25.350500 ms
+[2026.10.02-21.55.08:064][104]LogVerse: VerseProfile: Native LengthSquared (vector2) 35.458300 ms
+[2026.10.02-21.55.08:064][104]LogVerse: VerseProfile: Fast LengthSquared (vector2) 18.989500 ms
+[2026.10.02-21.55.12:669][653]LogVerse: VerseProfile: Native IsFinite (vector2) 331.962600 ms
+[2026.10.02-21.55.12:670][653]LogVerse: VerseProfile: Fast IsFinite (vector2) 28.122300 ms
+[2026.10.02-21.55.12:946][686]LogVerse: VerseProfile: Native MakeUnitVector (vector2) 706.112000 ms
+[2026.10.02-21.55.12:946][686]LogVerse: VerseProfile: Fast MakeUnitVector (vector2) 298.423700 ms
+[2026.10.02-21.55.12:946][686]LogVerse: VerseProfile: Native Lerp (vector2) 365.753000 ms
+[2026.10.02-21.55.12:947][686]LogVerse: VerseProfile: Fast Lerp (vector2) 286.009900 ms
+[2026.10.02-21.55.12:947][686]LogVerse: VerseProfile: Native ReflectVector (vector2) 1065.861700 ms
+[2026.10.02-21.55.12:947][686]LogVerse: VerseProfile: Fast ReflectVector (vector2) 283.537200 ms
+[2026.10.02-21.55.13:232][720]LogVerse: VerseProfile: Native Equals (vector2i) 148.331200 ms
+[2026.10.02-21.55.13:232][720]LogVerse: VerseProfile: Fast Equals (vector2i) 36.666800 ms
+[2026.10.02-21.55.15:325][970]LogVerse: VerseProfile: Native Distance [Verse.org] 85.823400 ms
+[2026.10.02-21.55.15:325][970]LogVerse: VerseProfile: Fast Distance [Verse.org] 49.174200 ms
+[2026.10.02-21.55.15:326][970]LogVerse: VerseProfile: Native DistanceSquared [Verse.org] 67.632500 ms
+[2026.10.02-21.55.15:326][970]LogVerse: VerseProfile: Fast DistanceSquared [Verse.org] 32.957100 ms
+[2026.10.02-21.55.15:326][970]LogVerse: VerseProfile: Native DistanceForwardLeft [Verse.org] 92.694100 ms
+[2026.10.02-21.55.15:326][970]LogVerse: VerseProfile: Fast DistanceForwardLeft [Verse.org] 52.251400 ms
+[2026.10.02-21.55.15:326][970]LogVerse: VerseProfile: Native DistanceSquaredForwardLeft [Verse.org] 69.642100 ms
+[2026.10.02-21.55.15:327][970]LogVerse: VerseProfile: Fast DistanceSquaredForwardLeft [Verse.org] 29.722800 ms
+[2026.10.02-21.55.15:327][970]LogVerse: VerseProfile: Native LengthForwardLeft [Verse.org] 47.112400 ms
+[2026.10.02-21.55.15:327][970]LogVerse: VerseProfile: Fast LengthForwardLeft [Verse.org] 28.146300 ms
+[2026.10.02-21.55.15:335][971]LogVerse: VerseProfile: Native Lerp [Verse.org] 51.005700 ms
+[2026.10.02-21.55.15:335][971]LogVerse: VerseProfile: Fast Lerp [Verse.org] 34.061400 ms
+[2026.10.02-21.55.15:336][971]LogVerse: VerseProfile: Native Length [Verse.org] 49.127400 ms
+[2026.10.02-21.55.15:336][971]LogVerse: VerseProfile: Fast Length [Verse.org] 29.212600 ms
+[2026.10.02-21.55.15:336][971]LogVerse: VerseProfile: Native IsFinite [Verse.org] 82.542600 ms
+[2026.10.02-21.55.15:336][971]LogVerse: VerseProfile: Fast IsFinite [Verse.org] 38.419800 ms
+[2026.10.02-21.55.15:352][973]LogVerse: VerseProfile: Native MakeUnitVector [Verse.org] 84.042700 ms
+[2026.10.02-21.55.15:353][973]LogVerse: VerseProfile: Fast MakeUnitVector [Verse.org] 48.799000 ms
+[2026.10.02-21.55.15:353][973]LogVerse: VerseProfile: Native ReflectVector [Verse.org] 176.366900 ms
+[2026.10.02-21.55.15:353][973]LogVerse: VerseProfile: Fast ReflectVector [Verse.org] 64.415100 ms
+[2026.10.02-21.55.15:353][973]LogVerse: VerseProfile: Native GetForwardAxis [Verse.org] 50.213700 ms
+[2026.10.02-21.55.15:353][973]LogVerse: VerseProfile: Fast GetForwardAxis [Verse.org] 36.427900 ms
+[2026.10.02-21.55.15:403][979]LogVerse: VerseProfile: Native GetLeftAxis [Verse.org] 50.483500 ms
+[2026.10.02-21.55.15:403][979]LogVerse: VerseProfile: Fast GetLeftAxis [Verse.org] 36.641500 ms
+[2026.10.02-21.55.15:403][979]LogVerse: VerseProfile: Native GetUpAxis [Verse.org] 50.405900 ms
+[2026.10.02-21.55.15:403][979]LogVerse: VerseProfile: Fast GetUpAxis [Verse.org] 36.594700 ms
+[2026.10.02-21.55.15:403][979]LogVerse: VerseProfile: Native vector3 * transform [Verse.org] 100.149000 ms
+[2026.10.02-21.55.15:403][979]LogVerse: VerseProfile: Fast vector3 * transform [Verse.org] 107.121300 ms
+[2026.10.02-21.55.16:207][ 75]LogVerse: VerseProfile: Native MakeRotationDegrees [Verse.org] 59.823600 ms
+[2026.10.02-21.55.16:207][ 75]LogVerse: VerseProfile: Fast MakeRotationDegrees [Verse.org] 45.028100 ms
+[2026.10.02-21.55.16:208][ 75]LogVerse: VerseProfile: Native MakeRotationFromYawPitchRollRadians [Verse.org] 67.784800 ms
+[2026.10.02-21.55.16:208][ 75]LogVerse: VerseProfile: Fast MakeRotationFromYawPitchRollRadians [Verse.org] 37.293900 ms
+[2026.10.02-21.55.16:208][ 75]LogVerse: VerseProfile: Native MakeRotationFromEulerDegrees [Verse.org] 65.870300 ms
+[2026.10.02-21.55.16:208][ 75]LogVerse: VerseProfile: Fast MakeRotationFromEulerDegrees [Verse.org] 35.624000 ms
+[2026.10.02-21.55.16:209][ 75]LogVerse: VerseProfile: Native AngularDistanceDegrees [Verse.org] 46.752400 ms
+[2026.10.02-21.55.16:209][ 75]LogVerse: VerseProfile: Fast AngularDistanceDegrees [Verse.org] 37.844300 ms
+[2026.10.02-21.55.16:209][ 75]LogVerse: VerseProfile: Native GetYawPitchRollRadians [Verse.org] 71.098800 ms
+[2026.10.02-21.55.16:209][ 75]LogVerse: VerseProfile: Fast GetYawPitchRollRadians [Verse.org] 41.441400 ms
+[2026.10.02-21.55.16:238][ 78]LogVerse: VerseProfile: Native GetEulerDegrees [Verse.org] 71.354500 ms
+[2026.10.02-21.55.16:238][ 78]LogVerse: VerseProfile: Fast GetEulerDegrees [Verse.org] 40.617400 ms
+[2026.10.02-21.55.16:238][ 78]LogVerse: VerseProfile: Native GetAngleDegrees [Verse.org] 45.920100 ms
+[2026.10.02-21.55.16:238][ 78]LogVerse: VerseProfile: Fast GetAngleDegrees [Verse.org] 34.315500 ms
+[2026.10.02-21.55.18:833][385]LogVerse: VerseProfile: Native Add [repr] 324.401400 ms
+[2026.10.02-21.55.18:833][385]LogVerse: VerseProfile: VerseOrg Add [repr] 32.041600 ms
+[2026.10.02-21.55.18:834][385]LogVerse: VerseProfile: Tuple Add [repr] 23.410300 ms
+[2026.10.02-21.55.18:834][385]LogVerse: VerseProfile: Native Scale [repr] 409.857500 ms
+[2026.10.02-21.55.18:834][385]LogVerse: VerseProfile: VerseOrg Scale [repr] 31.857700 ms
+[2026.10.02-21.55.18:834][385]LogVerse: VerseProfile: Tuple Scale [repr] 23.246400 ms
+[2026.10.02-21.55.18:834][385]LogVerse: VerseProfile: Native Cross [repr] 408.280600 ms
+[2026.10.02-21.55.18:917][395]LogVerse: VerseProfile: VerseOrg Cross [repr] 41.918400 ms
+[2026.10.02-21.55.18:917][395]LogVerse: VerseProfile: Tuple Cross [repr] 29.872400 ms
+[2026.10.02-21.55.18:917][395]LogVerse: VerseProfile: Native Lerp [repr] 447.300200 ms
+[2026.10.02-21.55.18:917][395]LogVerse: VerseProfile: VerseOrg Lerp [repr] 57.001500 ms
+[2026.10.02-21.55.18:917][395]LogVerse: VerseProfile: Tuple Lerp [repr] 32.803900 ms
+[2026.10.02-21.55.24:625][ 75]LogVerse: VerseProfile: Native HomingStep 2868.988800 ms
+[2026.10.02-21.55.24:625][ 75]LogVerse: VerseProfile: VerseOrg HomingStep 377.514300 ms
+[2026.10.02-21.55.24:626][ 75]LogVerse: VerseProfile: Tuple HomingStep 174.777300 ms
+[2026.10.02-21.55.24:626][ 75]LogVerse: VerseProfile: Scalar HomingStep 452.144700 ms
+[2026.10.02-21.55.25:075][129]LogVerse: VerseProfile: Native Sin 12.772500 ms
+[2026.10.02-21.55.25:075][129]LogVerse: VerseProfile: Fast Sin 128.104100 ms
+[2026.10.02-21.55.25:076][129]LogVerse: VerseProfile: Native Cos 12.467700 ms
+[2026.10.02-21.55.25:076][129]LogVerse: VerseProfile: Fast Cos 110.497200 ms
+[2026.10.02-21.55.25:076][129]LogVerse: VerseProfile: Native Tan 12.462400 ms
+[2026.10.02-21.55.25:076][129]LogVerse: VerseProfile: Fast Tan 125.760900 ms
+[2026.10.02-21.55.25:639][196]LogVerse: VerseProfile: Native Exp 12.198900 ms
+[2026.10.02-21.55.25:639][196]LogVerse: VerseProfile: Fast Exp 247.955000 ms
+[2026.10.02-21.55.25:639][196]LogVerse: VerseProfile: Native Ln 12.443700 ms
+[2026.10.02-21.55.25:655][198]LogVerse: VerseProfile: Fast Ln 246.213400 ms
+[2026.10.02-21.55.26:690][322]LogVerse: VerseProfile: Native ArcTan 12.232000 ms
+[2026.10.02-21.55.26:691][322]LogVerse: VerseProfile: Fast ArcTan 110.402700 ms
+[2026.10.02-21.55.26:707][324]LogVerse: VerseProfile: Native ArcTan2 14.019900 ms
+[2026.10.02-21.55.26:707][324]LogVerse: VerseProfile: Fast ArcTan2 231.691300 ms
+[2026.10.02-21.55.26:708][324]LogVerse: VerseProfile: Native ArcSin 12.342400 ms
+[2026.10.02-21.55.26:708][324]LogVerse: VerseProfile: Fast ArcSin 268.322500 ms
+[2026.10.02-21.55.26:708][324]LogVerse: VerseProfile: Native ArcCos 12.571200 ms
+[2026.10.02-21.55.26:708][324]LogVerse: VerseProfile: Fast ArcCos 270.110400 ms
+[2026.10.02-21.55.29:208][616]LogVerse: VerseProfile: Native Sinh 12.194100 ms
+[2026.10.02-21.55.29:208][616]LogVerse: VerseProfile: Fast Sinh 552.157000 ms
+[2026.10.02-21.55.29:209][616]LogVerse: VerseProfile: Native Cosh 12.342400 ms
+[2026.10.02-21.55.29:209][616]LogVerse: VerseProfile: Fast Cosh 273.324900 ms
+[2026.10.02-21.55.29:209][616]LogVerse: VerseProfile: Native Tanh 12.287000 ms
+[2026.10.02-21.55.29:209][616]LogVerse: VerseProfile: Fast Tanh 567.042300 ms
+[2026.10.02-21.55.29:209][616]LogVerse: VerseProfile: Native ArSinh 12.344000 ms
+[2026.10.02-21.55.29:242][620]LogVerse: VerseProfile: Fast ArSinh 243.155700 ms
+[2026.10.02-21.55.29:242][620]LogVerse: VerseProfile: Native ArCosh 12.357900 ms
+[2026.10.02-21.55.29:243][620]LogVerse: VerseProfile: Fast ArCosh 318.486900 ms
+[2026.10.02-21.55.29:243][620]LogVerse: VerseProfile: Native ArTanh 11.976500 ms
+[2026.10.02-21.55.29:243][620]LogVerse: VerseProfile: Fast ArTanh 262.202100 ms
+[2026.10.02-21.55.29:514][652]LogVerse: VerseProfile: Native PowCube 13.146700 ms
+[2026.10.02-21.55.29:514][652]LogVerse: VerseProfile: Fast PowCube 214.453800 ms
+[2026.10.02-21.55.30:997][829]LogVerse: VerseProfile: Native SortBy 442.148700 ms
+[2026.10.02-21.55.30:997][829]LogVerse: VerseProfile: Fast SortBy 623.430600 ms
+[2026.10.02-21.55.30:997][829]LogVerse: VerseProfile: Inlined SortBy 346.008700 ms
+[2026.10.02-21.55.31:683][911]LogVerse: VerseProfile: Native EaseInOut 28.058700 ms
+[2026.10.02-21.55.31:683][911]LogVerse: VerseProfile: Fast EaseInOut 258.642000 ms
+[2026.10.02-21.55.31:683][911]LogVerse: VerseProfile: Native CubicBezier 30.607500 ms
+[2026.10.02-21.55.31:684][911]LogVerse: VerseProfile: Fast CubicBezier 278.993800 ms
+[2026.10.02-21.55.31:884][935]LogVerse: VerseProfile: Native Sqrt 11.853400 ms
+[2026.10.02-21.55.31:884][935]LogVerse: VerseProfile: Fast Sqrt 159.669200 ms
+[2026.10.02-21.55.32:102][961]LogVerse: VerseProfile: Native Clamp 112.431400 ms
+[2026.10.02-21.55.32:102][961]LogVerse: VerseProfile: Fast Clamp 72.387900 ms
+[2026.10.02-21.55.32:253][979]LogVerse: VerseProfile: Native Min 30.530700 ms
+[2026.10.02-21.55.32:253][979]LogVerse: VerseProfile: Fast Min 29.697300 ms
+[2026.10.02-21.55.32:253][979]LogVerse: VerseProfile: Native Max 31.758200 ms
+[2026.10.02-21.55.32:254][979]LogVerse: VerseProfile: Fast Max 31.105600 ms
+[2026.10.02-21.55.32:328][987]LogVerse: VerseProfile: Native Sgn 37.101000 ms
+[2026.10.02-21.55.32:328][987]LogVerse: VerseProfile: Fast Sgn 24.126400 ms
+[2026.10.02-21.55.32:407][993]LogVerse: VerseProfile: Native Abs 7.385200 ms
+[2026.10.02-21.55.32:408][993]LogVerse: VerseProfile: Fast Abs 27.199200 ms
+[2026.10.02-21.55.32:408][993]LogVerse: VerseProfile: Native Lerp (float) 13.928700 ms
+[2026.10.02-21.55.32:408][993]LogVerse: VerseProfile: Fast Lerp (float) 18.671600 ms
+[2026.10.02-21.55.33:344][105]LogVerse: VerseProfile: Native Floor 15.541500 ms
+[2026.10.02-21.55.33:346][105]LogVerse: VerseProfile: Fast Floor 438.192800 ms
+[2026.10.02-21.55.33:346][105]LogVerse: VerseProfile: Native Round 15.703500 ms
+[2026.10.02-21.55.33:346][105]LogVerse: VerseProfile: Fast Round 427.762900 ms
+[2026.10.02-21.55.33:596][135]LogVerse: VerseProfile: Native Abs (int) 7.275700 ms
+[2026.10.02-21.55.33:596][135]LogVerse: VerseProfile: Fast Abs (int) 19.178200 ms
+[2026.10.02-21.55.33:596][135]LogVerse: VerseProfile: Native Min (int) 24.268300 ms
+[2026.10.02-21.55.33:596][135]LogVerse: VerseProfile: Fast Min (int) 21.300900 ms
+[2026.10.02-21.55.33:597][135]LogVerse: VerseProfile: Native Clamp (int) 13.571200 ms
+[2026.10.02-21.55.33:597][135]LogVerse: VerseProfile: Fast Clamp (int) 39.172800 ms
+[2026.10.02-21.55.33:597][135]LogVerse: VerseProfile: Native Quotient 18.369200 ms
+[2026.10.02-21.55.33:613][137]LogVerse: VerseProfile: Fast Quotient 34.021000 ms
+[2026.10.02-21.55.33:613][137]LogVerse: VerseProfile: Native Mod 18.508100 ms
+[2026.10.02-21.55.33:613][137]LogVerse: VerseProfile: Fast Mod 45.742200 ms
+[2026.10.02-21.55.37:684][611]LogVerse: VerseProfile: Native Find 295.290300 ms
+[2026.10.02-21.55.37:684][611]LogVerse: VerseProfile: Fast Find 256.070900 ms
+[2026.10.02-21.55.37:684][611]LogVerse: VerseProfile: Native RemoveFirstElement 712.214400 ms
+[2026.10.02-21.55.37:685][611]LogVerse: VerseProfile: Fast RemoveFirstElement 781.207900 ms
+[2026.10.02-21.55.37:685][611]LogVerse: VerseProfile: Native ReplaceFirstElement 750.458600 ms
+[2026.10.02-21.55.37:685][611]LogVerse: VerseProfile: Fast ReplaceFirstElement 745.603000 ms
+[2026.10.02-21.55.41:215][ 26]LogVerse: VerseProfile: Native RemoveElement 504.221900 ms
+[2026.10.02-21.55.41:215][ 26]LogVerse: VerseProfile: Fast RemoveElement 578.706200 ms
+[2026.10.02-21.55.41:215][ 26]LogVerse: VerseProfile: Native Slice 354.564900 ms
+[2026.10.02-21.55.41:215][ 26]LogVerse: VerseProfile: Fast Slice 332.715900 ms
+[2026.10.02-21.55.41:215][ 26]LogVerse: VerseProfile: Native Insert 642.243200 ms
+[2026.10.02-21.55.41:216][ 26]LogVerse: VerseProfile: Fast Insert 640.918300 ms
+[2026.10.02-21.55.43:166][257]LogVerse: VerseProfile: Native Concatenate 1312.793600 ms
+[2026.10.02-21.55.43:166][257]LogVerse: VerseProfile: Fast Concatenate 120.617700 ms
+[2026.10.02-21.55.44:317][393]LogVerse: VerseProfile: Native ReplaceAll 424.792500 ms
+[2026.10.02-21.55.44:317][393]LogVerse: VerseProfile: Fast ReplaceAll 516.546500 ms
+[2026.10.02-21.55.44:820][452]LogVerse: VerseProfile: Native ToString (int) 28.368500 ms
+[2026.10.02-21.55.44:820][452]LogVerse: VerseProfile: Fast ToString (int) 335.879700 ms
+[2026.10.02-21.55.44:905][462]LogVerse: VerseProfile: Native DegreesToRadians 19.164900 ms
+[2026.10.02-21.55.44:905][462]LogVerse: VerseProfile: Fast DegreesToRadians 14.595800 ms
+[2026.10.02-21.55.44:905][462]LogVerse: VerseProfile: Native RadiansToDegrees 19.107100 ms
+[2026.10.02-21.55.44:906][462]LogVerse: VerseProfile: Fast RadiansToDegrees 14.896500 ms
+[2026.10.02-21.55.45:007][474]LogVerse: VerseProfile: Native DotProduct 28.873400 ms
+[2026.10.02-21.55.45:007][474]LogVerse: VerseProfile: Fast DotProduct 24.722400 ms
+[2026.10.02-21.55.45:007][474]LogVerse: VerseProfile: Inline DotProduct 14.946500 ms
+[2026.10.02-21.55.46:214][617]LogVerse: VerseProfile: Native CrossProduct 415.881900 ms
+[2026.10.02-21.55.46:214][617]LogVerse: VerseProfile: Fast CrossProduct 392.536000 ms
+[2026.10.02-21.55.47:018][713]LogVerse: VerseProfile: Native Distance 475.203500 ms
+[2026.10.02-21.55.47:019][713]LogVerse: VerseProfile: Fast Distance 61.493000 ms
+[2026.10.02-21.55.47:737][799]LogVerse: VerseProfile: Native DistanceSquared 452.078800 ms
+[2026.10.02-21.55.47:737][799]LogVerse: VerseProfile: Fast DistanceSquared 31.636100 ms
+[2026.10.02-21.55.49:295][973]LogVerse: VerseProfile: Native DistanceXY 469.501600 ms
+[2026.10.02-21.55.49:295][973]LogVerse: VerseProfile: Fast DistanceXY 59.802000 ms
+[2026.10.02-21.55.49:295][973]LogVerse: VerseProfile: Native DistanceSquaredXY 498.232800 ms
+[2026.10.02-21.55.49:295][973]LogVerse: VerseProfile: Fast DistanceSquaredXY 32.511500 ms
+[2026.10.02-21.55.49:496][997]LogVerse: VerseProfile: Native Length 48.007500 ms
+[2026.10.02-21.55.49:497][997]LogVerse: VerseProfile: Fast Length 28.456100 ms
+[2026.10.02-21.55.49:497][997]LogVerse: VerseProfile: Native LengthXY 45.648000 ms
+[2026.10.02-21.55.49:497][997]LogVerse: VerseProfile: Fast LengthXY 26.577600 ms
+[2026.10.02-21.55.50:217][ 76]LogVerse: VerseProfile: Native IsFinite 462.677000 ms
+[2026.10.02-21.55.50:217][ 76]LogVerse: VerseProfile: Fast IsFinite 35.358200 ms
+[2026.10.02-21.55.52:361][325]LogVerse: VerseProfile: Native MakeUnitVector 1007.981400 ms
+[2026.10.02-21.55.52:390][328]LogVerse: VerseProfile: Fast MakeUnitVector 413.171300 ms
+[2026.10.02-21.55.53:709][476]LogVerse: VerseProfile: Native Lerp 448.696900 ms
+[2026.10.02-21.55.53:709][476]LogVerse: VerseProfile: Fast Lerp 436.255900 ms
+[2026.10.02-21.55.57:323][909]LogVerse: VerseProfile: Native ReflectVector 1967.059700 ms
+[2026.10.02-21.55.57:323][909]LogVerse: VerseProfile: Fast ReflectVector 505.433000 ms
+[2026.10.02-21.55.59:439][160]LogVerse: VerseProfile: Native GetLocalForward 428.814300 ms
+[2026.10.02-21.55.59:439][160]LogVerse: VerseProfile: Fast GetLocalForward 35.773900 ms
+[2026.10.02-21.55.59:440][160]LogVerse: VerseProfile: Native GetLocalRight 422.564600 ms
+[2026.10.02-21.55.59:440][160]LogVerse: VerseProfile: Fast GetLocalRight 41.523500 ms
+[2026.10.02-21.55.59:440][160]LogVerse: VerseProfile: Native GetLocalUp 453.261600 ms
+[2026.10.02-21.55.59:474][164]LogVerse: VerseProfile: Fast GetLocalUp 44.491700 ms
+[2026.10.02-21.56.01:214][372]LogVerse: VerseProfile: Native ApplyLocalRotationY 504.880000 ms
+[2026.10.02-21.56.01:314][384]LogVerse: VerseProfile: Fast ApplyLocalRotationY 108.157100 ms
+[2026.10.02-21.56.01:315][384]LogVerse: VerseProfile: Native ApplyLocalRotationZ 510.223200 ms
+[2026.10.02-21.56.01:315][384]LogVerse: VerseProfile: Fast ApplyLocalRotationZ 124.638000 ms
+[2026.10.02-21.56.04:882][812]LogVerse: VerseProfile: Native TransformVector 906.714300 ms
+[2026.10.02-21.56.04:882][812]LogVerse: VerseProfile: Fast TransformVector 507.781400 ms
+[2026.10.02-21.56.04:999][826]LogVerse: VerseProfile: Native TransformVectorNoScale 560.324600 ms
+[2026.10.02-21.56.04:999][826]LogVerse: VerseProfile: Fast TransformVectorNoScale 474.338600 ms
+[2026.10.02-21.56.07:767][158]LogVerse: VerseProfile: Native TransformVector scaled 911.157800 ms
+[2026.10.02-21.56.07:768][158]LogVerse: VerseProfile: Fast TransformVector scaled 952.960300 ms
+[2026.10.02-21.56.09:007][301]LogVerse: VerseProfile: Native Distance (vector2) 363.148400 ms
+[2026.10.02-21.56.09:008][301]LogVerse: VerseProfile: Fast Distance (vector2) 38.632100 ms
+[2026.10.02-21.56.09:008][301]LogVerse: VerseProfile: Native DistanceSquared (vector2) 349.194300 ms
+[2026.10.02-21.56.09:008][301]LogVerse: VerseProfile: Fast DistanceSquared (vector2) 23.086300 ms
+[2026.10.02-21.56.09:008][301]LogVerse: VerseProfile: Native Length (vector2) 53.154200 ms
+[2026.10.02-21.56.09:035][304]LogVerse: VerseProfile: Fast Length (vector2) 25.299200 ms
+[2026.10.02-21.56.09:035][304]LogVerse: VerseProfile: Native LengthSquared (vector2) 34.266700 ms
+[2026.10.02-21.56.09:035][304]LogVerse: VerseProfile: Fast LengthSquared (vector2) 18.544800 ms
+[2026.10.02-21.56.13:999][898]LogVerse: VerseProfile: Native IsFinite (vector2) 341.818500 ms
+[2026.10.02-21.56.14:450][952]LogVerse: VerseProfile: Fast IsFinite (vector2) 28.106400 ms
+[2026.10.02-21.56.14:450][952]LogVerse: VerseProfile: Native MakeUnitVector (vector2) 748.203400 ms
+[2026.10.02-21.56.14:451][952]LogVerse: VerseProfile: Fast MakeUnitVector (vector2) 317.714900 ms
+[2026.10.02-21.56.14:451][952]LogVerse: VerseProfile: Native Lerp (vector2) 314.812000 ms
+[2026.10.02-21.56.14:451][952]LogVerse: VerseProfile: Fast Lerp (vector2) 364.257800 ms
+[2026.10.02-21.56.14:451][952]LogVerse: VerseProfile: Native ReflectVector (vector2) 1262.441100 ms
+[2026.10.02-21.56.14:500][958]LogVerse: VerseProfile: Fast ReflectVector (vector2) 349.007600 ms
+[2026.10.02-21.56.14:818][996]LogVerse: VerseProfile: Native Equals (vector2i) 182.051400 ms
+[2026.10.02-21.56.14:818][996]LogVerse: VerseProfile: Fast Equals (vector2i) 36.676700 ms
+[2026.10.02-21.56.17:020][260]LogVerse: VerseProfile: Native Distance [Verse.org] 87.982900 ms
+[2026.10.02-21.56.17:020][260]LogVerse: VerseProfile: Fast Distance [Verse.org] 50.012200 ms
+[2026.10.02-21.56.17:021][260]LogVerse: VerseProfile: Native DistanceSquared [Verse.org] 70.972500 ms
+[2026.10.02-21.56.17:021][260]LogVerse: VerseProfile: Fast DistanceSquared [Verse.org] 33.117500 ms
+[2026.10.02-21.56.17:021][260]LogVerse: VerseProfile: Native DistanceForwardLeft [Verse.org] 99.708500 ms
+[2026.10.02-21.56.17:022][260]LogVerse: VerseProfile: Fast DistanceForwardLeft [Verse.org] 53.026200 ms
+[2026.10.02-21.56.17:022][260]LogVerse: VerseProfile: Native DistanceSquaredForwardLeft [Verse.org] 72.843400 ms
+[2026.10.02-21.56.17:022][260]LogVerse: VerseProfile: Fast DistanceSquaredForwardLeft [Verse.org] 29.930200 ms
+[2026.10.02-21.56.17:038][262]LogVerse: VerseProfile: Native LengthForwardLeft [Verse.org] 49.567900 ms
+[2026.10.02-21.56.17:038][262]LogVerse: VerseProfile: Fast LengthForwardLeft [Verse.org] 28.405700 ms
+[2026.10.02-21.56.17:039][262]LogVerse: VerseProfile: Native Lerp [Verse.org] 55.401800 ms
+[2026.10.02-21.56.17:039][262]LogVerse: VerseProfile: Fast Lerp [Verse.org] 34.333100 ms
+[2026.10.02-21.56.17:039][262]LogVerse: VerseProfile: Native Length [Verse.org] 53.612800 ms
+[2026.10.02-21.56.17:039][262]LogVerse: VerseProfile: Fast Length [Verse.org] 30.625500 ms
+[2026.10.02-21.56.17:071][266]LogVerse: VerseProfile: Native IsFinite [Verse.org] 84.674600 ms
+[2026.10.02-21.56.17:073][266]LogVerse: VerseProfile: Fast IsFinite [Verse.org] 38.683600 ms
+[2026.10.02-21.56.17:073][266]LogVerse: VerseProfile: Native MakeUnitVector [Verse.org] 91.905300 ms
+[2026.10.02-21.56.17:073][266]LogVerse: VerseProfile: Fast MakeUnitVector [Verse.org] 50.784800 ms
+[2026.10.02-21.56.17:073][266]LogVerse: VerseProfile: Native ReflectVector [Verse.org] 193.676800 ms
+[2026.10.02-21.56.17:073][266]LogVerse: VerseProfile: Fast ReflectVector [Verse.org] 66.885800 ms
+[2026.10.02-21.56.17:090][268]LogVerse: VerseProfile: Native GetForwardAxis [Verse.org] 56.093300 ms
+[2026.10.02-21.56.17:090][268]LogVerse: VerseProfile: Fast GetForwardAxis [Verse.org] 38.381300 ms
+[2026.10.02-21.56.17:090][268]LogVerse: VerseProfile: Native GetLeftAxis [Verse.org] 56.598100 ms
+[2026.10.02-21.56.17:090][268]LogVerse: VerseProfile: Fast GetLeftAxis [Verse.org] 38.799100 ms
+[2026.10.02-21.56.17:091][268]LogVerse: VerseProfile: Native GetUpAxis [Verse.org] 55.406100 ms
+[2026.10.02-21.56.17:091][268]LogVerse: VerseProfile: Fast GetUpAxis [Verse.org] 38.003200 ms
+[2026.10.02-21.56.17:141][274]LogVerse: VerseProfile: Native vector3 * transform [Verse.org] 105.198100 ms
+[2026.10.02-21.56.17:141][274]LogVerse: VerseProfile: Fast vector3 * transform [Verse.org] 107.174900 ms
+[2026.10.02-21.56.17:994][376]LogVerse: VerseProfile: Native MakeRotationDegrees [Verse.org] 64.505400 ms
+[2026.10.02-21.56.18:026][380]LogVerse: VerseProfile: Fast MakeRotationDegrees [Verse.org] 48.773000 ms
+[2026.10.02-21.56.18:027][380]LogVerse: VerseProfile: Native MakeRotationFromYawPitchRollRadians [Verse.org] 74.513000 ms
+[2026.10.02-21.56.18:027][380]LogVerse: VerseProfile: Fast MakeRotationFromYawPitchRollRadians [Verse.org] 40.654900 ms
+[2026.10.02-21.56.18:027][380]LogVerse: VerseProfile: Native MakeRotationFromEulerDegrees [Verse.org] 73.050200 ms
+[2026.10.02-21.56.18:027][380]LogVerse: VerseProfile: Fast MakeRotationFromEulerDegrees [Verse.org] 38.160100 ms
+[2026.10.02-21.56.18:045][382]LogVerse: VerseProfile: Native AngularDistanceDegrees [Verse.org] 51.224800 ms
+[2026.10.02-21.56.18:045][382]LogVerse: VerseProfile: Fast AngularDistanceDegrees [Verse.org] 39.625200 ms
+[2026.10.02-21.56.18:045][382]LogVerse: VerseProfile: Native GetYawPitchRollRadians [Verse.org] 78.532800 ms
+[2026.10.02-21.56.18:045][382]LogVerse: VerseProfile: Fast GetYawPitchRollRadians [Verse.org] 42.085700 ms
+[2026.10.02-21.56.18:047][382]LogVerse: VerseProfile: Native GetEulerDegrees [Verse.org] 77.132900 ms
+[2026.10.02-21.56.18:047][382]LogVerse: VerseProfile: Fast GetEulerDegrees [Verse.org] 41.734300 ms
+[2026.10.02-21.56.18:063][384]LogVerse: VerseProfile: Native GetAngleDegrees [Verse.org] 49.229900 ms
+[2026.10.02-21.56.18:063][384]LogVerse: VerseProfile: Fast GetAngleDegrees [Verse.org] 35.044400 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: Native Add [repr] 402.526900 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: VerseOrg Add [repr] 32.363200 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: Tuple Add [repr] 23.411100 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: Native Scale [repr] 403.307100 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: VerseOrg Scale [repr] 32.017000 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: Tuple Scale [repr] 23.254800 ms
+[2026.10.02-21.56.20:917][726]LogVerse: VerseProfile: Native Cross [repr] 417.819800 ms
+[2026.10.02-21.56.21:017][738]LogVerse: VerseProfile: VerseOrg Cross [repr] 40.947300 ms
+[2026.10.02-21.56.21:017][738]LogVerse: VerseProfile: Tuple Cross [repr] 29.715200 ms
+[2026.10.02-21.56.21:017][738]LogVerse: VerseProfile: Native Lerp [repr] 516.182000 ms
+[2026.10.02-21.56.21:017][738]LogVerse: VerseProfile: VerseOrg Lerp [repr] 63.897100 ms
+[2026.10.02-21.56.21:017][738]LogVerse: VerseProfile: Tuple Lerp [repr] 33.012200 ms
+[2026.10.02-21.56.27:138][471]LogVerse: VerseProfile: Native HomingStep 3122.253500 ms
+[2026.10.02-21.56.27:138][471]LogVerse: VerseProfile: VerseOrg HomingStep 395.631100 ms
+[2026.10.02-21.56.27:138][471]LogVerse: VerseProfile: Tuple HomingStep 176.896800 ms
+[2026.10.02-21.56.27:138][471]LogVerse: VerseProfile: Scalar HomingStep 493.311100 ms
+[2026.10.02-21.56.27:588][525]LogVerse: VerseProfile: Native Sin 12.835600 ms
+[2026.10.02-21.56.27:589][525]LogVerse: VerseProfile: Fast Sin 126.048500 ms
+[2026.10.02-21.56.27:589][525]LogVerse: VerseProfile: Native Cos 12.872900 ms
+[2026.10.02-21.56.27:589][525]LogVerse: VerseProfile: Fast Cos 110.736500 ms
+[2026.10.02-21.56.27:589][525]LogVerse: VerseProfile: Native Tan 12.572500 ms
+[2026.10.02-21.56.27:589][525]LogVerse: VerseProfile: Fast Tan 125.947500 ms
+[2026.10.02-21.56.28:172][595]LogVerse: VerseProfile: Native Exp 12.354600 ms
+[2026.10.02-21.56.28:172][595]LogVerse: VerseProfile: Fast Exp 250.115100 ms
+[2026.10.02-21.56.28:172][595]LogVerse: VerseProfile: Native Ln 12.564700 ms
+[2026.10.02-21.56.28:172][595]LogVerse: VerseProfile: Fast Ln 247.699300 ms
+[2026.10.02-21.56.29:209][719]LogVerse: VerseProfile: Native ArcTan 12.498800 ms
+[2026.10.02-21.56.29:209][719]LogVerse: VerseProfile: Fast ArcTan 110.812400 ms
+[2026.10.02-21.56.29:209][719]LogVerse: VerseProfile: Native ArcTan2 13.890000 ms
+[2026.10.02-21.56.29:209][719]LogVerse: VerseProfile: Fast ArcTan2 230.280200 ms
+[2026.10.02-21.56.29:209][719]LogVerse: VerseProfile: Native ArcSin 12.466900 ms
+[2026.10.02-21.56.29:210][719]LogVerse: VerseProfile: Fast ArcSin 266.538900 ms
+[2026.10.02-21.56.29:210][719]LogVerse: VerseProfile: Native ArcCos 12.444200 ms
+[2026.10.02-21.56.29:227][721]LogVerse: VerseProfile: Fast ArcCos 269.212700 ms
+[2026.10.02-21.56.31:747][ 22]LogVerse: VerseProfile: Native Sinh 13.109200 ms
+[2026.10.02-21.56.31:747][ 22]LogVerse: VerseProfile: Fast Sinh 551.578100 ms
+[2026.10.02-21.56.31:748][ 22]LogVerse: VerseProfile: Native Cosh 12.341800 ms
+[2026.10.02-21.56.31:748][ 22]LogVerse: VerseProfile: Fast Cosh 273.630800 ms
+[2026.10.02-21.56.31:749][ 22]LogVerse: VerseProfile: Native Tanh 12.468900 ms
+[2026.10.02-21.56.31:781][ 26]LogVerse: VerseProfile: Fast Tanh 568.286900 ms
+[2026.10.02-21.56.31:781][ 26]LogVerse: VerseProfile: Native ArSinh 12.416100 ms
+[2026.10.02-21.56.31:781][ 26]LogVerse: VerseProfile: Fast ArSinh 242.151600 ms
+[2026.10.02-21.56.31:781][ 26]LogVerse: VerseProfile: Native ArCosh 12.470700 ms
+[2026.10.02-21.56.31:782][ 26]LogVerse: VerseProfile: Fast ArCosh 341.657200 ms
+[2026.10.02-21.56.31:782][ 26]LogVerse: VerseProfile: Native ArTanh 13.356300 ms
+[2026.10.02-21.56.31:782][ 26]LogVerse: VerseProfile: Fast ArTanh 261.690700 ms
+[2026.10.02-21.56.32:065][ 60]LogVerse: VerseProfile: Native PowCube 14.520000 ms
+[2026.10.02-21.56.32:065][ 60]LogVerse: VerseProfile: Fast PowCube 212.600900 ms
+[2026.10.02-21.56.33:517][234]LogVerse: VerseProfile: Native SortBy 442.015300 ms
+[2026.10.02-21.56.33:534][236]LogVerse: VerseProfile: Fast SortBy 620.068900 ms
+[2026.10.02-21.56.33:535][236]LogVerse: VerseProfile: Inlined SortBy 346.802800 ms
+[2026.10.02-21.56.34:220][318]LogVerse: VerseProfile: Native EaseInOut 29.001400 ms
+[2026.10.02-21.56.34:220][318]LogVerse: VerseProfile: Fast EaseInOut 270.106500 ms
+[2026.10.02-21.56.34:220][318]LogVerse: VerseProfile: Native CubicBezier 30.669200 ms
+[2026.10.02-21.56.34:237][320]LogVerse: VerseProfile: Fast CubicBezier 280.618000 ms
+[2026.10.02-21.56.34:437][344]LogVerse: VerseProfile: Native Sqrt 12.178300 ms
+[2026.10.02-21.56.34:437][344]LogVerse: VerseProfile: Fast Sqrt 159.186600 ms
+[2026.10.02-21.56.34:670][372]LogVerse: VerseProfile: Native Clamp 113.561000 ms
+[2026.10.02-21.56.34:670][372]LogVerse: VerseProfile: Fast Clamp 72.440700 ms
+[2026.10.02-21.56.34:805][388]LogVerse: VerseProfile: Native Min 31.133600 ms
+[2026.10.02-21.56.34:805][388]LogVerse: VerseProfile: Fast Min 29.775300 ms
+[2026.10.02-21.56.34:805][388]LogVerse: VerseProfile: Native Max 32.438600 ms
+[2026.10.02-21.56.34:805][388]LogVerse: VerseProfile: Fast Max 30.938400 ms
+[2026.10.02-21.56.34:888][398]LogVerse: VerseProfile: Native Sgn 37.753800 ms
+[2026.10.02-21.56.34:889][398]LogVerse: VerseProfile: Fast Sgn 24.324400 ms
+[2026.10.02-21.56.34:971][408]LogVerse: VerseProfile: Native Abs 7.456200 ms
+[2026.10.02-21.56.34:971][408]LogVerse: VerseProfile: Fast Abs 27.250200 ms
+[2026.10.02-21.56.34:973][408]LogVerse: VerseProfile: Native Lerp (float) 14.663600 ms
+[2026.10.02-21.56.34:973][408]LogVerse: VerseProfile: Fast Lerp (float) 18.770000 ms
+[2026.10.02-21.56.35:910][520]LogVerse: VerseProfile: Native Floor 16.214900 ms
+[2026.10.02-21.56.35:910][520]LogVerse: VerseProfile: Fast Floor 440.618700 ms
+[2026.10.02-21.56.35:910][520]LogVerse: VerseProfile: Native Round 15.929900 ms
+[2026.10.02-21.56.35:911][520]LogVerse: VerseProfile: Fast Round 426.668300 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Native Abs (int) 7.374500 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Fast Abs (int) 19.215800 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Native Min (int) 24.615600 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Fast Min (int) 21.157500 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Native Clamp (int) 14.339100 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Fast Clamp (int) 39.558000 ms
+[2026.10.02-21.56.36:170][551]LogVerse: VerseProfile: Native Quotient 18.645100 ms
+[2026.10.02-21.56.36:188][553]LogVerse: VerseProfile: Fast Quotient 34.026600 ms
+[2026.10.02-21.56.36:188][553]LogVerse: VerseProfile: Native Mod 18.686700 ms
+[2026.10.02-21.56.36:188][553]LogVerse: VerseProfile: Fast Mod 46.323900 ms
+[2026.10.02-21.56.40:281][ 41]LogVerse: VerseProfile: Native Find 294.006000 ms
+[2026.10.02-21.56.40:281][ 41]LogVerse: VerseProfile: Fast Find 254.884400 ms
+[2026.10.02-21.56.40:281][ 41]LogVerse: VerseProfile: Native RemoveFirstElement 718.208000 ms
+[2026.10.02-21.56.40:281][ 41]LogVerse: VerseProfile: Fast RemoveFirstElement 787.608400 ms
+[2026.10.02-21.56.40:281][ 41]LogVerse: VerseProfile: Native ReplaceFirstElement 752.254800 ms
+[2026.10.02-21.56.40:282][ 41]LogVerse: VerseProfile: Fast ReplaceFirstElement 740.552600 ms
+[2026.10.02-21.56.43:799][460]LogVerse: VerseProfile: Native RemoveElement 511.632500 ms
+[2026.10.02-21.56.43:799][460]LogVerse: VerseProfile: Fast RemoveElement 580.698000 ms
+[2026.10.02-21.56.43:799][460]LogVerse: VerseProfile: Native Slice 362.566600 ms
+[2026.10.02-21.56.43:800][460]LogVerse: VerseProfile: Fast Slice 333.721000 ms
+[2026.10.02-21.56.43:800][460]LogVerse: VerseProfile: Native Insert 645.081100 ms
+[2026.10.02-21.56.43:833][464]LogVerse: VerseProfile: Fast Insert 644.722900 ms
+[2026.10.02-21.56.45:854][706]LogVerse: VerseProfile: Native Concatenate 1368.631600 ms
+[2026.10.02-21.56.45:855][706]LogVerse: VerseProfile: Fast Concatenate 122.869600 ms
+[2026.10.02-21.56.47:008][844]LogVerse: VerseProfile: Native ReplaceAll 426.550100 ms
+[2026.10.02-21.56.47:009][844]LogVerse: VerseProfile: Fast ReplaceAll 513.447300 ms
+[2026.10.02-21.56.47:524][906]LogVerse: VerseProfile: Native ToString (int) 28.890000 ms
+[2026.10.02-21.56.47:525][906]LogVerse: VerseProfile: Fast ToString (int) 341.120700 ms
+[2026.10.02-21.56.47:591][914]LogVerse: VerseProfile: Native DegreesToRadians 19.258300 ms
+[2026.10.02-21.56.47:591][914]LogVerse: VerseProfile: Fast DegreesToRadians 14.859100 ms
+[2026.10.02-21.56.47:608][916]LogVerse: VerseProfile: Native RadiansToDegrees 19.128100 ms
+[2026.10.02-21.56.47:609][916]LogVerse: VerseProfile: Fast RadiansToDegrees 15.036600 ms
+[2026.10.02-21.56.47:710][928]LogVerse: VerseProfile: Native DotProduct 28.953200 ms
+[2026.10.02-21.56.47:710][928]LogVerse: VerseProfile: Fast DotProduct 24.848600 ms
+[2026.10.02-21.56.47:710][928]LogVerse: VerseProfile: Inline DotProduct 14.964800 ms
+[2026.10.02-21.56.49:026][ 86]LogVerse: VerseProfile: Native CrossProduct 432.643600 ms
+[2026.10.02-21.56.49:027][ 86]LogVerse: VerseProfile: Fast CrossProduct 433.909700 ms
+[2026.10.02-21.56.49:875][188]LogVerse: VerseProfile: Native Distance 505.640800 ms
+[2026.10.02-21.56.49:877][188]LogVerse: VerseProfile: Fast Distance 61.388800 ms
+[2026.10.02-21.56.50:639][279]LogVerse: VerseProfile: Native DistanceSquared 475.115000 ms
+[2026.10.02-21.56.50:639][279]LogVerse: VerseProfile: Fast DistanceSquared 30.925400 ms
+[2026.10.02-21.56.52:206][467]LogVerse: VerseProfile: Native DistanceXY 502.012700 ms
+[2026.10.02-21.56.52:206][467]LogVerse: VerseProfile: Fast DistanceXY 57.473700 ms
+[2026.10.02-21.56.52:206][467]LogVerse: VerseProfile: Native DistanceSquaredXY 502.909900 ms
+[2026.10.02-21.56.52:223][469]LogVerse: VerseProfile: Fast DistanceSquaredXY 32.004700 ms
+[2026.10.02-21.56.52:408][491]LogVerse: VerseProfile: Native Length 49.537700 ms
+[2026.10.02-21.56.52:408][491]LogVerse: VerseProfile: Fast Length 28.698200 ms
+[2026.10.02-21.56.52:424][493]LogVerse: VerseProfile: Native LengthXY 45.633800 ms
+[2026.10.02-21.56.52:424][493]LogVerse: VerseProfile: Fast LengthXY 26.582400 ms
+[2026.10.02-21.56.53:224][589]LogVerse: VerseProfile: Native IsFinite 493.882900 ms
+[2026.10.02-21.56.53:224][589]LogVerse: VerseProfile: Fast IsFinite 35.189300 ms
+[2026.10.02-21.56.55:458][857]LogVerse: VerseProfile: Native MakeUnitVector 1042.615900 ms
+[2026.10.02-21.56.55:458][857]LogVerse: VerseProfile: Fast MakeUnitVector 440.863600 ms
+[2026.10.02-21.56.56:827][ 21]LogVerse: VerseProfile: Native Lerp 464.952900 ms
+[2026.10.02-21.56.56:827][ 21]LogVerse: VerseProfile: Fast Lerp 451.085800 ms
+[2026.10.02-21.57.00:541][466]LogVerse: VerseProfile: Native ReflectVector 2055.572000 ms
+[2026.10.02-21.57.00:541][466]LogVerse: VerseProfile: Fast ReflectVector 518.858400 ms
+[2026.10.02-21.57.02:790][736]LogVerse: VerseProfile: Native GetLocalForward 444.196300 ms
+[2026.10.02-21.57.02:790][736]LogVerse: VerseProfile: Fast GetLocalForward 37.352900 ms
+[2026.10.02-21.57.02:791][736]LogVerse: VerseProfile: Native GetLocalRight 460.000900 ms
+[2026.10.02-21.57.02:791][736]LogVerse: VerseProfile: Fast GetLocalRight 43.785100 ms
+[2026.10.02-21.57.02:791][736]LogVerse: VerseProfile: Native GetLocalUp 441.804800 ms
+[2026.10.02-21.57.02:791][736]LogVerse: VerseProfile: Fast GetLocalUp 45.525200 ms
+[2026.10.02-21.57.04:675][962]LogVerse: VerseProfile: Native ApplyLocalRotationY 518.668900 ms
+[2026.10.02-21.57.04:675][962]LogVerse: VerseProfile: Fast ApplyLocalRotationY 106.228400 ms
+[2026.10.02-21.57.04:675][962]LogVerse: VerseProfile: Native ApplyLocalRotationZ 522.388200 ms
+[2026.10.02-21.57.04:675][962]LogVerse: VerseProfile: Fast ApplyLocalRotationZ 127.577600 ms
+[2026.10.02-21.57.08:411][410]LogVerse: VerseProfile: Native TransformVector 893.239000 ms
+[2026.10.02-21.57.08:411][410]LogVerse: VerseProfile: Fast TransformVector 551.538000 ms
+[2026.10.02-21.57.08:411][410]LogVerse: VerseProfile: Native TransformVectorNoScale 575.657600 ms
+[2026.10.02-21.57.08:411][410]LogVerse: VerseProfile: Fast TransformVectorNoScale 481.727800 ms
+[2026.10.02-21.57.11:215][746]LogVerse: VerseProfile: Native TransformVector scaled 894.049900 ms
+[2026.10.02-21.57.11:215][746]LogVerse: VerseProfile: Fast TransformVector scaled 987.061000 ms
+[2026.10.02-21.57.12:481][898]LogVerse: VerseProfile: Native Distance (vector2) 366.553900 ms
+[2026.10.02-21.57.12:482][898]LogVerse: VerseProfile: Fast Distance (vector2) 39.067700 ms
+[2026.10.02-21.57.12:482][898]LogVerse: VerseProfile: Native DistanceSquared (vector2) 352.638200 ms
+[2026.10.02-21.57.12:483][898]LogVerse: VerseProfile: Fast DistanceSquared (vector2) 23.505200 ms
+[2026.10.02-21.57.12:483][898]LogVerse: VerseProfile: Native Length (vector2) 54.572600 ms
+[2026.10.02-21.57.12:483][898]LogVerse: VerseProfile: Fast Length (vector2) 25.635900 ms
+[2026.10.02-21.57.12:516][902]LogVerse: VerseProfile: Native LengthSquared (vector2) 35.124900 ms
+[2026.10.02-21.57.12:516][902]LogVerse: VerseProfile: Fast LengthSquared (vector2) 19.064100 ms
+[2026.10.02-21.57.17:754][530]LogVerse: VerseProfile: Native IsFinite (vector2) 346.504900 ms
+[2026.10.02-21.57.17:755][530]LogVerse: VerseProfile: Fast IsFinite (vector2) 28.218500 ms
+[2026.10.02-21.57.17:755][530]LogVerse: VerseProfile: Native MakeUnitVector (vector2) 723.367700 ms
+[2026.10.02-21.57.18:121][574]LogVerse: VerseProfile: Fast MakeUnitVector (vector2) 349.318500 ms
+[2026.10.02-21.57.18:121][574]LogVerse: VerseProfile: Native Lerp (vector2) 318.503400 ms
+[2026.10.02-21.57.18:121][574]LogVerse: VerseProfile: Fast Lerp (vector2) 372.634000 ms
+[2026.10.02-21.57.18:122][574]LogVerse: VerseProfile: Native ReflectVector (vector2) 1347.755700 ms
+[2026.10.02-21.57.18:122][574]LogVerse: VerseProfile: Fast ReflectVector (vector2) 375.225500 ms
+[2026.10.02-21.57.18:455][614]LogVerse: VerseProfile: Native Equals (vector2i) 194.863100 ms
+[2026.10.02-21.57.18:455][614]LogVerse: VerseProfile: Fast Equals (vector2i) 36.947000 ms
+[2026.10.02-21.57.20:689][882]LogVerse: VerseProfile: Native Distance [Verse.org] 90.998400 ms
+[2026.10.02-21.57.20:689][882]LogVerse: VerseProfile: Fast Distance [Verse.org] 50.435500 ms
+[2026.10.02-21.57.20:690][882]LogVerse: VerseProfile: Native DistanceSquared [Verse.org] 71.292000 ms
+[2026.10.02-21.57.20:690][882]LogVerse: VerseProfile: Fast DistanceSquared [Verse.org] 32.659300 ms
+[2026.10.02-21.57.20:690][882]LogVerse: VerseProfile: Native DistanceForwardLeft [Verse.org] 99.912800 ms
+[2026.10.02-21.57.20:690][882]LogVerse: VerseProfile: Fast DistanceForwardLeft [Verse.org] 53.902400 ms
+[2026.10.02-21.57.20:690][882]LogVerse: VerseProfile: Native DistanceSquaredForwardLeft [Verse.org] 73.866800 ms
+[2026.10.02-21.57.20:690][882]LogVerse: VerseProfile: Fast DistanceSquaredForwardLeft [Verse.org] 29.577600 ms
+[2026.10.02-21.57.20:691][882]LogVerse: VerseProfile: Native LengthForwardLeft [Verse.org] 51.517700 ms
+[2026.10.02-21.57.20:691][882]LogVerse: VerseProfile: Fast LengthForwardLeft [Verse.org] 28.917300 ms
+[2026.10.02-21.57.20:691][882]LogVerse: VerseProfile: Native Lerp [Verse.org] 56.034800 ms
+[2026.10.02-21.57.20:691][882]LogVerse: VerseProfile: Fast Lerp [Verse.org] 34.147900 ms
+[2026.10.02-21.57.20:724][886]LogVerse: VerseProfile: Native Length [Verse.org] 52.883100 ms
+[2026.10.02-21.57.20:724][886]LogVerse: VerseProfile: Fast Length [Verse.org] 30.547100 ms
+[2026.10.02-21.57.20:724][886]LogVerse: VerseProfile: Native IsFinite [Verse.org] 84.111200 ms
+[2026.10.02-21.57.20:724][886]LogVerse: VerseProfile: Fast IsFinite [Verse.org] 38.586000 ms
+[2026.10.02-21.57.20:724][886]LogVerse: VerseProfile: Native MakeUnitVector [Verse.org] 92.416100 ms
+[2026.10.02-21.57.20:724][886]LogVerse: VerseProfile: Fast MakeUnitVector [Verse.org] 50.554100 ms
+[2026.10.02-21.57.20:741][888]LogVerse: VerseProfile: Native ReflectVector [Verse.org] 194.368200 ms
+[2026.10.02-21.57.20:741][888]LogVerse: VerseProfile: Fast ReflectVector [Verse.org] 66.612100 ms
+[2026.10.02-21.57.20:742][888]LogVerse: VerseProfile: Native GetForwardAxis [Verse.org] 56.162100 ms
+[2026.10.02-21.57.20:742][888]LogVerse: VerseProfile: Fast GetForwardAxis [Verse.org] 38.499300 ms
+[2026.10.02-21.57.20:742][888]LogVerse: VerseProfile: Native GetLeftAxis [Verse.org] 56.046500 ms
+[2026.10.02-21.57.20:742][888]LogVerse: VerseProfile: Fast GetLeftAxis [Verse.org] 38.641600 ms
+[2026.10.02-21.57.20:791][894]LogVerse: VerseProfile: Native GetUpAxis [Verse.org] 55.988700 ms
+[2026.10.02-21.57.20:791][894]LogVerse: VerseProfile: Fast GetUpAxis [Verse.org] 38.583300 ms
+[2026.10.02-21.57.20:791][894]LogVerse: VerseProfile: Native vector3 * transform [Verse.org] 106.669500 ms
+[2026.10.02-21.57.20:791][894]LogVerse: VerseProfile: Fast vector3 * transform [Verse.org] 108.783200 ms
+[2026.10.02-21.57.21:692][  2]LogVerse: VerseProfile: Native MakeRotationDegrees [Verse.org] 65.618700 ms
+[2026.10.02-21.57.21:692][  2]LogVerse: VerseProfile: Fast MakeRotationDegrees [Verse.org] 48.561400 ms
+[2026.10.02-21.57.21:692][  2]LogVerse: VerseProfile: Native MakeRotationFromYawPitchRollRadians [Verse.org] 75.093500 ms
+[2026.10.02-21.57.21:693][  2]LogVerse: VerseProfile: Fast MakeRotationFromYawPitchRollRadians [Verse.org] 40.434700 ms
+[2026.10.02-21.57.21:693][  2]LogVerse: VerseProfile: Native MakeRotationFromEulerDegrees [Verse.org] 73.584500 ms
+[2026.10.02-21.57.21:708][  4]LogVerse: VerseProfile: Fast MakeRotationFromEulerDegrees [Verse.org] 38.482300 ms
+[2026.10.02-21.57.21:708][  4]LogVerse: VerseProfile: Native AngularDistanceDegrees [Verse.org] 51.979800 ms
+[2026.10.02-21.57.21:709][  4]LogVerse: VerseProfile: Fast AngularDistanceDegrees [Verse.org] 40.143000 ms
+[2026.10.02-21.57.21:709][  4]LogVerse: VerseProfile: Native GetYawPitchRollRadians [Verse.org] 79.682200 ms
+[2026.10.02-21.57.21:709][  4]LogVerse: VerseProfile: Fast GetYawPitchRollRadians [Verse.org] 42.983000 ms
+[2026.10.02-21.57.21:742][  8]LogVerse: VerseProfile: Native GetEulerDegrees [Verse.org] 77.785700 ms
+[2026.10.02-21.57.21:742][  8]LogVerse: VerseProfile: Fast GetEulerDegrees [Verse.org] 42.200200 ms
+[2026.10.02-21.57.21:743][  8]LogVerse: VerseProfile: Native GetAngleDegrees [Verse.org] 49.770700 ms
+[2026.10.02-21.57.21:743][  8]LogVerse: VerseProfile: Fast GetAngleDegrees [Verse.org] 35.604600 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: Native Add [repr] 428.117000 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: VerseOrg Add [repr] 32.126800 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: Tuple Add [repr] 23.154500 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: Native Scale [repr] 437.867700 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: VerseOrg Scale [repr] 30.662000 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: Tuple Scale [repr] 22.466400 ms
+[2026.10.02-21.57.24:611][352]LogVerse: VerseProfile: Native Cross [repr] 418.890100 ms
+[2026.10.02-21.57.24:711][364]LogVerse: VerseProfile: VerseOrg Cross [repr] 40.421800 ms
+[2026.10.02-21.57.24:711][364]LogVerse: VerseProfile: Tuple Cross [repr] 29.249700 ms
+[2026.10.02-21.57.24:712][364]LogVerse: VerseProfile: Native Lerp [repr] 514.687000 ms
+[2026.10.02-21.57.24:712][364]LogVerse: VerseProfile: VerseOrg Lerp [repr] 61.444700 ms
+[2026.10.02-21.57.24:712][364]LogVerse: VerseProfile: Tuple Lerp [repr] 31.890400 ms
+[2026.10.02-21.57.30:748][ 88]LogVerse: VerseProfile: Native HomingStep 3186.652900 ms
+[2026.10.02-21.57.30:864][102]LogVerse: VerseProfile: VerseOrg HomingStep 355.329500 ms
+[2026.10.02-21.57.30:865][102]LogVerse: VerseProfile: Tuple HomingStep 172.543000 ms
+[2026.10.02-21.57.30:865][102]LogVerse: VerseProfile: Scalar HomingStep 500.437100 ms
+[2026.10.02-21.57.31:314][156]LogVerse: VerseProfile: Native Sin 13.526200 ms
+[2026.10.02-21.57.31:315][156]LogVerse: VerseProfile: Fast Sin 127.903000 ms
+[2026.10.02-21.57.31:315][156]LogVerse: VerseProfile: Native Cos 13.580800 ms
+[2026.10.02-21.57.31:315][156]LogVerse: VerseProfile: Fast Cos 110.962500 ms
+[2026.10.02-21.57.31:315][156]LogVerse: VerseProfile: Native Tan 13.111400 ms
+[2026.10.02-21.57.31:315][156]LogVerse: VerseProfile: Fast Tan 126.176000 ms
+[2026.10.02-21.57.31:898][226]LogVerse: VerseProfile: Native Exp 12.969500 ms
+[2026.10.02-21.57.31:914][228]LogVerse: VerseProfile: Fast Exp 248.511100 ms
+[2026.10.02-21.57.31:914][228]LogVerse: VerseProfile: Native Ln 13.430100 ms
+[2026.10.02-21.57.31:914][228]LogVerse: VerseProfile: Fast Ln 246.485000 ms
+[2026.10.02-21.57.32:931][350]LogVerse: VerseProfile: Native ArcTan 12.808600 ms
+[2026.10.02-21.57.32:931][350]LogVerse: VerseProfile: Fast ArcTan 108.359900 ms
+[2026.10.02-21.57.32:931][350]LogVerse: VerseProfile: Native ArcTan2 14.962400 ms
+[2026.10.02-21.57.32:931][350]LogVerse: VerseProfile: Fast ArcTan2 229.394700 ms
+[2026.10.02-21.57.32:931][350]LogVerse: VerseProfile: Native ArcSin 13.174700 ms
+[2026.10.02-21.57.32:965][354]LogVerse: VerseProfile: Fast ArcSin 267.192800 ms
+[2026.10.02-21.57.32:965][354]LogVerse: VerseProfile: Native ArcCos 13.379100 ms
+[2026.10.02-21.57.32:965][354]LogVerse: VerseProfile: Fast ArcCos 268.916700 ms
+[2026.10.02-21.57.35:464][654]LogVerse: VerseProfile: Native Sinh 13.482200 ms
+[2026.10.02-21.57.35:465][654]LogVerse: VerseProfile: Fast Sinh 550.020600 ms
+[2026.10.02-21.57.35:465][654]LogVerse: VerseProfile: Native Cosh 13.349900 ms
+[2026.10.02-21.57.35:465][654]LogVerse: VerseProfile: Fast Cosh 272.168100 ms
+[2026.10.02-21.57.35:465][654]LogVerse: VerseProfile: Native Tanh 13.445000 ms
+[2026.10.02-21.57.35:465][654]LogVerse: VerseProfile: Fast Tanh 568.244100 ms
+[2026.10.02-21.57.35:465][654]LogVerse: VerseProfile: Native ArSinh 13.323500 ms
+[2026.10.02-21.57.35:498][658]LogVerse: VerseProfile: Fast ArSinh 243.967700 ms
+[2026.10.02-21.57.35:499][658]LogVerse: VerseProfile: Native ArCosh 13.084300 ms
+[2026.10.02-21.57.35:499][658]LogVerse: VerseProfile: Fast ArCosh 320.566600 ms
+[2026.10.02-21.57.35:499][658]LogVerse: VerseProfile: Native ArTanh 13.463200 ms
+[2026.10.02-21.57.35:499][658]LogVerse: VerseProfile: Fast ArTanh 261.928000 ms
+[2026.10.02-21.57.35:782][692]LogVerse: VerseProfile: Native PowCube 14.659900 ms
+[2026.10.02-21.57.35:783][692]LogVerse: VerseProfile: Fast PowCube 219.340400 ms
+[2026.10.02-21.57.37:266][870]LogVerse: VerseProfile: Native SortBy 442.039100 ms
+[2026.10.02-21.57.37:268][870]LogVerse: VerseProfile: Fast SortBy 624.711800 ms
+[2026.10.02-21.57.37:268][870]LogVerse: VerseProfile: Inlined SortBy 347.938500 ms
+[2026.10.02-21.57.37:968][954]LogVerse: VerseProfile: Native EaseInOut 29.929400 ms
+[2026.10.02-21.57.37:969][954]LogVerse: VerseProfile: Fast EaseInOut 267.786200 ms
+[2026.10.02-21.57.37:969][954]LogVerse: VerseProfile: Native CubicBezier 32.007200 ms
+[2026.10.02-21.57.37:969][954]LogVerse: VerseProfile: Fast CubicBezier 279.259700 ms
+[2026.10.02-21.57.38:186][980]LogVerse: VerseProfile: Native Sqrt 12.947900 ms
+[2026.10.02-21.57.38:186][980]LogVerse: VerseProfile: Fast Sqrt 158.093900 ms
+[2026.10.02-21.57.38:402][  6]LogVerse: VerseProfile: Native Clamp 116.793200 ms
+[2026.10.02-21.57.38:402][  6]LogVerse: VerseProfile: Fast Clamp 72.536100 ms
+[2026.10.02-21.57.38:552][ 24]LogVerse: VerseProfile: Native Min 31.206400 ms
+[2026.10.02-21.57.38:552][ 24]LogVerse: VerseProfile: Fast Min 29.866200 ms
+[2026.10.02-21.57.38:553][ 24]LogVerse: VerseProfile: Native Max 32.925400 ms
+[2026.10.02-21.57.38:553][ 24]LogVerse: VerseProfile: Fast Max 31.128700 ms
+[2026.10.02-21.57.38:636][ 34]LogVerse: VerseProfile: Native Sgn 38.211500 ms
+[2026.10.02-21.57.38:636][ 34]LogVerse: VerseProfile: Fast Sgn 24.254600 ms
+[2026.10.02-21.57.38:719][ 44]LogVerse: VerseProfile: Native Abs 7.529600 ms
+[2026.10.02-21.57.38:720][ 44]LogVerse: VerseProfile: Fast Abs 27.270400 ms
+[2026.10.02-21.57.38:720][ 44]LogVerse: VerseProfile: Native Lerp (float) 15.176300 ms
+[2026.10.02-21.57.38:720][ 44]LogVerse: VerseProfile: Fast Lerp (float) 18.861200 ms
+[2026.10.02-21.57.39:652][156]LogVerse: VerseProfile: Native Floor 16.587900 ms
+[2026.10.02-21.57.39:652][156]LogVerse: VerseProfile: Fast Floor 440.274600 ms
+[2026.10.02-21.57.39:653][156]LogVerse: VerseProfile: Native Round 16.416600 ms
+[2026.10.02-21.57.39:653][156]LogVerse: VerseProfile: Fast Round 426.933400 ms
+[2026.10.02-21.57.39:920][188]LogVerse: VerseProfile: Native Abs (int) 7.294500 ms
+[2026.10.02-21.57.39:920][188]LogVerse: VerseProfile: Fast Abs (int) 19.190700 ms
+[2026.10.02-21.57.39:920][188]LogVerse: VerseProfile: Native Min (int) 25.185000 ms
+[2026.10.02-21.57.39:920][188]LogVerse: VerseProfile: Fast Min (int) 21.226000 ms
+[2026.10.02-21.57.39:920][188]LogVerse: VerseProfile: Native Clamp (int) 14.718000 ms
+[2026.10.02-21.57.39:920][188]LogVerse: VerseProfile: Fast Clamp (int) 39.592800 ms
+[2026.10.02-21.57.39:921][188]LogVerse: VerseProfile: Native Quotient 19.302600 ms
+[2026.10.02-21.57.39:953][192]LogVerse: VerseProfile: Fast Quotient 34.022800 ms
+[2026.10.02-21.57.39:953][192]LogVerse: VerseProfile: Native Mod 19.398700 ms
+[2026.10.02-21.57.39:953][192]LogVerse: VerseProfile: Fast Mod 46.867600 ms
+[2026.10.02-21.57.44:042][682]LogVerse: VerseProfile: Native Find 294.420300 ms
+[2026.10.02-21.57.44:042][682]LogVerse: VerseProfile: Fast Find 256.431400 ms
+[2026.10.02-21.57.44:042][682]LogVerse: VerseProfile: Native RemoveFirstElement 719.830900 ms
+[2026.10.02-21.57.44:043][682]LogVerse: VerseProfile: Fast RemoveFirstElement 784.969700 ms
+[2026.10.02-21.57.44:043][682]LogVerse: VerseProfile: Native ReplaceFirstElement 755.770600 ms
+[2026.10.02-21.57.44:043][682]LogVerse: VerseProfile: Fast ReplaceFirstElement 748.371600 ms
+[2026.10.02-21.57.47:563][104]LogVerse: VerseProfile: Native RemoveElement 509.594400 ms
+[2026.10.02-21.57.47:612][110]LogVerse: VerseProfile: Fast RemoveElement 578.693100 ms
+[2026.10.02-21.57.47:613][110]LogVerse: VerseProfile: Native Slice 365.462200 ms
+[2026.10.02-21.57.47:613][110]LogVerse: VerseProfile: Fast Slice 344.179400 ms
+[2026.10.02-21.57.47:613][110]LogVerse: VerseProfile: Native Insert 654.058200 ms
+[2026.10.02-21.57.47:613][110]LogVerse: VerseProfile: Fast Insert 641.547700 ms
+[2026.10.02-21.57.49:666][356]LogVerse: VerseProfile: Native Concatenate 1399.388100 ms
+[2026.10.02-21.57.49:666][356]LogVerse: VerseProfile: Fast Concatenate 122.254200 ms
+[2026.10.02-21.57.50:816][494]LogVerse: VerseProfile: Native ReplaceAll 423.687900 ms
+[2026.10.02-21.57.50:816][494]LogVerse: VerseProfile: Fast ReplaceAll 516.774600 ms
+[2026.10.02-21.57.51:336][556]LogVerse: VerseProfile: Native ToString (int) 28.940200 ms
+[2026.10.02-21.57.51:336][556]LogVerse: VerseProfile: Fast ToString (int) 340.915300 ms
+[2026.10.02-21.57.51:419][566]LogVerse: VerseProfile: Native DegreesToRadians 19.979100 ms
+[2026.10.02-21.57.51:419][566]LogVerse: VerseProfile: Fast DegreesToRadians 14.714200 ms
+[2026.10.02-21.57.51:419][566]LogVerse: VerseProfile: Native RadiansToDegrees 19.005700 ms
+[2026.10.02-21.57.51:419][566]LogVerse: VerseProfile: Fast RadiansToDegrees 14.915500 ms
+[2026.10.02-21.57.51:518][578]LogVerse: VerseProfile: Native DotProduct 29.239000 ms
+[2026.10.02-21.57.51:518][578]LogVerse: VerseProfile: Fast DotProduct 25.159100 ms
+[2026.10.02-21.57.51:519][578]LogVerse: VerseProfile: Inline DotProduct 15.013300 ms
+[2026.10.02-21.57.52:819][734]LogVerse: VerseProfile: Native CrossProduct 436.070500 ms
+[2026.10.02-21.57.52:819][734]LogVerse: VerseProfile: Fast CrossProduct 447.173900 ms
+[2026.10.02-21.57.53:670][836]LogVerse: VerseProfile: Native Distance 517.298500 ms
+[2026.10.02-21.57.53:670][836]LogVerse: VerseProfile: Fast Distance 59.863100 ms
+[2026.10.02-21.57.54:437][928]LogVerse: VerseProfile: Native DistanceSquared 480.771500 ms
+[2026.10.02-21.57.54:437][928]LogVerse: VerseProfile: Fast DistanceSquared 32.025700 ms
+[2026.10.02-21.57.56:020][118]LogVerse: VerseProfile: Native DistanceXY 503.596500 ms
+[2026.10.02-21.57.56:021][118]LogVerse: VerseProfile: Fast DistanceXY 56.465700 ms
+[2026.10.02-21.57.56:021][118]LogVerse: VerseProfile: Native DistanceSquaredXY 501.612700 ms
+[2026.10.02-21.57.56:021][118]LogVerse: VerseProfile: Fast DistanceSquaredXY 31.914300 ms
+[2026.10.02-21.57.56:204][140]LogVerse: VerseProfile: Native Length 50.399900 ms
+[2026.10.02-21.57.56:205][140]LogVerse: VerseProfile: Fast Length 28.663100 ms
+[2026.10.02-21.57.56:205][140]LogVerse: VerseProfile: Native LengthXY 45.857400 ms
+[2026.10.02-21.57.56:221][142]LogVerse: VerseProfile: Fast LengthXY 26.633300 ms
+[2026.10.02-21.57.56:971][232]LogVerse: VerseProfile: Native IsFinite 480.583100 ms
+[2026.10.02-21.57.56:971][232]LogVerse: VerseProfile: Fast IsFinite 35.347200 ms
+[2026.10.02-21.57.59:288][510]LogVerse: VerseProfile: Native MakeUnitVector 1013.301000 ms
+[2026.10.02-21.57.59:288][510]LogVerse: VerseProfile: Fast MakeUnitVector 543.208200 ms
+[2026.10.02-21.58.00:622][670]LogVerse: VerseProfile: Native Lerp 451.203800 ms
+[2026.10.02-21.58.00:622][670]LogVerse: VerseProfile: Fast Lerp 439.979700 ms
+[2026.10.02-21.58.04:517][137]LogVerse: VerseProfile: Native ReflectVector 2063.631100 ms
+[2026.10.02-21.58.04:517][137]LogVerse: VerseProfile: Fast ReflectVector 525.088200 ms
+[2026.10.02-21.58.06:784][409]LogVerse: VerseProfile: Native GetLocalForward 435.723800 ms
+[2026.10.02-21.58.06:784][409]LogVerse: VerseProfile: Fast GetLocalForward 37.429600 ms
+[2026.10.02-21.58.06:784][409]LogVerse: VerseProfile: Native GetLocalRight 479.215700 ms
+[2026.10.02-21.58.06:784][409]LogVerse: VerseProfile: Fast GetLocalRight 45.380600 ms
+[2026.10.02-21.58.06:785][409]LogVerse: VerseProfile: Native GetLocalUp 452.426000 ms
+[2026.10.02-21.58.06:785][409]LogVerse: VerseProfile: Fast GetLocalUp 48.375600 ms
+[2026.10.02-21.58.08:701][639]LogVerse: VerseProfile: Native ApplyLocalRotationY 518.147400 ms
+[2026.10.02-21.58.08:702][639]LogVerse: VerseProfile: Fast ApplyLocalRotationY 108.701000 ms
+[2026.10.02-21.58.08:702][639]LogVerse: VerseProfile: Native ApplyLocalRotationZ 558.917600 ms
+[2026.10.02-21.58.08:702][639]LogVerse: VerseProfile: Fast ApplyLocalRotationZ 120.394900 ms
+[2026.10.02-21.58.12:552][101]LogVerse: VerseProfile: Native TransformVector 919.619300 ms
+[2026.10.02-21.58.12:552][101]LogVerse: VerseProfile: Fast TransformVector 528.164900 ms
+[2026.10.02-21.58.12:553][101]LogVerse: VerseProfile: Native TransformVectorNoScale 581.468100 ms
+[2026.10.02-21.58.12:553][101]LogVerse: VerseProfile: Fast TransformVectorNoScale 493.284900 ms
+[2026.10.02-21.58.15:370][439]LogVerse: VerseProfile: Native TransformVector scaled 930.770500 ms
+[2026.10.02-21.58.15:370][439]LogVerse: VerseProfile: Fast TransformVector scaled 971.010100 ms
+[2026.10.02-21.58.16:586][585]LogVerse: VerseProfile: Native Distance (vector2) 368.104500 ms
+[2026.10.02-21.58.16:654][593]LogVerse: VerseProfile: Fast Distance (vector2) 38.844100 ms
+[2026.10.02-21.58.16:654][593]LogVerse: VerseProfile: Native DistanceSquared (vector2) 363.021500 ms
+[2026.10.02-21.58.16:654][593]LogVerse: VerseProfile: Fast DistanceSquared (vector2) 24.075800 ms
+[2026.10.02-21.58.16:654][593]LogVerse: VerseProfile: Native Length (vector2) 55.590100 ms
+[2026.10.02-21.58.16:654][593]LogVerse: VerseProfile: Fast Length (vector2) 25.941100 ms
+[2026.10.02-21.58.16:655][593]LogVerse: VerseProfile: Native LengthSquared (vector2) 35.777400 ms
+[2026.10.02-21.58.16:670][595]LogVerse: VerseProfile: Fast LengthSquared (vector2) 19.268200 ms
+[2026.10.02-21.58.21:958][229]LogVerse: VerseProfile: Native IsFinite (vector2) 349.071400 ms
+[2026.10.02-21.58.21:958][229]LogVerse: VerseProfile: Fast IsFinite (vector2) 28.073100 ms
+[2026.10.02-21.58.22:374][279]LogVerse: VerseProfile: Native MakeUnitVector (vector2) 732.261400 ms
+[2026.10.02-21.58.22:374][279]LogVerse: VerseProfile: Fast MakeUnitVector (vector2) 320.312700 ms
+[2026.10.02-21.58.22:374][279]LogVerse: VerseProfile: Native Lerp (vector2) 322.201000 ms
+[2026.10.02-21.58.22:374][279]LogVerse: VerseProfile: Fast Lerp (vector2) 312.118400 ms
+[2026.10.02-21.58.22:375][279]LogVerse: VerseProfile: Native ReflectVector (vector2) 1444.254500 ms
+[2026.10.02-21.58.22:375][279]LogVerse: VerseProfile: Fast ReflectVector (vector2) 379.662500 ms
+[2026.10.02-21.58.22:707][319]LogVerse: VerseProfile: Native Equals (vector2i) 196.659700 ms
+[2026.10.02-21.58.22:708][319]LogVerse: VerseProfile: Fast Equals (vector2i) 36.747800 ms
+[2026.10.02-21.58.24:941][587]LogVerse: VerseProfile: Native Distance [Verse.org] 91.971100 ms
+[2026.10.02-21.58.24:941][587]LogVerse: VerseProfile: Fast Distance [Verse.org] 51.077800 ms
+[2026.10.02-21.58.24:942][587]LogVerse: VerseProfile: Native DistanceSquared [Verse.org] 71.526700 ms
+[2026.10.02-21.58.24:942][587]LogVerse: VerseProfile: Fast DistanceSquared [Verse.org] 32.644600 ms
+[2026.10.02-21.58.24:942][587]LogVerse: VerseProfile: Native DistanceForwardLeft [Verse.org] 99.282600 ms
+[2026.10.02-21.58.24:942][587]LogVerse: VerseProfile: Fast DistanceForwardLeft [Verse.org] 53.551900 ms
+[2026.10.02-21.58.24:957][589]LogVerse: VerseProfile: Native DistanceSquaredForwardLeft [Verse.org] 93.405200 ms
+[2026.10.02-21.58.24:957][589]LogVerse: VerseProfile: Fast DistanceSquaredForwardLeft [Verse.org] 29.474400 ms
+[2026.10.02-21.58.24:957][589]LogVerse: VerseProfile: Native LengthForwardLeft [Verse.org] 51.527200 ms
+[2026.10.02-21.58.24:958][589]LogVerse: VerseProfile: Fast LengthForwardLeft [Verse.org] 29.188600 ms
+[2026.10.02-21.58.24:958][589]LogVerse: VerseProfile: Native Lerp [Verse.org] 56.034900 ms
+[2026.10.02-21.58.24:958][589]LogVerse: VerseProfile: Fast Lerp [Verse.org] 34.063400 ms
+[2026.10.02-21.58.24:974][591]LogVerse: VerseProfile: Native Length [Verse.org] 53.074000 ms
+[2026.10.02-21.58.24:975][591]LogVerse: VerseProfile: Fast Length [Verse.org] 30.677800 ms
+[2026.10.02-21.58.24:975][591]LogVerse: VerseProfile: Native IsFinite [Verse.org] 84.237800 ms
+[2026.10.02-21.58.24:975][591]LogVerse: VerseProfile: Fast IsFinite [Verse.org] 38.591500 ms
+[2026.10.02-21.58.24:975][591]LogVerse: VerseProfile: Native MakeUnitVector [Verse.org] 93.015400 ms
+[2026.10.02-21.58.24:975][591]LogVerse: VerseProfile: Fast MakeUnitVector [Verse.org] 50.881800 ms
+[2026.10.02-21.58.24:991][593]LogVerse: VerseProfile: Native ReflectVector [Verse.org] 193.285300 ms
+[2026.10.02-21.58.24:991][593]LogVerse: VerseProfile: Fast ReflectVector [Verse.org] 66.301100 ms
+[2026.10.02-21.58.24:991][593]LogVerse: VerseProfile: Native GetForwardAxis [Verse.org] 55.698200 ms
+[2026.10.02-21.58.24:991][593]LogVerse: VerseProfile: Fast GetForwardAxis [Verse.org] 38.193200 ms
+[2026.10.02-21.58.24:991][593]LogVerse: VerseProfile: Native GetLeftAxis [Verse.org] 55.837800 ms
+[2026.10.02-21.58.24:991][593]LogVerse: VerseProfile: Fast GetLeftAxis [Verse.org] 38.285500 ms
+[2026.10.02-21.58.25:057][601]LogVerse: VerseProfile: Native GetUpAxis [Verse.org] 55.623700 ms
+[2026.10.02-21.58.25:057][601]LogVerse: VerseProfile: Fast GetUpAxis [Verse.org] 38.253000 ms
+[2026.10.02-21.58.25:057][601]LogVerse: VerseProfile: Native vector3 * transform [Verse.org] 105.938400 ms
+[2026.10.02-21.58.25:057][601]LogVerse: VerseProfile: Fast vector3 * transform [Verse.org] 108.523700 ms
+[2026.10.02-21.58.25:941][707]LogVerse: VerseProfile: Native MakeRotationDegrees [Verse.org] 65.655100 ms
+[2026.10.02-21.58.25:942][707]LogVerse: VerseProfile: Fast MakeRotationDegrees [Verse.org] 48.482300 ms
+[2026.10.02-21.58.25:942][707]LogVerse: VerseProfile: Native MakeRotationFromYawPitchRollRadians [Verse.org] 74.681600 ms
+[2026.10.02-21.58.25:942][707]LogVerse: VerseProfile: Fast MakeRotationFromYawPitchRollRadians [Verse.org] 40.838700 ms
+[2026.10.02-21.58.25:942][707]LogVerse: VerseProfile: Native MakeRotationFromEulerDegrees [Verse.org] 73.217400 ms
+[2026.10.02-21.58.25:957][709]LogVerse: VerseProfile: Fast MakeRotationFromEulerDegrees [Verse.org] 38.799400 ms
+[2026.10.02-21.58.25:957][709]LogVerse: VerseProfile: Native AngularDistanceDegrees [Verse.org] 51.069200 ms
+[2026.10.02-21.58.25:957][709]LogVerse: VerseProfile: Fast AngularDistanceDegrees [Verse.org] 39.893900 ms
+[2026.10.02-21.58.25:959][709]LogVerse: VerseProfile: Native GetYawPitchRollRadians [Verse.org] 78.628000 ms
+[2026.10.02-21.58.25:959][709]LogVerse: VerseProfile: Fast GetYawPitchRollRadians [Verse.org] 42.896500 ms
+[2026.10.02-21.58.25:991][713]LogVerse: VerseProfile: Native GetEulerDegrees [Verse.org] 77.735000 ms
+[2026.10.02-21.58.25:991][713]LogVerse: VerseProfile: Fast GetEulerDegrees [Verse.org] 41.884900 ms
+[2026.10.02-21.58.25:991][713]LogVerse: VerseProfile: Native GetAngleDegrees [Verse.org] 49.925200 ms
+[2026.10.02-21.58.25:991][713]LogVerse: VerseProfile: Fast GetAngleDegrees [Verse.org] 35.712500 ms
+[2026.10.02-21.58.28:909][ 63]LogVerse: VerseProfile: Native Add [repr] 431.956100 ms
+[2026.10.02-21.58.28:909][ 63]LogVerse: VerseProfile: VerseOrg Add [repr] 33.570500 ms
+[2026.10.02-21.58.28:909][ 63]LogVerse: VerseProfile: Tuple Add [repr] 23.307900 ms
+[2026.10.02-21.58.28:909][ 63]LogVerse: VerseProfile: Native Scale [repr] 409.577000 ms
+[2026.10.02-21.58.28:910][ 63]LogVerse: VerseProfile: VerseOrg Scale [repr] 32.460000 ms
+[2026.10.02-21.58.28:910][ 63]LogVerse: VerseProfile: Tuple Scale [repr] 23.336600 ms
+[2026.10.02-21.58.28:910][ 63]LogVerse: VerseProfile: Native Cross [repr] 459.570300 ms
+[2026.10.02-21.58.29:009][ 75]LogVerse: VerseProfile: VerseOrg Cross [repr] 41.754900 ms
+[2026.10.02-21.58.29:009][ 75]LogVerse: VerseProfile: Tuple Cross [repr] 29.797200 ms
+[2026.10.02-21.58.29:009][ 75]LogVerse: VerseProfile: Native Lerp [repr] 533.694200 ms
+[2026.10.02-21.58.29:009][ 75]LogVerse: VerseProfile: VerseOrg Lerp [repr] 63.777000 ms
+[2026.10.02-21.58.29:009][ 75]LogVerse: VerseProfile: Tuple Lerp [repr] 32.882500 ms
+[2026.10.02-21.58.35:143][809]LogVerse: VerseProfile: Native HomingStep 3224.031700 ms
+[2026.10.02-21.58.35:259][823]LogVerse: VerseProfile: VerseOrg HomingStep 383.769600 ms
+[2026.10.02-21.58.35:259][823]LogVerse: VerseProfile: Tuple HomingStep 175.904100 ms
+[2026.10.02-21.58.35:259][823]LogVerse: VerseProfile: Scalar HomingStep 508.007300 ms
+[2026.10.02-21.58.35:710][877]LogVerse: VerseProfile: Native Sin 13.788900 ms
+[2026.10.02-21.58.35:710][877]LogVerse: VerseProfile: Fast Sin 127.400900 ms
+[2026.10.02-21.58.35:710][877]LogVerse: VerseProfile: Native Cos 13.713800 ms
+[2026.10.02-21.58.35:710][877]LogVerse: VerseProfile: Fast Cos 110.651100 ms
+[2026.10.02-21.58.35:710][877]LogVerse: VerseProfile: Native Tan 13.502200 ms
+[2026.10.02-21.58.35:711][877]LogVerse: VerseProfile: Fast Tan 126.157100 ms
+[2026.10.02-21.58.36:294][947]LogVerse: VerseProfile: Native Exp 13.489400 ms
+[2026.10.02-21.58.36:294][947]LogVerse: VerseProfile: Fast Exp 249.435100 ms
+[2026.10.02-21.58.36:295][947]LogVerse: VerseProfile: Native Ln 13.440700 ms
+[2026.10.02-21.58.36:312][949]LogVerse: VerseProfile: Fast Ln 247.362700 ms
+[2026.10.02-21.58.37:345][ 73]LogVerse: VerseProfile: Native ArcTan 13.020400 ms
+[2026.10.02-21.58.37:345][ 73]LogVerse: VerseProfile: Fast ArcTan 108.827000 ms
+[2026.10.02-21.58.37:363][ 75]LogVerse: VerseProfile: Native ArcTan2 15.015200 ms
+[2026.10.02-21.58.37:363][ 75]LogVerse: VerseProfile: Fast ArcTan2 231.143800 ms
+[2026.10.02-21.58.37:363][ 75]LogVerse: VerseProfile: Native ArcSin 13.291900 ms
+[2026.10.02-21.58.37:363][ 75]LogVerse: VerseProfile: Fast ArcSin 268.278000 ms
+[2026.10.02-21.58.37:364][ 75]LogVerse: VerseProfile: Native ArcCos 13.355200 ms
+[2026.10.02-21.58.37:364][ 75]LogVerse: VerseProfile: Fast ArcCos 270.391400 ms
+[2026.10.02-21.58.39:880][377]LogVerse: VerseProfile: Native Sinh 13.420900 ms
+[2026.10.02-21.58.39:880][377]LogVerse: VerseProfile: Fast Sinh 553.953400 ms
+[2026.10.02-21.58.39:880][377]LogVerse: VerseProfile: Native Cosh 13.312700 ms
+[2026.10.02-21.58.39:881][377]LogVerse: VerseProfile: Fast Cosh 273.996500 ms
+[2026.10.02-21.58.39:881][377]LogVerse: VerseProfile: Native Tanh 13.357800 ms
+[2026.10.02-21.58.39:881][377]LogVerse: VerseProfile: Fast Tanh 569.964300 ms
+[2026.10.02-21.58.39:913][381]LogVerse: VerseProfile: Native ArSinh 13.374500 ms
+[2026.10.02-21.58.39:913][381]LogVerse: VerseProfile: Fast ArSinh 245.442700 ms
+[2026.10.02-21.58.39:913][381]LogVerse: VerseProfile: Native ArCosh 13.285500 ms
+[2026.10.02-21.58.39:914][381]LogVerse: VerseProfile: Fast ArCosh 320.971000 ms
+[2026.10.02-21.58.39:914][381]LogVerse: VerseProfile: Native ArTanh 13.410900 ms
+[2026.10.02-21.58.39:914][381]LogVerse: VerseProfile: Fast ArTanh 262.137600 ms
+[2026.10.02-21.58.40:196][415]LogVerse: VerseProfile: Native PowCube 14.722400 ms
+[2026.10.02-21.58.40:196][415]LogVerse: VerseProfile: Fast PowCube 217.265800 ms
+[2026.10.02-21.58.41:690][594]LogVerse: VerseProfile: Native SortBy 443.704200 ms
+[2026.10.02-21.58.41:691][594]LogVerse: VerseProfile: Fast SortBy 629.069300 ms
+[2026.10.02-21.58.41:691][594]LogVerse: VerseProfile: Inlined SortBy 348.807100 ms
+[2026.10.02-21.58.42:391][678]LogVerse: VerseProfile: Native EaseInOut 29.723400 ms
+[2026.10.02-21.58.42:392][678]LogVerse: VerseProfile: Fast EaseInOut 258.571500 ms
+[2026.10.02-21.58.42:392][678]LogVerse: VerseProfile: Native CubicBezier 32.169000 ms
+[2026.10.02-21.58.42:392][678]LogVerse: VerseProfile: Fast CubicBezier 279.997200 ms

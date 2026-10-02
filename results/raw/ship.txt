@@ -1,0 +1,824 @@
+PROFILE Native Sqrt: 6.578400 ms
+PROFILE Fast Sqrt: 84.756700 ms
+PROFILE Native Clamp: 68.208800 ms
+PROFILE Fast Clamp: 37.361700 ms
+PROFILE Native Min: 19.632300 ms
+PROFILE Fast Min: 17.084600 ms
+PROFILE Native Max: 20.022400 ms
+PROFILE Fast Max: 17.778600 ms
+PROFILE Native Sgn: 22.533000 ms
+PROFILE Fast Sgn: 11.241900 ms
+PROFILE Native Abs: 3.636700 ms
+PROFILE Fast Abs: 14.551500 ms
+PROFILE Native Lerp (float): 7.894500 ms
+PROFILE Fast Lerp (float): 9.537800 ms
+PROFILE Native Floor: 14.221300 ms
+PROFILE Fast Floor: 207.019900 ms
+PROFILE Native Round: 9.208800 ms
+PROFILE Fast Round: 203.759500 ms
+PROFILE Native Abs (int): 3.615400 ms
+PROFILE Fast Abs (int): 8.730300 ms
+PROFILE Native Min (int): 13.879200 ms
+PROFILE Fast Min (int): 10.433200 ms
+PROFILE Native Clamp (int): 8.108700 ms
+PROFILE Fast Clamp (int): 18.822700 ms
+PROFILE Native Quotient: 10.805200 ms
+PROFILE Fast Quotient: 15.968200 ms
+PROFILE Native Mod: 11.327900 ms
+PROFILE Fast Mod: 21.667600 ms
+PROFILE Native Find: 167.897200 ms
+PROFILE Fast Find: 159.053500 ms
+PROFILE Native RemoveFirstElement: 388.954700 ms
+PROFILE Fast RemoveFirstElement: 419.372400 ms
+PROFILE Native ReplaceFirstElement: 434.480000 ms
+PROFILE Fast ReplaceFirstElement: 436.327300 ms
+PROFILE Native RemoveElement: 260.688500 ms
+PROFILE Fast RemoveElement: 289.178300 ms
+PROFILE Native Slice: 165.985100 ms
+PROFILE Fast Slice: 167.052000 ms
+PROFILE Native Insert: 290.748300 ms
+PROFILE Fast Insert: 328.657300 ms
+PROFILE Native Concatenate: 1071.107900 ms
+PROFILE Fast Concatenate: 118.024100 ms
+PROFILE Native ReplaceAll: 244.041800 ms
+PROFILE Fast ReplaceAll: 304.267000 ms
+PROFILE Native ToString (int): 16.651700 ms
+PROFILE Fast ToString (int): 193.930000 ms
+PROFILE Native DegreesToRadians: 8.506200 ms
+PROFILE Fast DegreesToRadians: 5.836100 ms
+PROFILE Native RadiansToDegrees: 8.282900 ms
+PROFILE Fast RadiansToDegrees: 5.888200 ms
+PROFILE Native DotProduct: 13.277000 ms
+PROFILE Fast DotProduct: 10.457800 ms
+PROFILE Inline DotProduct: 6.306400 ms
+PROFILE Native CrossProduct: 238.560000 ms
+PROFILE Fast CrossProduct: 235.017200 ms
+PROFILE Native Distance: 258.486400 ms
+PROFILE Fast Distance: 20.770100 ms
+PROFILE Native DistanceSquared: 248.088300 ms
+PROFILE Fast DistanceSquared: 12.474700 ms
+PROFILE Native DistanceXY: 276.258200 ms
+PROFILE Fast DistanceXY: 18.863400 ms
+PROFILE Native DistanceSquaredXY: 292.182000 ms
+PROFILE Fast DistanceSquaredXY: 11.589300 ms
+PROFILE Native Length: 23.574700 ms
+PROFILE Fast Length: 13.698500 ms
+PROFILE Native LengthXY: 20.588400 ms
+PROFILE Fast LengthXY: 12.481800 ms
+PROFILE Native IsFinite: 225.356400 ms
+PROFILE Fast IsFinite: 24.201400 ms
+PROFILE Native MakeUnitVector: 462.922000 ms
+PROFILE Fast MakeUnitVector: 187.513400 ms
+PROFILE Native Lerp: 264.599800 ms
+PROFILE Fast Lerp: 252.554700 ms
+PROFILE Native ReflectVector: 938.970300 ms
+PROFILE Fast ReflectVector: 245.531200 ms
+PROFILE Native GetLocalForward: 248.514900 ms
+PROFILE Fast GetLocalForward: 15.347900 ms
+PROFILE Native GetLocalRight: 297.126300 ms
+PROFILE Fast GetLocalRight: 15.515900 ms
+PROFILE Native GetLocalUp: 321.292900 ms
+PROFILE Fast GetLocalUp: 14.897900 ms
+PROFILE Native ApplyLocalRotationY: 292.207700 ms
+PROFILE Fast ApplyLocalRotationY: 37.363300 ms
+PROFILE Native ApplyLocalRotationZ: 292.458900 ms
+PROFILE Fast ApplyLocalRotationZ: 37.480700 ms
+PROFILE Native TransformVector: 528.946400 ms
+PROFILE Fast TransformVector: 310.415700 ms
+PROFILE Native TransformVectorNoScale: 292.449800 ms
+PROFILE Fast TransformVectorNoScale: 277.247400 ms
+PROFILE Native TransformVector scaled: 524.785600 ms
+PROFILE Fast TransformVector scaled: 568.985300 ms
+PROFILE Native Distance (vector2): 204.719000 ms
+PROFILE Fast Distance (vector2): 16.373500 ms
+PROFILE Native DistanceSquared (vector2): 198.135600 ms
+PROFILE Fast DistanceSquared (vector2): 10.001800 ms
+PROFILE Native Length (vector2): 26.270500 ms
+PROFILE Fast Length (vector2): 11.721700 ms
+PROFILE Native LengthSquared (vector2): 20.802100 ms
+PROFILE Fast LengthSquared (vector2): 8.320800 ms
+PROFILE Native IsFinite (vector2): 161.117200 ms
+PROFILE Fast IsFinite (vector2): 12.564200 ms
+PROFILE Native MakeUnitVector (vector2): 346.581400 ms
+PROFILE Fast MakeUnitVector (vector2): 155.757700 ms
+PROFILE Native Lerp (vector2): 194.530800 ms
+PROFILE Fast Lerp (vector2): 187.130300 ms
+PROFILE Native ReflectVector (vector2): 571.485400 ms
+PROFILE Fast ReflectVector (vector2): 128.846600 ms
+PROFILE Native Equals (vector2i): 78.341700 ms
+PROFILE Fast Equals (vector2i): 17.719700 ms
+PROFILE Native Distance [Verse.org]: 40.754400 ms
+PROFILE Fast Distance [Verse.org]: 24.084400 ms
+PROFILE Native DistanceSquared [Verse.org]: 33.656200 ms
+PROFILE Fast DistanceSquared [Verse.org]: 15.140600 ms
+PROFILE Native DistanceForwardLeft [Verse.org]: 39.966800 ms
+PROFILE Fast DistanceForwardLeft [Verse.org]: 20.683200 ms
+PROFILE Native DistanceSquaredForwardLeft [Verse.org]: 30.159300 ms
+PROFILE Fast DistanceSquaredForwardLeft [Verse.org]: 12.801200 ms
+PROFILE Native LengthForwardLeft [Verse.org]: 21.148500 ms
+PROFILE Fast LengthForwardLeft [Verse.org]: 12.507700 ms
+PROFILE Native Lerp [Verse.org]: 27.670600 ms
+PROFILE Fast Lerp [Verse.org]: 16.317400 ms
+PROFILE Native Length [Verse.org]: 22.757600 ms
+PROFILE Fast Length [Verse.org]: 14.578600 ms
+PROFILE Native IsFinite [Verse.org]: 37.353700 ms
+PROFILE Fast IsFinite [Verse.org]: 15.759800 ms
+PROFILE Native MakeUnitVector [Verse.org]: 38.373700 ms
+PROFILE Fast MakeUnitVector [Verse.org]: 20.646100 ms
+PROFILE Native ReflectVector [Verse.org]: 78.311500 ms
+PROFILE Fast ReflectVector [Verse.org]: 32.049500 ms
+PROFILE Native GetForwardAxis [Verse.org]: 23.328600 ms
+PROFILE Fast GetForwardAxis [Verse.org]: 15.819200 ms
+PROFILE Native GetLeftAxis [Verse.org]: 21.661400 ms
+PROFILE Fast GetLeftAxis [Verse.org]: 16.008700 ms
+PROFILE Native GetUpAxis [Verse.org]: 21.890000 ms
+PROFILE Fast GetUpAxis [Verse.org]: 13.882400 ms
+PROFILE Native vector3 * transform [Verse.org]: 40.421700 ms
+PROFILE Fast vector3 * transform [Verse.org]: 44.628600 ms
+PROFILE Native MakeRotationDegrees [Verse.org]: 28.761600 ms
+PROFILE Fast MakeRotationDegrees [Verse.org]: 21.986200 ms
+PROFILE Native MakeRotationFromYawPitchRollRadians [Verse.org]: 35.319200 ms
+PROFILE Fast MakeRotationFromYawPitchRollRadians [Verse.org]: 19.511900 ms
+PROFILE Native MakeRotationFromEulerDegrees [Verse.org]: 34.383400 ms
+PROFILE Fast MakeRotationFromEulerDegrees [Verse.org]: 18.663400 ms
+PROFILE Native AngularDistanceDegrees [Verse.org]: 22.518800 ms
+PROFILE Fast AngularDistanceDegrees [Verse.org]: 16.088700 ms
+PROFILE Native GetYawPitchRollRadians [Verse.org]: 33.352700 ms
+PROFILE Fast GetYawPitchRollRadians [Verse.org]: 17.507600 ms
+PROFILE Native GetEulerDegrees [Verse.org]: 31.522100 ms
+PROFILE Fast GetEulerDegrees [Verse.org]: 16.730500 ms
+PROFILE Native GetAngleDegrees [Verse.org]: 19.816000 ms
+PROFILE Fast GetAngleDegrees [Verse.org]: 13.282400 ms
+PROFILE Native Add [repr]: 225.327800 ms
+PROFILE VerseOrg Add [repr]: 15.140800 ms
+PROFILE Tuple Add [repr]: 10.733500 ms
+PROFILE Native Scale [repr]: 265.315600 ms
+PROFILE VerseOrg Scale [repr]: 14.822600 ms
+PROFILE Tuple Scale [repr]: 10.357200 ms
+PROFILE Native Cross [repr]: 300.296900 ms
+PROFILE VerseOrg Cross [repr]: 20.469500 ms
+PROFILE Tuple Cross [repr]: 15.795800 ms
+PROFILE Native Lerp [repr]: 275.446900 ms
+PROFILE VerseOrg Lerp [repr]: 27.874300 ms
+PROFILE Tuple Lerp [repr]: 14.892700 ms
+PROFILE Native HomingStep: 2031.175000 ms
+PROFILE VerseOrg HomingStep: 112.548300 ms
+PROFILE Tuple HomingStep: 69.002800 ms
+PROFILE Scalar HomingStep: 317.815600 ms
+PROFILE Native Sin: 6.613200 ms
+PROFILE Fast Sin: 65.557100 ms
+PROFILE Native Cos: 6.780800 ms
+PROFILE Fast Cos: 61.669100 ms
+PROFILE Native Tan: 6.966200 ms
+PROFILE Fast Tan: 69.139800 ms
+PROFILE Native Exp: 8.553600 ms
+PROFILE Fast Exp: 140.224400 ms
+PROFILE Native Ln: 6.667500 ms
+PROFILE Fast Ln: 138.283400 ms
+PROFILE Native ArcTan: 6.696600 ms
+PROFILE Fast ArcTan: 53.381800 ms
+PROFILE Native ArcTan2: 8.239300 ms
+PROFILE Fast ArcTan2: 125.821100 ms
+PROFILE Native ArcSin: 6.988000 ms
+PROFILE Fast ArcSin: 136.325600 ms
+PROFILE Native ArcCos: 6.469500 ms
+PROFILE Fast ArcCos: 138.697600 ms
+PROFILE Native Sinh: 6.534000 ms
+PROFILE Fast Sinh: 300.939700 ms
+PROFILE Native Cosh: 6.457500 ms
+PROFILE Fast Cosh: 146.208200 ms
+PROFILE Native Tanh: 6.773000 ms
+PROFILE Fast Tanh: 295.753600 ms
+PROFILE Native ArSinh: 6.238400 ms
+PROFILE Fast ArSinh: 125.420400 ms
+PROFILE Native ArCosh: 6.680200 ms
+PROFILE Fast ArCosh: 156.635100 ms
+PROFILE Native ArTanh: 6.732700 ms
+PROFILE Fast ArTanh: 129.084100 ms
+PROFILE Native PowCube: 7.754400 ms
+PROFILE Fast PowCube: 117.030800 ms
+PROFILE Native SortBy: 213.135900 ms
+PROFILE Fast SortBy: 338.493600 ms
+PROFILE Inlined SortBy: 177.360800 ms
+PROFILE Native EaseInOut: 15.597500 ms
+PROFILE Fast EaseInOut: 127.897500 ms
+PROFILE Native CubicBezier: 16.645100 ms
+PROFILE Fast CubicBezier: 135.033600 ms
+PROFILE Native Sqrt: 5.568200 ms
+PROFILE Fast Sqrt: 74.237300 ms
+PROFILE Native Clamp: 63.412500 ms
+PROFILE Fast Clamp: 37.293300 ms
+PROFILE Native Min: 17.669300 ms
+PROFILE Fast Min: 14.545500 ms
+PROFILE Native Max: 16.423900 ms
+PROFILE Fast Max: 15.667000 ms
+PROFILE Native Sgn: 18.948600 ms
+PROFILE Fast Sgn: 10.488600 ms
+PROFILE Native Abs: 3.145900 ms
+PROFILE Fast Abs: 12.522300 ms
+PROFILE Native Lerp (float): 7.471700 ms
+PROFILE Fast Lerp (float): 9.292400 ms
+PROFILE Native Floor: 8.510300 ms
+PROFILE Fast Floor: 191.683500 ms
+PROFILE Native Round: 8.670100 ms
+PROFILE Fast Round: 191.837900 ms
+PROFILE Native Abs (int): 3.123500 ms
+PROFILE Fast Abs (int): 8.573600 ms
+PROFILE Native Min (int): 13.152400 ms
+PROFILE Fast Min (int): 10.194400 ms
+PROFILE Native Clamp (int): 9.258000 ms
+PROFILE Fast Clamp (int): 18.637500 ms
+PROFILE Native Quotient: 11.062600 ms
+PROFILE Fast Quotient: 16.192600 ms
+PROFILE Native Mod: 10.985400 ms
+PROFILE Fast Mod: 21.756600 ms
+PROFILE Native Find: 161.523100 ms
+PROFILE Fast Find: 141.118200 ms
+PROFILE Native RemoveFirstElement: 417.776400 ms
+PROFILE Fast RemoveFirstElement: 436.357600 ms
+PROFILE Native ReplaceFirstElement: 448.892800 ms
+PROFILE Fast ReplaceFirstElement: 422.210100 ms
+PROFILE Native RemoveElement: 259.818500 ms
+PROFILE Fast RemoveElement: 296.347300 ms
+PROFILE Native Slice: 167.776300 ms
+PROFILE Fast Slice: 175.217200 ms
+PROFILE Native Insert: 288.092800 ms
+PROFILE Fast Insert: 341.925800 ms
+PROFILE Native Concatenate: 1363.312800 ms
+PROFILE Fast Concatenate: 209.850700 ms
+PROFILE Native ReplaceAll: 277.187600 ms
+PROFILE Fast ReplaceAll: 343.991400 ms
+PROFILE Native ToString (int): 21.205000 ms
+PROFILE Fast ToString (int): 251.182500 ms
+PROFILE Native DegreesToRadians: 9.034600 ms
+PROFILE Fast DegreesToRadians: 6.125700 ms
+PROFILE Native RadiansToDegrees: 9.979200 ms
+PROFILE Fast RadiansToDegrees: 6.078300 ms
+PROFILE Native DotProduct: 14.267000 ms
+PROFILE Fast DotProduct: 10.870700 ms
+PROFILE Inline DotProduct: 6.471500 ms
+PROFILE Native CrossProduct: 294.107800 ms
+PROFILE Fast CrossProduct: 282.858300 ms
+PROFILE Native Distance: 296.063300 ms
+PROFILE Fast Distance: 22.465200 ms
+PROFILE Native DistanceSquared: 290.785000 ms
+PROFILE Fast DistanceSquared: 13.036300 ms
+PROFILE Native DistanceXY: 310.200100 ms
+PROFILE Fast DistanceXY: 21.378700 ms
+PROFILE Native DistanceSquaredXY: 312.862700 ms
+PROFILE Fast DistanceSquaredXY: 12.211600 ms
+PROFILE Native Length: 23.243000 ms
+PROFILE Fast Length: 13.297800 ms
+PROFILE Native LengthXY: 24.146300 ms
+PROFILE Fast LengthXY: 12.777000 ms
+PROFILE Native IsFinite: 270.574900 ms
+PROFILE Fast IsFinite: 18.445600 ms
+PROFILE Native MakeUnitVector: 505.065700 ms
+PROFILE Fast MakeUnitVector: 223.336500 ms
+PROFILE Native Lerp: 277.713500 ms
+PROFILE Fast Lerp: 281.400600 ms
+PROFILE Native ReflectVector: 956.297400 ms
+PROFILE Fast ReflectVector: 269.663100 ms
+PROFILE Native GetLocalForward: 266.999300 ms
+PROFILE Fast GetLocalForward: 15.558300 ms
+PROFILE Native GetLocalRight: 297.044500 ms
+PROFILE Fast GetLocalRight: 13.749400 ms
+PROFILE Native GetLocalUp: 304.490900 ms
+PROFILE Fast GetLocalUp: 14.715300 ms
+PROFILE Native ApplyLocalRotationY: 345.607200 ms
+PROFILE Fast ApplyLocalRotationY: 36.755300 ms
+PROFILE Native ApplyLocalRotationZ: 344.333600 ms
+PROFILE Fast ApplyLocalRotationZ: 38.596300 ms
+PROFILE Native TransformVector: 578.761400 ms
+PROFILE Fast TransformVector: 399.858700 ms
+PROFILE Native TransformVectorNoScale: 386.824100 ms
+PROFILE Fast TransformVectorNoScale: 333.603200 ms
+PROFILE Native TransformVector scaled: 605.982700 ms
+PROFILE Fast TransformVector scaled: 599.581300 ms
+PROFILE Native Distance (vector2): 219.758800 ms
+PROFILE Fast Distance (vector2): 17.274600 ms
+PROFILE Native DistanceSquared (vector2): 209.252700 ms
+PROFILE Fast DistanceSquared (vector2): 10.890000 ms
+PROFILE Native Length (vector2): 26.355700 ms
+PROFILE Fast Length (vector2): 12.105600 ms
+PROFILE Native LengthSquared (vector2): 17.123600 ms
+PROFILE Fast LengthSquared (vector2): 9.881800 ms
+PROFILE Native IsFinite (vector2): 171.438200 ms
+PROFILE Fast IsFinite (vector2): 12.965300 ms
+PROFILE Native MakeUnitVector (vector2): 355.837400 ms
+PROFILE Fast MakeUnitVector (vector2): 163.470100 ms
+PROFILE Native Lerp (vector2): 196.902500 ms
+PROFILE Fast Lerp (vector2): 196.474500 ms
+PROFILE Native ReflectVector (vector2): 634.206800 ms
+PROFILE Fast ReflectVector (vector2): 174.957500 ms
+PROFILE Native Equals (vector2i): 106.813800 ms
+PROFILE Fast Equals (vector2i): 17.332500 ms
+PROFILE Native Distance [Verse.org]: 42.416000 ms
+PROFILE Fast Distance [Verse.org]: 23.454400 ms
+PROFILE Native DistanceSquared [Verse.org]: 32.505600 ms
+PROFILE Fast DistanceSquared [Verse.org]: 14.493600 ms
+PROFILE Native DistanceForwardLeft [Verse.org]: 43.654700 ms
+PROFILE Fast DistanceForwardLeft [Verse.org]: 20.423500 ms
+PROFILE Native DistanceSquaredForwardLeft [Verse.org]: 31.274400 ms
+PROFILE Fast DistanceSquaredForwardLeft [Verse.org]: 12.847200 ms
+PROFILE Native LengthForwardLeft [Verse.org]: 21.443500 ms
+PROFILE Fast LengthForwardLeft [Verse.org]: 13.529100 ms
+PROFILE Native Lerp [Verse.org]: 31.237400 ms
+PROFILE Fast Lerp [Verse.org]: 17.188300 ms
+PROFILE Native Length [Verse.org]: 25.284300 ms
+PROFILE Fast Length [Verse.org]: 14.175500 ms
+PROFILE Native IsFinite [Verse.org]: 38.426100 ms
+PROFILE Fast IsFinite [Verse.org]: 16.441500 ms
+PROFILE Native MakeUnitVector [Verse.org]: 41.000800 ms
+PROFILE Fast MakeUnitVector [Verse.org]: 22.319100 ms
+PROFILE Native ReflectVector [Verse.org]: 82.419900 ms
+PROFILE Fast ReflectVector [Verse.org]: 30.975000 ms
+PROFILE Native GetForwardAxis [Verse.org]: 23.586900 ms
+PROFILE Fast GetForwardAxis [Verse.org]: 14.267300 ms
+PROFILE Native GetLeftAxis [Verse.org]: 23.964400 ms
+PROFILE Fast GetLeftAxis [Verse.org]: 14.954600 ms
+PROFILE Native GetUpAxis [Verse.org]: 25.824600 ms
+PROFILE Fast GetUpAxis [Verse.org]: 15.267700 ms
+PROFILE Native vector3 * transform [Verse.org]: 43.841800 ms
+PROFILE Fast vector3 * transform [Verse.org]: 45.018800 ms
+PROFILE Native MakeRotationDegrees [Verse.org]: 31.074300 ms
+PROFILE Fast MakeRotationDegrees [Verse.org]: 23.552400 ms
+PROFILE Native MakeRotationFromYawPitchRollRadians [Verse.org]: 41.098500 ms
+PROFILE Fast MakeRotationFromYawPitchRollRadians [Verse.org]: 22.053200 ms
+PROFILE Native MakeRotationFromEulerDegrees [Verse.org]: 38.230800 ms
+PROFILE Fast MakeRotationFromEulerDegrees [Verse.org]: 20.787500 ms
+PROFILE Native AngularDistanceDegrees [Verse.org]: 26.288100 ms
+PROFILE Fast AngularDistanceDegrees [Verse.org]: 17.848100 ms
+PROFILE Native GetYawPitchRollRadians [Verse.org]: 37.839200 ms
+PROFILE Fast GetYawPitchRollRadians [Verse.org]: 17.983000 ms
+PROFILE Native GetEulerDegrees [Verse.org]: 36.820800 ms
+PROFILE Fast GetEulerDegrees [Verse.org]: 21.249000 ms
+PROFILE Native GetAngleDegrees [Verse.org]: 21.983900 ms
+PROFILE Fast GetAngleDegrees [Verse.org]: 14.387600 ms
+PROFILE Native Add [repr]: 304.376000 ms
+PROFILE VerseOrg Add [repr]: 16.153300 ms
+PROFILE Tuple Add [repr]: 10.942800 ms
+PROFILE Native Scale [repr]: 303.450400 ms
+PROFILE VerseOrg Scale [repr]: 15.004800 ms
+PROFILE Tuple Scale [repr]: 10.482200 ms
+PROFILE Native Cross [repr]: 356.713300 ms
+PROFILE VerseOrg Cross [repr]: 18.793200 ms
+PROFILE Tuple Cross [repr]: 13.848800 ms
+PROFILE Native Lerp [repr]: 312.375100 ms
+PROFILE VerseOrg Lerp [repr]: 33.075900 ms
+PROFILE Tuple Lerp [repr]: 15.123400 ms
+PROFILE Native HomingStep: 2325.428700 ms
+PROFILE VerseOrg HomingStep: 116.048100 ms
+PROFILE Tuple HomingStep: 70.862400 ms
+PROFILE Scalar HomingStep: 343.796700 ms
+PROFILE Native Sin: 7.079000 ms
+PROFILE Fast Sin: 62.777600 ms
+PROFILE Native Cos: 7.181900 ms
+PROFILE Fast Cos: 54.537100 ms
+PROFILE Native Tan: 7.026400 ms
+PROFILE Fast Tan: 63.301600 ms
+PROFILE Native Exp: 6.728600 ms
+PROFILE Fast Exp: 124.916700 ms
+PROFILE Native Ln: 6.676000 ms
+PROFILE Fast Ln: 124.412200 ms
+PROFILE Native ArcTan: 8.821700 ms
+PROFILE Fast ArcTan: 49.283500 ms
+PROFILE Native ArcTan2: 7.794100 ms
+PROFILE Fast ArcTan2: 117.615700 ms
+PROFILE Native ArcSin: 6.379100 ms
+PROFILE Fast ArcSin: 129.313100 ms
+PROFILE Native ArcCos: 6.387700 ms
+PROFILE Fast ArcCos: 132.976600 ms
+PROFILE Native Sinh: 7.050900 ms
+PROFILE Fast Sinh: 273.375300 ms
+PROFILE Native Cosh: 6.600200 ms
+PROFILE Fast Cosh: 130.617800 ms
+PROFILE Native Tanh: 6.653300 ms
+PROFILE Fast Tanh: 284.992400 ms
+PROFILE Native ArSinh: 6.991600 ms
+PROFILE Fast ArSinh: 122.119200 ms
+PROFILE Native ArCosh: 6.242000 ms
+PROFILE Fast ArCosh: 147.594900 ms
+PROFILE Native ArTanh: 7.798900 ms
+PROFILE Fast ArTanh: 121.976200 ms
+PROFILE Native PowCube: 8.106400 ms
+PROFILE Fast PowCube: 111.833500 ms
+PROFILE Native SortBy: 202.846000 ms
+PROFILE Fast SortBy: 330.870000 ms
+PROFILE Inlined SortBy: 173.624400 ms
+PROFILE Native EaseInOut: 15.329900 ms
+PROFILE Fast EaseInOut: 123.555600 ms
+PROFILE Native CubicBezier: 16.622200 ms
+PROFILE Fast CubicBezier: 134.573100 ms
+PROFILE Native Sqrt: 5.884100 ms
+PROFILE Fast Sqrt: 75.132300 ms
+PROFILE Native Clamp: 62.837900 ms
+PROFILE Fast Clamp: 35.732600 ms
+PROFILE Native Min: 16.263000 ms
+PROFILE Fast Min: 13.612200 ms
+PROFILE Native Max: 17.368600 ms
+PROFILE Fast Max: 14.527700 ms
+PROFILE Native Sgn: 18.928000 ms
+PROFILE Fast Sgn: 10.107700 ms
+PROFILE Native Abs: 3.030700 ms
+PROFILE Fast Abs: 12.452300 ms
+PROFILE Native Lerp (float): 8.040900 ms
+PROFILE Fast Lerp (float): 8.580600 ms
+PROFILE Native Floor: 8.927700 ms
+PROFILE Fast Floor: 190.725900 ms
+PROFILE Native Round: 9.614800 ms
+PROFILE Fast Round: 197.822400 ms
+PROFILE Native Abs (int): 3.134400 ms
+PROFILE Fast Abs (int): 8.753200 ms
+PROFILE Native Min (int): 12.962700 ms
+PROFILE Fast Min (int): 10.557900 ms
+PROFILE Native Clamp (int): 8.002200 ms
+PROFILE Fast Clamp (int): 18.352100 ms
+PROFILE Native Quotient: 31.004000 ms
+PROFILE Fast Quotient: 15.953500 ms
+PROFILE Native Mod: 10.377900 ms
+PROFILE Fast Mod: 22.051600 ms
+PROFILE Native Find: 174.478400 ms
+PROFILE Fast Find: 146.629900 ms
+PROFILE Native RemoveFirstElement: 395.309600 ms
+PROFILE Fast RemoveFirstElement: 419.215400 ms
+PROFILE Native ReplaceFirstElement: 428.145200 ms
+PROFILE Fast ReplaceFirstElement: 405.689800 ms
+PROFILE Native RemoveElement: 269.381100 ms
+PROFILE Fast RemoveElement: 292.742500 ms
+PROFILE Native Slice: 163.944700 ms
+PROFILE Fast Slice: 174.202700 ms
+PROFILE Native Insert: 296.755800 ms
+PROFILE Fast Insert: 328.052600 ms
+PROFILE Native Concatenate: 1259.521200 ms
+PROFILE Fast Concatenate: 195.628500 ms
+PROFILE Native ReplaceAll: 258.777600 ms
+PROFILE Fast ReplaceAll: 324.335400 ms
+PROFILE Native ToString (int): 24.182900 ms
+PROFILE Fast ToString (int): 251.452900 ms
+PROFILE Native DegreesToRadians: 9.671700 ms
+PROFILE Fast DegreesToRadians: 7.140800 ms
+PROFILE Native RadiansToDegrees: 10.425100 ms
+PROFILE Fast RadiansToDegrees: 6.403000 ms
+PROFILE Native DotProduct: 14.501400 ms
+PROFILE Fast DotProduct: 11.104500 ms
+PROFILE Inline DotProduct: 6.419500 ms
+PROFILE Native CrossProduct: 304.458500 ms
+PROFILE Fast CrossProduct: 304.425600 ms
+PROFILE Native Distance: 317.446100 ms
+PROFILE Fast Distance: 22.973600 ms
+PROFILE Native DistanceSquared: 309.836100 ms
+PROFILE Fast DistanceSquared: 13.413800 ms
+PROFILE Native DistanceXY: 321.800100 ms
+PROFILE Fast DistanceXY: 20.632700 ms
+PROFILE Native DistanceSquaredXY: 315.648500 ms
+PROFILE Fast DistanceSquaredXY: 11.090600 ms
+PROFILE Native Length: 24.043700 ms
+PROFILE Fast Length: 14.538700 ms
+PROFILE Native LengthXY: 24.544900 ms
+PROFILE Fast LengthXY: 13.341500 ms
+PROFILE Native IsFinite: 267.386200 ms
+PROFILE Fast IsFinite: 15.443300 ms
+PROFILE Native MakeUnitVector: 628.506500 ms
+PROFILE Fast MakeUnitVector: 309.275300 ms
+PROFILE Native Lerp: 331.742300 ms
+PROFILE Fast Lerp: 318.162900 ms
+PROFILE Native ReflectVector: 1156.079500 ms
+PROFILE Fast ReflectVector: 290.928200 ms
+PROFILE Native GetLocalForward: 288.819900 ms
+PROFILE Fast GetLocalForward: 14.417000 ms
+PROFILE Native GetLocalRight: 316.535700 ms
+PROFILE Fast GetLocalRight: 14.698600 ms
+PROFILE Native GetLocalUp: 331.947000 ms
+PROFILE Fast GetLocalUp: 13.915600 ms
+PROFILE Native ApplyLocalRotationY: 318.827500 ms
+PROFILE Fast ApplyLocalRotationY: 38.432600 ms
+PROFILE Native ApplyLocalRotationZ: 334.606300 ms
+PROFILE Fast ApplyLocalRotationZ: 38.361100 ms
+PROFILE Native TransformVector: 604.327800 ms
+PROFILE Fast TransformVector: 325.678500 ms
+PROFILE Native TransformVectorNoScale: 386.443500 ms
+PROFILE Fast TransformVectorNoScale: 320.245700 ms
+PROFILE Native TransformVector scaled: 600.607500 ms
+PROFILE Fast TransformVector scaled: 799.869600 ms
+PROFILE Native Distance (vector2): 259.226400 ms
+PROFILE Fast Distance (vector2): 18.883500 ms
+PROFILE Native DistanceSquared (vector2): 243.647400 ms
+PROFILE Fast DistanceSquared (vector2): 10.526500 ms
+PROFILE Native Length (vector2): 30.246500 ms
+PROFILE Fast Length (vector2): 12.702200 ms
+PROFILE Native LengthSquared (vector2): 17.720400 ms
+PROFILE Fast LengthSquared (vector2): 8.620300 ms
+PROFILE Native IsFinite (vector2): 183.199900 ms
+PROFILE Fast IsFinite (vector2): 13.111700 ms
+PROFILE Native MakeUnitVector (vector2): 405.889900 ms
+PROFILE Fast MakeUnitVector (vector2): 184.022400 ms
+PROFILE Native Lerp (vector2): 239.164100 ms
+PROFILE Fast Lerp (vector2): 215.021600 ms
+PROFILE Native ReflectVector (vector2): 765.555000 ms
+PROFILE Fast ReflectVector (vector2): 198.668900 ms
+PROFILE Native Equals (vector2i): 100.486600 ms
+PROFILE Fast Equals (vector2i): 17.373600 ms
+PROFILE Native Distance [Verse.org]: 44.484300 ms
+PROFILE Fast Distance [Verse.org]: 23.466800 ms
+PROFILE Native DistanceSquared [Verse.org]: 33.567600 ms
+PROFILE Fast DistanceSquared [Verse.org]: 14.594300 ms
+PROFILE Native DistanceForwardLeft [Verse.org]: 43.527700 ms
+PROFILE Fast DistanceForwardLeft [Verse.org]: 21.499200 ms
+PROFILE Native DistanceSquaredForwardLeft [Verse.org]: 33.031100 ms
+PROFILE Fast DistanceSquaredForwardLeft [Verse.org]: 12.884500 ms
+PROFILE Native LengthForwardLeft [Verse.org]: 23.624100 ms
+PROFILE Fast LengthForwardLeft [Verse.org]: 13.819800 ms
+PROFILE Native Lerp [Verse.org]: 32.343000 ms
+PROFILE Fast Lerp [Verse.org]: 16.166400 ms
+PROFILE Native Length [Verse.org]: 24.486200 ms
+PROFILE Fast Length [Verse.org]: 15.138900 ms
+PROFILE Native IsFinite [Verse.org]: 38.501400 ms
+PROFILE Fast IsFinite [Verse.org]: 15.610200 ms
+PROFILE Native MakeUnitVector [Verse.org]: 42.426300 ms
+PROFILE Fast MakeUnitVector [Verse.org]: 22.487800 ms
+PROFILE Native ReflectVector [Verse.org]: 85.540800 ms
+PROFILE Fast ReflectVector [Verse.org]: 32.323800 ms
+PROFILE Native GetForwardAxis [Verse.org]: 24.465000 ms
+PROFILE Fast GetForwardAxis [Verse.org]: 14.431000 ms
+PROFILE Native GetLeftAxis [Verse.org]: 23.769800 ms
+PROFILE Fast GetLeftAxis [Verse.org]: 14.447700 ms
+PROFILE Native GetUpAxis [Verse.org]: 23.923000 ms
+PROFILE Fast GetUpAxis [Verse.org]: 14.115500 ms
+PROFILE Native vector3 * transform [Verse.org]: 44.755300 ms
+PROFILE Fast vector3 * transform [Verse.org]: 45.098700 ms
+PROFILE Native MakeRotationDegrees [Verse.org]: 33.181500 ms
+PROFILE Fast MakeRotationDegrees [Verse.org]: 24.523100 ms
+PROFILE Native MakeRotationFromYawPitchRollRadians [Verse.org]: 39.719200 ms
+PROFILE Fast MakeRotationFromYawPitchRollRadians [Verse.org]: 21.532400 ms
+PROFILE Native MakeRotationFromEulerDegrees [Verse.org]: 40.188700 ms
+PROFILE Fast MakeRotationFromEulerDegrees [Verse.org]: 20.651300 ms
+PROFILE Native AngularDistanceDegrees [Verse.org]: 25.357900 ms
+PROFILE Fast AngularDistanceDegrees [Verse.org]: 17.174100 ms
+PROFILE Native GetYawPitchRollRadians [Verse.org]: 36.579500 ms
+PROFILE Fast GetYawPitchRollRadians [Verse.org]: 18.422200 ms
+PROFILE Native GetEulerDegrees [Verse.org]: 37.687800 ms
+PROFILE Fast GetEulerDegrees [Verse.org]: 18.338100 ms
+PROFILE Native GetAngleDegrees [Verse.org]: 23.299200 ms
+PROFILE Fast GetAngleDegrees [Verse.org]: 15.104900 ms
+PROFILE Native Add [repr]: 273.821700 ms
+PROFILE VerseOrg Add [repr]: 15.528200 ms
+PROFILE Tuple Add [repr]: 10.691200 ms
+PROFILE Native Scale [repr]: 291.412600 ms
+PROFILE VerseOrg Scale [repr]: 14.868600 ms
+PROFILE Tuple Scale [repr]: 11.066800 ms
+PROFILE Native Cross [repr]: 307.632000 ms
+PROFILE VerseOrg Cross [repr]: 19.302000 ms
+PROFILE Tuple Cross [repr]: 14.482600 ms
+PROFILE Native Lerp [repr]: 331.674500 ms
+PROFILE VerseOrg Lerp [repr]: 32.654200 ms
+PROFILE Tuple Lerp [repr]: 14.340100 ms
+PROFILE Native HomingStep: 2190.836000 ms
+PROFILE VerseOrg HomingStep: 122.057200 ms
+PROFILE Tuple HomingStep: 68.508900 ms
+PROFILE Scalar HomingStep: 346.257400 ms
+PROFILE Native Sin: 6.959500 ms
+PROFILE Fast Sin: 59.614500 ms
+PROFILE Native Cos: 7.023200 ms
+PROFILE Fast Cos: 52.745900 ms
+PROFILE Native Tan: 7.425500 ms
+PROFILE Fast Tan: 64.880600 ms
+PROFILE Native Exp: 6.787500 ms
+PROFILE Fast Exp: 120.341900 ms
+PROFILE Native Ln: 7.100700 ms
+PROFILE Fast Ln: 119.744600 ms
+PROFILE Native ArcTan: 6.869800 ms
+PROFILE Fast ArcTan: 49.071000 ms
+PROFILE Native ArcTan2: 8.576700 ms
+PROFILE Fast ArcTan2: 120.605500 ms
+PROFILE Native ArcSin: 7.351200 ms
+PROFILE Fast ArcSin: 137.699300 ms
+PROFILE Native ArcCos: 7.415700 ms
+PROFILE Fast ArcCos: 133.849400 ms
+PROFILE Native Sinh: 7.178000 ms
+PROFILE Fast Sinh: 272.679600 ms
+PROFILE Native Cosh: 7.583900 ms
+PROFILE Fast Cosh: 128.949300 ms
+PROFILE Native Tanh: 7.804100 ms
+PROFILE Fast Tanh: 272.773700 ms
+PROFILE Native ArSinh: 6.798200 ms
+PROFILE Fast ArSinh: 111.992900 ms
+PROFILE Native ArCosh: 6.915400 ms
+PROFILE Fast ArCosh: 153.293700 ms
+PROFILE Native ArTanh: 7.638300 ms
+PROFILE Fast ArTanh: 124.687600 ms
+PROFILE Native PowCube: 8.553300 ms
+PROFILE Fast PowCube: 116.504700 ms
+PROFILE Native SortBy: 201.673900 ms
+PROFILE Fast SortBy: 319.260400 ms
+PROFILE Inlined SortBy: 182.812800 ms
+PROFILE Native EaseInOut: 16.281400 ms
+PROFILE Fast EaseInOut: 127.844300 ms
+PROFILE Native CubicBezier: 18.315700 ms
+PROFILE Fast CubicBezier: 138.045100 ms
+PROFILE Native Sqrt: 6.617200 ms
+PROFILE Fast Sqrt: 75.221600 ms
+PROFILE Native Clamp: 65.935100 ms
+PROFILE Fast Clamp: 36.875500 ms
+PROFILE Native Min: 17.193000 ms
+PROFILE Fast Min: 13.607800 ms
+PROFILE Native Max: 18.506800 ms
+PROFILE Fast Max: 14.472600 ms
+PROFILE Native Sgn: 20.918100 ms
+PROFILE Fast Sgn: 10.419600 ms
+PROFILE Native Abs: 3.124700 ms
+PROFILE Fast Abs: 12.934500 ms
+PROFILE Native Lerp (float): 8.734800 ms
+PROFILE Fast Lerp (float): 8.622500 ms
+PROFILE Native Floor: 9.203800 ms
+PROFILE Fast Floor: 192.692400 ms
+PROFILE Native Round: 10.023300 ms
+PROFILE Fast Round: 197.234700 ms
+PROFILE Native Abs (int): 3.172700 ms
+PROFILE Fast Abs (int): 8.330400 ms
+PROFILE Native Min (int): 13.930300 ms
+PROFILE Fast Min (int): 9.899400 ms
+PROFILE Native Clamp (int): 10.169200 ms
+PROFILE Fast Clamp (int): 17.821300 ms
+PROFILE Native Quotient: 11.255800 ms
+PROFILE Fast Quotient: 15.408900 ms
+PROFILE Native Mod: 13.001200 ms
+PROFILE Fast Mod: 21.140300 ms
+PROFILE Native Find: 163.817900 ms
+PROFILE Fast Find: 133.763000 ms
+PROFILE Native RemoveFirstElement: 389.320300 ms
+PROFILE Fast RemoveFirstElement: 422.323600 ms
+PROFILE Native ReplaceFirstElement: 451.039600 ms
+PROFILE Fast ReplaceFirstElement: 445.486400 ms
+PROFILE Native RemoveElement: 286.968300 ms
+PROFILE Fast RemoveElement: 320.036300 ms
+PROFILE Native Slice: 186.377900 ms
+PROFILE Fast Slice: 185.509100 ms
+PROFILE Native Insert: 344.092000 ms
+PROFILE Fast Insert: 370.194700 ms
+PROFILE Native Concatenate: 1303.350000 ms
+PROFILE Fast Concatenate: 233.460700 ms
+PROFILE Native ReplaceAll: 260.137100 ms
+PROFILE Fast ReplaceAll: 339.223700 ms
+PROFILE Native ToString (int): 19.877200 ms
+PROFILE Fast ToString (int): 238.669700 ms
+PROFILE Native DegreesToRadians: 8.734500 ms
+PROFILE Fast DegreesToRadians: 6.125500 ms
+PROFILE Native RadiansToDegrees: 9.590900 ms
+PROFILE Fast RadiansToDegrees: 6.386000 ms
+PROFILE Native DotProduct: 14.009300 ms
+PROFILE Fast DotProduct: 11.212300 ms
+PROFILE Inline DotProduct: 7.556700 ms
+PROFILE Native CrossProduct: 301.992400 ms
+PROFILE Fast CrossProduct: 312.559600 ms
+PROFILE Native Distance: 338.891100 ms
+PROFILE Fast Distance: 21.820300 ms
+PROFILE Native DistanceSquared: 308.293400 ms
+PROFILE Fast DistanceSquared: 13.047000 ms
+PROFILE Native DistanceXY: 304.490700 ms
+PROFILE Fast DistanceXY: 20.517500 ms
+PROFILE Native DistanceSquaredXY: 311.095700 ms
+PROFILE Fast DistanceSquaredXY: 10.821700 ms
+PROFILE Native Length: 23.770000 ms
+PROFILE Fast Length: 14.237400 ms
+PROFILE Native LengthXY: 24.315300 ms
+PROFILE Fast LengthXY: 19.494600 ms
+PROFILE Native IsFinite: 253.278600 ms
+PROFILE Fast IsFinite: 15.864800 ms
+PROFILE Native MakeUnitVector: 518.996300 ms
+PROFILE Fast MakeUnitVector: 237.144100 ms
+PROFILE Native Lerp: 324.810800 ms
+PROFILE Fast Lerp: 309.780100 ms
+PROFILE Native ReflectVector: 1105.605500 ms
+PROFILE Fast ReflectVector: 307.967300 ms
+PROFILE Native GetLocalForward: 333.867500 ms
+PROFILE Fast GetLocalForward: 14.635800 ms
+PROFILE Native GetLocalRight: 327.034600 ms
+PROFILE Fast GetLocalRight: 14.969400 ms
+PROFILE Native GetLocalUp: 362.189000 ms
+PROFILE Fast GetLocalUp: 14.594800 ms
+PROFILE Native ApplyLocalRotationY: 305.763900 ms
+PROFILE Fast ApplyLocalRotationY: 37.982400 ms
+PROFILE Native ApplyLocalRotationZ: 336.297200 ms
+PROFILE Fast ApplyLocalRotationZ: 40.723200 ms
+PROFILE Native TransformVector: 609.968600 ms
+PROFILE Fast TransformVector: 368.655000 ms
+PROFILE Native TransformVectorNoScale: 323.964200 ms
+PROFILE Fast TransformVectorNoScale: 313.029200 ms
+PROFILE Native TransformVector scaled: 629.354200 ms
+PROFILE Fast TransformVector scaled: 613.874600 ms
+PROFILE Native Distance (vector2): 207.606800 ms
+PROFILE Fast Distance (vector2): 17.008600 ms
+PROFILE Native DistanceSquared (vector2): 214.397900 ms
+PROFILE Fast DistanceSquared (vector2): 10.240800 ms
+PROFILE Native Length (vector2): 27.948300 ms
+PROFILE Fast Length (vector2): 11.907100 ms
+PROFILE Native LengthSquared (vector2): 18.136800 ms
+PROFILE Fast LengthSquared (vector2): 8.182200 ms
+PROFILE Native IsFinite (vector2): 168.560500 ms
+PROFILE Fast IsFinite (vector2): 13.331600 ms
+PROFILE Native MakeUnitVector (vector2): 386.825400 ms
+PROFILE Fast MakeUnitVector (vector2): 178.707400 ms
+PROFILE Native Lerp (vector2): 220.212200 ms
+PROFILE Fast Lerp (vector2): 253.504300 ms
+PROFILE Native ReflectVector (vector2): 844.196400 ms
+PROFILE Fast ReflectVector (vector2): 225.224200 ms
+PROFILE Native Equals (vector2i): 105.368100 ms
+PROFILE Fast Equals (vector2i): 18.282300 ms
+PROFILE Native Distance [Verse.org]: 49.624800 ms
+PROFILE Fast Distance [Verse.org]: 24.138300 ms
+PROFILE Native DistanceSquared [Verse.org]: 35.210400 ms
+PROFILE Fast DistanceSquared [Verse.org]: 14.496000 ms
+PROFILE Native DistanceForwardLeft [Verse.org]: 46.714900 ms
+PROFILE Fast DistanceForwardLeft [Verse.org]: 22.118100 ms
+PROFILE Native DistanceSquaredForwardLeft [Verse.org]: 34.551100 ms
+PROFILE Fast DistanceSquaredForwardLeft [Verse.org]: 13.333700 ms
+PROFILE Native LengthForwardLeft [Verse.org]: 28.054800 ms
+PROFILE Fast LengthForwardLeft [Verse.org]: 14.168600 ms
+PROFILE Native Lerp [Verse.org]: 34.384000 ms
+PROFILE Fast Lerp [Verse.org]: 16.841700 ms
+PROFILE Native Length [Verse.org]: 27.112800 ms
+PROFILE Fast Length [Verse.org]: 15.414200 ms
+PROFILE Native IsFinite [Verse.org]: 38.813400 ms
+PROFILE Fast IsFinite [Verse.org]: 18.175000 ms
+PROFILE Native MakeUnitVector [Verse.org]: 43.568000 ms
+PROFILE Fast MakeUnitVector [Verse.org]: 23.120600 ms
+PROFILE Native ReflectVector [Verse.org]: 87.263000 ms
+PROFILE Fast ReflectVector [Verse.org]: 31.937300 ms
+PROFILE Native GetForwardAxis [Verse.org]: 24.023400 ms
+PROFILE Fast GetForwardAxis [Verse.org]: 14.837300 ms
+PROFILE Native GetLeftAxis [Verse.org]: 24.425500 ms
+PROFILE Fast GetLeftAxis [Verse.org]: 14.715800 ms
+PROFILE Native GetUpAxis [Verse.org]: 23.782700 ms
+PROFILE Fast GetUpAxis [Verse.org]: 16.367100 ms
+PROFILE Native vector3 * transform [Verse.org]: 45.104400 ms
+PROFILE Fast vector3 * transform [Verse.org]: 46.404900 ms
+PROFILE Native MakeRotationDegrees [Verse.org]: 32.746700 ms
+PROFILE Fast MakeRotationDegrees [Verse.org]: 24.328900 ms
+PROFILE Native MakeRotationFromYawPitchRollRadians [Verse.org]: 42.096100 ms
+PROFILE Fast MakeRotationFromYawPitchRollRadians [Verse.org]: 22.087500 ms
+PROFILE Native MakeRotationFromEulerDegrees [Verse.org]: 42.978700 ms
+PROFILE Fast MakeRotationFromEulerDegrees [Verse.org]: 21.502000 ms
+PROFILE Native AngularDistanceDegrees [Verse.org]: 26.749100 ms
+PROFILE Fast AngularDistanceDegrees [Verse.org]: 20.184200 ms
+PROFILE Native GetYawPitchRollRadians [Verse.org]: 38.995400 ms
+PROFILE Fast GetYawPitchRollRadians [Verse.org]: 18.270900 ms
+PROFILE Native GetEulerDegrees [Verse.org]: 37.642000 ms
+PROFILE Fast GetEulerDegrees [Verse.org]: 18.066100 ms
+PROFILE Native GetAngleDegrees [Verse.org]: 25.763100 ms
+PROFILE Fast GetAngleDegrees [Verse.org]: 15.122100 ms
+PROFILE Native Add [repr]: 282.224600 ms
+PROFILE VerseOrg Add [repr]: 15.524700 ms
+PROFILE Tuple Add [repr]: 11.073900 ms
+PROFILE Native Scale [repr]: 326.738700 ms
+PROFILE VerseOrg Scale [repr]: 15.184500 ms
+PROFILE Tuple Scale [repr]: 10.392600 ms
+PROFILE Native Cross [repr]: 340.067800 ms
+PROFILE VerseOrg Cross [repr]: 19.224100 ms
+PROFILE Tuple Cross [repr]: 14.772400 ms
+PROFILE Native Lerp [repr]: 324.946900 ms
+PROFILE VerseOrg Lerp [repr]: 36.572800 ms
+PROFILE Tuple Lerp [repr]: 16.493500 ms
+PROFILE Native HomingStep: 2296.966100 ms
+PROFILE VerseOrg HomingStep: 116.625200 ms
+PROFILE Tuple HomingStep: 71.748100 ms
+PROFILE Scalar HomingStep: 362.148800 ms
+PROFILE Native Sin: 7.600200 ms
+PROFILE Fast Sin: 60.465500 ms
+PROFILE Native Cos: 7.488800 ms
+PROFILE Fast Cos: 53.262300 ms
+PROFILE Native Tan: 7.471600 ms
+PROFILE Fast Tan: 62.640000 ms
+PROFILE Native Exp: 7.321300 ms
+PROFILE Fast Exp: 122.845300 ms
+PROFILE Native Ln: 7.305000 ms
+PROFILE Fast Ln: 132.138000 ms
+PROFILE Native ArcTan: 7.245200 ms
+PROFILE Fast ArcTan: 49.062200 ms
+PROFILE Native ArcTan2: 8.903800 ms
+PROFILE Fast ArcTan2: 121.280300 ms
+PROFILE Native ArcSin: 7.263100 ms
+PROFILE Fast ArcSin: 169.369300 ms
+PROFILE Native ArcCos: 9.191400 ms
+PROFILE Fast ArcCos: 144.496700 ms
+PROFILE Native Sinh: 7.816300 ms
+PROFILE Fast Sinh: 276.309600 ms
+PROFILE Native Cosh: 7.540100 ms
+PROFILE Fast Cosh: 131.316700 ms
+PROFILE Native Tanh: 8.072900 ms
+PROFILE Fast Tanh: 278.148500 ms
+PROFILE Native ArSinh: 7.069400 ms
+PROFILE Fast ArSinh: 116.701500 ms
+PROFILE Native ArCosh: 10.019700 ms
+PROFILE Fast ArCosh: 157.053400 ms
+PROFILE Native ArTanh: 8.076100 ms
+PROFILE Fast ArTanh: 124.349400 ms
+PROFILE Native PowCube: 7.628500 ms
+PROFILE Fast PowCube: 116.246500 ms
+PROFILE Native SortBy: 211.603200 ms
+PROFILE Fast SortBy: 344.641100 ms
+PROFILE Inlined SortBy: 181.741700 ms
+PROFILE Native EaseInOut: 16.912400 ms
+PROFILE Fast EaseInOut: 127.634400 ms
+PROFILE Native CubicBezier: 19.329400 ms
+PROFILE Fast CubicBezier: 137.523400 ms

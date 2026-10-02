@@ -1,0 +1,334 @@
+<title>Verse Natives vs Rewrites</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a lab readout — approach and findings first, then a summary per VM, then one sortable row per function. */
+:root {
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --ink: #17202c;
+  --muted: #5b6878;
+  --line: #d9dfe7;
+  --accent: #1d5fd6;
+  --win: #127a4b;
+  --win-bg: #dff3e8;
+  --even: #6a7686;
+  --even-bg: #eceff3;
+  --loss: #b42d2d;
+  --loss-bg: #f8e1e0;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f141b; --surface: #161d27; --ink: #e6ebf2; --muted: #93a0b1; --line: #263141;
+    --accent: #6ea2ff; --win: #4fd08f; --win-bg: #15372a; --even: #9aa6b6; --even-bg: #1e2733;
+    --loss: #ff7b72; --loss-bg: #3b1d1f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f141b; --surface: #161d27; --ink: #e6ebf2; --muted: #93a0b1; --line: #263141;
+  --accent: #6ea2ff; --win: #4fd08f; --win-bg: #15372a; --even: #9aa6b6; --even-bg: #1e2733;
+  --loss: #ff7b72; --loss-bg: #3b1d1f; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+.page { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 48px; display: grid; gap: 28px; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: 0.01em; line-height: 1.1; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 44px); }
+h2 { font-size: 24px; }
+.lede { color: var(--muted); max-width: 72ch; margin: 8px 0 0; font-size: 16px; }
+.prose { display: grid; gap: 12px; max-width: 78ch; }
+.prose p { margin: 0; }
+.steps { margin: 0; padding-left: 1.4em; display: grid; gap: 10px; }
+.steps li::marker { font-family: var(--font-display); font-weight: 700; color: var(--accent); }
+.steps b { font-weight: 600; }
+.findings { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.finding { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0; }
+.finding strong { font-family: var(--font-display); font-size: 18px; font-weight: 600; line-height: 1.2; }
+.finding p { margin: 0; color: var(--muted); font-size: 14px; }
+.vms { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.vm { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 8px; }
+.vm h3 { margin: 0; font-family: var(--font-display); font-size: 20px; font-weight: 600; }
+.vm p { margin: 0; color: var(--muted); font-size: 13px; }
+.tally { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { font-family: var(--font-data); font-size: 12px; padding: 2px 8px; border-radius: 999px; font-variant-numeric: tabular-nums; }
+.chip.win { background: var(--win-bg); color: var(--win); }
+.chip.even { background: var(--even-bg); color: var(--even); }
+.chip.loss { background: var(--loss-bg); color: var(--loss); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+.controls label { display: grid; gap: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.controls input, .controls select { font: inherit; font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; min-width: 0; }
+.controls input:focus-visible, .controls select:focus-visible, th button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.count { margin-left: auto; color: var(--muted); font-size: 13px; }
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; min-width: 860px; }
+th, td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; }
+thead th { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--surface); z-index: 1; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+th button[aria-sort="descending"]::after { content: "▼"; font-size: 9px; color: var(--accent); }
+th button[aria-sort="ascending"]::after { content: "▲"; font-size: 9px; color: var(--accent); }
+td.fn { font-weight: 600; }
+td.fn small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+td.variant { color: var(--muted); font-size: 13px; }
+.ratio { display: grid; gap: 4px; min-width: 150px; }
+.ratio-top { display: flex; align-items: baseline; gap: 8px; }
+.ratio b { font-family: var(--font-data); font-weight: 600; font-variant-numeric: tabular-nums; font-size: 14px; padding: 1px 6px; border-radius: 4px; }
+.ratio b.win { background: var(--win-bg); color: var(--win); }
+.ratio b.even { background: var(--even-bg); color: var(--even); }
+.ratio b.loss { background: var(--loss-bg); color: var(--loss); }
+.ratio span { font-family: var(--font-data); font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.bar { position: relative; height: 4px; background: var(--even-bg); border-radius: 2px; }
+.bar i { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+.bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+.empty { padding: 24px; color: var(--muted); }
+.notes { display: grid; gap: 8px; max-width: 80ch; color: var(--muted); font-size: 14px; }
+.notes h2 { color: var(--ink); }
+.notes p { margin: 0; }
+code { font-family: var(--font-data); font-size: 0.88em; }
+@media (prefers-reduced-motion: no-preference) { tbody tr { transition: background 0.15s; } }
+tbody tr.row { cursor: pointer; }
+tbody tr.row:hover, tbody tr.row.open { background: var(--bg); }
+.toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.toggle::before { content: "▸"; color: var(--accent); font-size: 12px; width: 10px; }
+.toggle[aria-expanded="true"]::before { content: "▾"; }
+.toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+tr.detail > td { background: var(--bg); padding: 4px 12px 16px; }
+.code-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .code-grid { grid-template-columns: minmax(0, 1fr); } }
+.code-grid > div { min-width: 0; display: grid; gap: 6px; align-content: start; }
+.code-grid h4 { margin: 0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+.code-grid h4 span { text-transform: none; letter-spacing: 0; font-family: var(--font-data); font-weight: 400; }
+.code-grid .wide { grid-column: 1 / -1; }
+pre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; overflow-x: auto; font-family: var(--font-data); font-size: 12.5px; line-height: 1.5; tab-size: 4; }
+.code-note { margin: 0; color: var(--muted); font-size: 13px; }
+</style>
+
+<main class="page">
+  <header>
+    <h1>Verse natives vs rewrites</h1>
+    <p class="lede" id="lede"></p>
+  </header>
+
+  <section class="prose" aria-labelledby="approach-title">
+    <h2 id="approach-title">Approach</h2>
+    <p>The question: for each native function Fortnite gives to Verse code (vector math, standard library, arrays, sorting), is a hand-written Verse version faster, and does the answer hold on the VM that actually runs islands?</p>
+    <ol class="steps">
+      <li><b>Real runtimes, outside the game.</b> From Unreal Engine's public source, we built Epic's own Verse command-line runners for both backends: <code>VerseCmd</code> on the new VerseVM, and <code>VerseCLR</code> on the BPVM, the Blueprint VM that Fortnite runs today (in Development and Shipping builds). Both include the real native implementations of <code>/UnrealEngine.com/Temporary/SpatialMath</code> and <code>/Verse.org/SpatialMath</code>, and print each <code>profile</code> block's duration.</li>
+      <li><b>Rewrites that stay drop-in.</b> Every rewrite is plain Verse that can be pasted into a UEFN project, with the same signature and failure behaviour as the native it replaces.</li>
+      <li><b>Same result, checked bit for bit.</b> Before any timing, each rewrite is compared with its native over thousands of inputs, edge cases included (NaN, infinities, subnormals, signed zeros, failing <code>&lt;decides&gt;</code> calls). All 96 check groups show no divergence on every runtime; only <code>Sqrt</code> and the transcendental functions differ, by 1 to 3 units in the last place.</li>
+      <li><b>Timing.</b> Each benchmark times the native and the rewrite on the same prebuilt inputs, in separate <code>profile</code> blocks. The suite runs 4 times; the first round is a warm-up and the table uses the median.</li>
+      <li><b>Confirmation in a UEFN session.</b> The same files run in a UEFN play session on an Epic server. The suite is split into short steps with a <code>Sleep(0.0)</code> between them, since UEFN stops code that runs for about 10 seconds without suspending. The final checksum matches the local runs exactly.</li>
+    </ol>
+  </section>
+
+  <section class="prose" aria-labelledby="findings-title">
+    <h2 id="findings-title">What it shows</h2>
+    <div class="findings">
+      <div class="finding"><strong>Struct construction is the cost</strong><p>On the BPVM, each <code>vector3{}</code> of <code>/UnrealEngine.com/Temporary/SpatialMath</code> allocates three strings and a map before setting its fields. Rewrites that avoid intermediate vectors win 3 to 15×.</p></div>
+      <div class="finding"><strong>Representation beats rewriting</strong><p>The same vector math on tuples is 15 to 18× faster in UEFN; the <code>/Verse.org/SpatialMath</code> <code>vector3</code>, backed by a C++ struct, is about 13× faster.</p></div>
+      <div class="finding"><strong>C++ natives stay faster</strong><p><code>Sqrt</code>, trigonometry, <code>Exp</code>/<code>Ln</code>, rounding and <code>Abs</code> are 2 to 40× slower when rewritten. Keep the natives.</p></div>
+      <div class="finding"><strong>UEFN agrees with the local BPVM</strong><p id="agreement"></p></div>
+    </div>
+  </section>
+
+  <section class="vms" id="vms" aria-label="Summary per VM"></section>
+
+  <section class="controls" aria-label="Filters">
+    <label for="search">Function
+      <input id="search" type="search" placeholder="Distance, Sqrt, Sort…" autocomplete="off">
+    </label>
+    <label for="group">Family
+      <select id="group"></select>
+    </label>
+    <label for="verdict">UEFN verdict
+      <select id="verdict">
+        <option value="">All</option>
+        <option value="win">Rewrite wins (≥ 1.15×)</option>
+        <option value="even">No real difference (0.9 to 1.15×)</option>
+        <option value="loss">Native wins (&lt; 0.9×)</option>
+      </select>
+    </label>
+    <span class="count" id="count"></span>
+  </section>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr id="head"></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="empty" id="empty" hidden>No function matches these filters.</p>
+  </div>
+
+  <section class="notes">
+    <h2>Reading the table</h2>
+    <p>Speed-up = native time ÷ rewrite time, on the median of the timed rounds. Above 1×, the rewrite is faster. Each cell also shows both times in milliseconds; absolute times depend on the machine, so compare ratios within one VM.</p>
+    <p id="method"></p>
+    <p>"Tuple" and "VerseOrg" rows compare representations (a <code>(float, float, float)</code> tuple, and the <code>/Verse.org/SpatialMath</code> <code>vector3</code>) with the <code>/UnrealEngine.com/Temporary/SpatialMath</code> <code>vector3</code>. "Scalar" computes on floats and builds a single vector at the end. "Inlined" is a sort specialised for floats; "Fast" is a drop-in rewrite.</p>
+    <p>Local builds come from an earlier Unreal Engine revision than Fortnite's, and the UEFN server is about 1.8× slower than the local Shipping build. <code>Easing</code> is an experimental API: using it blocks publishing an island.</p>
+  </section>
+</main>
+
+<script id="bench-data" type="application/json">__BENCH_DATA__</script>
+<script>
+const data = JSON.parse(document.getElementById('bench-data').textContent);
+const runtimes = data.runtimes;
+const verdictOf = x => x == null ? null : x >= 1.15 ? 'win' : x >= 0.9 ? 'even' : 'loss';
+const fmt = (x, digits) => x == null ? '–' : x.toLocaleString('en-US', { minimumFractionDigits: digits, maximumFractionDigits: digits });
+const reference = runtimes[runtimes.length - 1].key;
+let sortKey = reference;
+let sortDir = -1;
+
+document.getElementById('lede').textContent = data.lede;
+document.getElementById('method').textContent = data.method;
+document.getElementById('agreement').textContent = data.agreement;
+
+const vms = document.getElementById('vms');
+for (const rt of runtimes) {
+  const counts = { win: 0, even: 0, loss: 0 };
+  for (const row of data.rows) {
+    const v = verdictOf(row.cells[rt.key]?.speedup);
+    if (v) counts[v]++;
+  }
+  const card = document.createElement('article');
+  card.className = 'vm';
+  card.innerHTML = `<h3></h3><p></p><div class="tally">
+    <span class="chip win">${counts.win} rewrites win</span>
+    <span class="chip even">${counts.even} even</span>
+    <span class="chip loss">${counts.loss} natives win</span></div>`;
+  card.querySelector('h3').textContent = rt.label;
+  card.querySelector('p').textContent = rt.detail;
+  vms.append(card);
+}
+
+const groups = [...new Set(data.rows.map(r => r.group))];
+const groupSelect = document.getElementById('group');
+groupSelect.append(new Option('All', ''));
+for (const g of groups) groupSelect.append(new Option(g, g));
+
+const head = document.getElementById('head');
+const columns = [{ key: 'function', label: 'Function' }, { key: 'variant', label: 'Rewrite' }, ...runtimes.map(rt => ({ key: rt.key, label: rt.label }))];
+for (const col of columns) {
+  const th = document.createElement('th');
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = col.label;
+  button.dataset.key = col.key;
+  button.addEventListener('click', () => {
+    sortDir = sortKey === col.key ? -sortDir : (col.key === 'function' || col.key === 'variant' ? 1 : -1);
+    sortKey = col.key;
+    render();
+  });
+  th.append(button);
+  head.append(th);
+}
+
+// Log scale centred on 1x: 1/8x at the left edge, 8x at the right.
+function bar(speedup, verdict) {
+  if (speedup == null) return '';
+  const pos = Math.max(-1, Math.min(1, Math.log(speedup) / Math.log(8)));
+  const left = pos >= 0 ? 50 : 50 + pos * 50;
+  const width = Math.abs(pos) * 50;
+  return `<div class="bar"><i style="left:${left}%;width:${width}%;background:var(--${verdict})"></i></div>`;
+}
+
+const expanded = new Set();
+
+function codeBlock(title, text, wide, file) {
+  const box = document.createElement('div');
+  if (wide) box.className = 'wide';
+  const h = document.createElement('h4');
+  h.textContent = title;
+  if (file) {
+    const name = document.createElement('span');
+    name.textContent = ` · ${file}`;
+    h.append(name);
+  }
+  const pre = document.createElement('pre');
+  pre.textContent = text;
+  box.append(h, pre);
+  return box;
+}
+
+// The two timed profile blocks side by side, then the rewrite's source and the helpers it calls.
+function detailRow(row, span) {
+  const tr = document.createElement('tr');
+  tr.className = 'detail';
+  const td = document.createElement('td');
+  td.colSpan = span;
+  const grid = document.createElement('div');
+  grid.className = 'code-grid';
+  grid.append(codeBlock(`Timed: ${row.variant}`, row.code.rewrite), codeBlock('Timed: native', row.code.native));
+  for (const source of row.code.sources) grid.append(codeBlock(`${row.variant} source`, source.text, true, source.file));
+  for (const source of row.code.native_sources) grid.append(codeBlock('Native side', source.text, true, source.file));
+  if (!row.code.sources.length) {
+    const note = document.createElement('p');
+    note.className = 'code-note wide';
+    note.textContent = row.variant === 'VerseOrg'
+      ? 'Same operation on the /Verse.org/SpatialMath vector3, through its own native operators: only the vector type changes.'
+      : 'The timed block is the whole rewrite: the call is replaced by its arithmetic.';
+    grid.append(note);
+  }
+  td.append(grid);
+  tr.append(td);
+  return tr;
+}
+
+function render() {
+  const query = document.getElementById('search').value.trim().toLowerCase();
+  const group = groupSelect.value;
+  const verdict = document.getElementById('verdict').value;
+  const rows = data.rows.filter(r =>
+    (!query || r.function.toLowerCase().includes(query) || r.variant.toLowerCase().includes(query)) &&
+    (!group || r.group === group) &&
+    (!verdict || verdictOf(r.cells[reference]?.speedup) === verdict));
+  rows.sort((a, b) => {
+    if (sortKey === 'function' || sortKey === 'variant') return sortDir * a[sortKey].localeCompare(b[sortKey], 'en');
+    return sortDir * ((a.cells[sortKey]?.speedup ?? -1) - (b.cells[sortKey]?.speedup ?? -1));
+  });
+  head.querySelectorAll('button').forEach(b => b.setAttribute('aria-sort', b.dataset.key === sortKey ? (sortDir > 0 ? 'ascending' : 'descending') : 'none'));
+  const body = document.getElementById('rows');
+  body.innerHTML = '';
+  for (const row of rows) {
+    const key = `${row.variant} ${row.function}`;
+    const tr = document.createElement('tr');
+    tr.className = 'row' + (expanded.has(key) ? ' open' : '');
+    const fn = document.createElement('td');
+    fn.className = 'fn';
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'toggle';
+    toggle.textContent = row.function;
+    toggle.setAttribute('aria-expanded', expanded.has(key) ? 'true' : 'false');
+    const small = document.createElement('small');
+    small.textContent = row.group;
+    fn.append(toggle, small);
+    tr.addEventListener('click', () => {
+      if (expanded.has(key)) expanded.delete(key); else expanded.add(key);
+      render();
+    });
+    const variant = document.createElement('td');
+    variant.className = 'variant';
+    variant.textContent = row.variant;
+    tr.append(fn, variant);
+    for (const rt of runtimes) {
+      const cell = row.cells[rt.key] || {};
+      const v = verdictOf(cell.speedup);
+      const td = document.createElement('td');
+      td.innerHTML = cell.speedup == null ? '<span class="ratio"><span>not measured</span></span>' :
+        `<div class="ratio"><div class="ratio-top"><b class="${v}">${fmt(cell.speedup, 2)}×</b>
+         <span>${fmt(cell.native, 1)} → ${fmt(cell.rewrite, 1)} ms</span></div>${bar(cell.speedup, v)}</div>`;
+      tr.append(td);
+    }
+    body.append(tr);
+    if (expanded.has(key)) body.append(detailRow(row, columns.length));
+  }
+  document.getElementById('empty').hidden = rows.length > 0;
+  document.getElementById('count').textContent = `${rows.length} of ${data.rows.length} comparisons`;
+}
+
+for (const id of ['search', 'group', 'verdict']) document.getElementById(id).addEventListener('input', render);
+render();
+</script>

@@ -1,0 +1,2256 @@
+{
+ "runtimes": [
+  "new",
+  "ship",
+  "uefn"
+ ],
+ "rows": [
+  {
+   "function": "Sqrt",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 2.8786,
+     "rewrite": 25.1844,
+     "speedup": 0.11430091644033608
+    },
+    "ship": {
+     "native": 6.23125,
+     "rewrite": 75.17695,
+     "speedup": 0.08288777344651518
+    },
+    "uefn": {
+     "native": 12.01585,
+     "rewrite": 159.4279,
+     "speedup": 0.07536855217938643
+    }
+   }
+  },
+  {
+   "function": "Clamp",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 9.33225,
+     "rewrite": 8.644400000000001,
+     "speedup": 1.0795717458701586
+    },
+    "ship": {
+     "native": 64.6738,
+     "rewrite": 37.0844,
+     "speedup": 1.743962420856209
+    },
+    "uefn": {
+     "native": 112.9962,
+     "rewrite": 72.4143,
+     "speedup": 1.5604127913961745
+    }
+   }
+  },
+  {
+   "function": "Min",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 4.1886,
+     "rewrite": 4.4188,
+     "speedup": 0.9479044084366797
+    },
+    "ship": {
+     "native": 17.431150000000002,
+     "rewrite": 14.07885,
+     "speedup": 1.2381089364543272
+    },
+    "uefn": {
+     "native": 30.83215,
+     "rewrite": 29.7363,
+     "speedup": 1.0368522647404015
+    }
+   }
+  },
+  {
+   "function": "Max",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 4.428800000000001,
+     "rewrite": 4.8362,
+     "speedup": 0.9157603076795833
+    },
+    "ship": {
+     "native": 17.9377,
+     "rewrite": 15.097349999999999,
+     "speedup": 1.1881356661930738
+    },
+    "uefn": {
+     "native": 32.0984,
+     "rewrite": 31.025750000000002,
+     "speedup": 1.0345728950952031
+    }
+   }
+  },
+  {
+   "function": "Sgn",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.6468499999999997,
+     "rewrite": 4.1997,
+     "speedup": 0.8683596447365287
+    },
+    "ship": {
+     "native": 19.933349999999997,
+     "rewrite": 10.4541,
+     "speedup": 1.9067495049789074
+    },
+    "uefn": {
+     "native": 37.4274,
+     "rewrite": 24.22675,
+     "speedup": 1.5448791109001414
+    }
+   }
+  },
+  {
+   "function": "Abs",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.01145,
+     "rewrite": 4.02615,
+     "speedup": 0.7479726289383157
+    },
+    "ship": {
+     "native": 3.1353,
+     "rewrite": 12.7284,
+     "speedup": 0.2463231828038088
+    },
+    "uefn": {
+     "native": 7.4207,
+     "rewrite": 27.254849999999998,
+     "speedup": 0.2722708068472217
+    }
+   }
+  },
+  {
+   "function": "Lerp (float)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 2.9859999999999998,
+     "rewrite": 3.5385,
+     "speedup": 0.8438603928218171
+    },
+    "ship": {
+     "native": 7.967700000000001,
+     "rewrite": 8.957450000000001,
+     "speedup": 0.8895053837866803
+    },
+    "uefn": {
+     "native": 14.29615,
+     "rewrite": 18.7208,
+     "speedup": 0.7636505918550489
+    }
+   }
+  },
+  {
+   "function": "Floor",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.5624000000000002,
+     "rewrite": 75.45385,
+     "speedup": 0.047212965276125736
+    },
+    "ship": {
+     "native": 9.06575,
+     "rewrite": 192.18795,
+     "speedup": 0.04717127166401431
+    },
+    "uefn": {
+     "native": 15.8782,
+     "rewrite": 440.44665,
+     "speedup": 0.036050223108746546
+    }
+   }
+  },
+  {
+   "function": "Round",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.7988,
+     "rewrite": 83.85855000000001,
+     "speedup": 0.04530009164241451
+    },
+    "ship": {
+     "native": 9.4118,
+     "rewrite": 197.52855,
+     "speedup": 0.047647795723706775
+    },
+    "uefn": {
+     "native": 15.8167,
+     "rewrite": 427.34815000000003,
+     "speedup": 0.037011275233085714
+    }
+   }
+  },
+  {
+   "function": "Abs (int)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.1185,
+     "rewrite": 4.28125,
+     "speedup": 0.7284087591240876
+    },
+    "ship": {
+     "native": 3.15355,
+     "rewrite": 8.65195,
+     "speedup": 0.36449008604996563
+    },
+    "uefn": {
+     "native": 7.30425,
+     "rewrite": 19.18445,
+     "speedup": 0.3807380456567689
+    }
+   }
+  },
+  {
+   "function": "Min (int)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 4.32495,
+     "rewrite": 4.772550000000001,
+     "speedup": 0.9062136593644906
+    },
+    "ship": {
+     "native": 13.5158,
+     "rewrite": 10.3138,
+     "speedup": 1.310457833194361
+    },
+    "uefn": {
+     "native": 24.44195,
+     "rewrite": 21.19175,
+     "speedup": 1.1533710052260904
+    }
+   }
+  },
+  {
+   "function": "Clamp (int)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.3078000000000003,
+     "rewrite": 6.39445,
+     "speedup": 0.5172923394506174
+    },
+    "ship": {
+     "native": 8.68335,
+     "rewrite": 18.494799999999998,
+     "speedup": 0.46950223846702865
+    },
+    "uefn": {
+     "native": 13.95515,
+     "rewrite": 39.3654,
+     "speedup": 0.3545029391292861
+    }
+   }
+  },
+  {
+   "function": "Quotient",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 4.0748,
+     "rewrite": 6.6106,
+     "speedup": 0.6164039572807309
+    },
+    "ship": {
+     "native": 11.1592,
+     "rewrite": 15.96085,
+     "speedup": 0.6991607589821344
+    },
+    "uefn": {
+     "native": 18.50715,
+     "rewrite": 34.024699999999996,
+     "speedup": 0.543932790002557
+    }
+   }
+  },
+  {
+   "function": "Mod",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 4.0095,
+     "rewrite": 7.04285,
+     "speedup": 0.5693007802239151
+    },
+    "ship": {
+     "native": 11.156649999999999,
+     "rewrite": 21.7121,
+     "speedup": 0.5138448146425265
+    },
+    "uefn": {
+     "native": 18.5974,
+     "rewrite": 46.03305,
+     "speedup": 0.4040010383843782
+    }
+   }
+  },
+  {
+   "function": "Find",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 15.61685,
+     "rewrite": 7.4852,
+     "speedup": 2.0863637578154224
+    },
+    "ship": {
+     "native": 165.85755,
+     "rewrite": 143.87405,
+     "speedup": 1.1527968386237823
+    },
+    "uefn": {
+     "native": 294.21315,
+     "rewrite": 255.47764999999998,
+     "speedup": 1.1516199166541574
+    }
+   }
+  },
+  {
+   "function": "RemoveFirstElement",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 40.751149999999996,
+     "rewrite": 31.14725,
+     "speedup": 1.3083386173739253
+    },
+    "ship": {
+     "native": 392.31494999999995,
+     "rewrite": 420.848,
+     "speedup": 0.932201055963198
+    },
+    "uefn": {
+     "native": 719.01945,
+     "rewrite": 783.42675,
+     "speedup": 0.9177877191454084
+    }
+   }
+  },
+  {
+   "function": "ReplaceFirstElement",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 39.6706,
+     "rewrite": 31.849849999999996,
+     "speedup": 1.24555060698873
+    },
+    "ship": {
+     "native": 441.68640000000005,
+     "rewrite": 429.26869999999997,
+     "speedup": 1.0289275691425908
+    },
+    "uefn": {
+     "native": 751.3567,
+     "rewrite": 743.1429499999999,
+     "speedup": 1.0110527187265923
+    }
+   }
+  },
+  {
+   "function": "RemoveElement",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 24.8024,
+     "rewrite": 22.735,
+     "speedup": 1.0909346822080492
+    },
+    "ship": {
+     "native": 265.0348,
+     "rewrite": 294.5449,
+     "speedup": 0.8998112002618278
+    },
+    "uefn": {
+     "native": 506.90815,
+     "rewrite": 578.69965,
+     "speedup": 0.8759434190084614
+    }
+   }
+  },
+  {
+   "function": "Slice",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 10.944849999999999,
+     "rewrite": 11.98525,
+     "speedup": 0.913193300098037
+    },
+    "ship": {
+     "native": 166.8807,
+     "rewrite": 174.70995,
+     "speedup": 0.9551871544808982
+    },
+    "uefn": {
+     "native": 359.38599999999997,
+     "rewrite": 333.21844999999996,
+     "speedup": 1.0785297152663667
+    }
+   }
+  },
+  {
+   "function": "Insert",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 22.47855,
+     "rewrite": 38.35255,
+     "speedup": 0.5861031404691474
+    },
+    "ship": {
+     "native": 293.75205,
+     "rewrite": 335.29155000000003,
+     "speedup": 0.8761093144160655
+    },
+    "uefn": {
+     "native": 645.34575,
+     "rewrite": 641.233,
+     "speedup": 1.00641381525904
+    }
+   }
+  },
+  {
+   "function": "Concatenate",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 5.6548,
+     "rewrite": 9.2094,
+     "speedup": 0.6140248007470628
+    },
+    "ship": {
+     "native": 1281.4355999999998,
+     "rewrite": 202.7396,
+     "speedup": 6.320598442534166
+    },
+    "uefn": {
+     "native": 1340.7125999999998,
+     "rewrite": 121.43594999999999,
+     "speedup": 11.040491716003373
+    }
+   }
+  },
+  {
+   "function": "ReplaceAll",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.08455,
+     "rewrite": 15.73695,
+     "speedup": 1.276267002182761
+    },
+    "ship": {
+     "native": 259.45735,
+     "rewrite": 331.77955,
+     "speedup": 0.7820173063710528
+    },
+    "uefn": {
+     "native": 424.65105,
+     "rewrite": 516.6605500000001,
+     "speedup": 0.8219149884774442
+    }
+   }
+  },
+  {
+   "function": "ToString (int)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 15.1162,
+     "rewrite": 39.34335,
+     "speedup": 0.38421232558996626
+    },
+    "ship": {
+     "native": 20.5411,
+     "rewrite": 244.92610000000002,
+     "speedup": 0.0838665213711401
+    },
+    "uefn": {
+     "native": 28.62925,
+     "rewrite": 338.39750000000004,
+     "speedup": 0.08460242761840733
+    }
+   }
+  },
+  {
+   "function": "DegreesToRadians",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.5339,
+     "rewrite": 3.3621499999999997,
+     "speedup": 1.0510833841440745
+    },
+    "ship": {
+     "native": 8.88455,
+     "rewrite": 6.1256,
+     "speedup": 1.4503966958338776
+    },
+    "uefn": {
+     "native": 19.211599999999997,
+     "rewrite": 14.6796,
+     "speedup": 1.3087277582495433
+    }
+   }
+  },
+  {
+   "function": "RadiansToDegrees",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.8044000000000002,
+     "rewrite": 3.5688500000000003,
+     "speedup": 1.0660016531936058
+    },
+    "ship": {
+     "native": 9.78505,
+     "rewrite": 6.23215,
+     "speedup": 1.5700921832754346
+    },
+    "uefn": {
+     "native": 19.0564,
+     "rewrite": 14.905999999999999,
+     "speedup": 1.2784382128002147
+    }
+   }
+  },
+  {
+   "function": "DotProduct",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 6.076549999999999,
+     "rewrite": 6.15715,
+     "speedup": 0.9869095279471832
+    },
+    "ship": {
+     "native": 14.13815,
+     "rewrite": 10.9876,
+     "speedup": 1.2867368670137245
+    },
+    "uefn": {
+     "native": 28.9133,
+     "rewrite": 24.7855,
+     "speedup": 1.1665409211030644
+    }
+   }
+  },
+  {
+   "function": "DotProduct",
+   "variant": "Inline",
+   "cells": {
+    "new": {
+     "native": 6.076549999999999,
+     "rewrite": 5.5434,
+     "speedup": 1.0961774362304721
+    },
+    "ship": {
+     "native": 14.13815,
+     "rewrite": 6.4455,
+     "speedup": 2.193491583275153
+    },
+    "uefn": {
+     "native": 28.9133,
+     "rewrite": 14.95645,
+     "speedup": 1.9331659584995102
+    }
+   }
+  },
+  {
+   "function": "CrossProduct",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.20795,
+     "rewrite": 21.530050000000003,
+     "speedup": 0.9385928040111378
+    },
+    "ship": {
+     "native": 298.0501,
+     "rewrite": 293.64194999999995,
+     "speedup": 1.0150119899421728
+    },
+    "uefn": {
+     "native": 424.26275,
+     "rewrite": 413.22285,
+     "speedup": 1.0267165767817534
+    }
+   }
+  },
+  {
+   "function": "Distance",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 22.0578,
+     "rewrite": 7.48275,
+     "speedup": 2.9478199859677257
+    },
+    "ship": {
+     "native": 306.7547,
+     "rewrite": 22.14275,
+     "speedup": 13.853505097605312
+    },
+    "uefn": {
+     "native": 490.42215,
+     "rewrite": 61.4409,
+     "speedup": 7.9820144236168415
+    }
+   }
+  },
+  {
+   "function": "DistanceSquared",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 21.0556,
+     "rewrite": 6.8355999999999995,
+     "speedup": 3.080285563812979
+    },
+    "ship": {
+     "native": 299.53920000000005,
+     "rewrite": 13.04165,
+     "speedup": 22.967891332768477
+    },
+    "uefn": {
+     "native": 463.5969,
+     "rewrite": 31.8309,
+     "speedup": 14.564366700281802
+    }
+   }
+  },
+  {
+   "function": "DistanceXY",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.97075,
+     "rewrite": 6.5898,
+     "speedup": 3.182304470545388
+    },
+    "ship": {
+     "native": 307.34540000000004,
+     "rewrite": 20.5751,
+     "speedup": 14.937735418053864
+    },
+    "uefn": {
+     "native": 485.75715,
+     "rewrite": 58.63785,
+     "speedup": 8.284020474829825
+    }
+   }
+  },
+  {
+   "function": "DistanceSquaredXY",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.76205,
+     "rewrite": 5.61745,
+     "speedup": 3.695991953644447
+    },
+    "ship": {
+     "native": 311.9792,
+     "rewrite": 11.33995,
+     "speedup": 27.511514601034396
+    },
+    "uefn": {
+     "native": 499.92275,
+     "rewrite": 32.2581,
+     "speedup": 15.497588202652977
+    }
+   }
+  },
+  {
+   "function": "Length",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 6.7004,
+     "rewrite": 5.9665,
+     "speedup": 1.1230034358501635
+    },
+    "ship": {
+     "native": 23.67235,
+     "rewrite": 13.967949999999998,
+     "speedup": 1.6947619371489735
+    },
+    "uefn": {
+     "native": 48.7726,
+     "rewrite": 28.5596,
+     "speedup": 1.7077480076751774
+    }
+   }
+  },
+  {
+   "function": "LengthXY",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 5.8233,
+     "rewrite": 5.6739999999999995,
+     "speedup": 1.0263130066972155
+    },
+    "ship": {
+     "native": 24.230800000000002,
+     "rewrite": 13.059249999999999,
+     "speedup": 1.8554511170243317
+    },
+    "uefn": {
+     "native": 45.6409,
+     "rewrite": 26.58,
+     "speedup": 1.7171143717080513
+    }
+   }
+  },
+  {
+   "function": "IsFinite",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 17.36515,
+     "rewrite": 6.07555,
+     "speedup": 2.8582021380780342
+    },
+    "ship": {
+     "native": 260.3324,
+     "rewrite": 17.1552,
+     "speedup": 15.175130572654355
+    },
+    "uefn": {
+     "native": 471.63005,
+     "rewrite": 35.26825,
+     "speedup": 13.372652456529597
+    }
+   }
+  },
+  {
+   "function": "MakeUnitVector",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 37.96155,
+     "rewrite": 22.68255,
+     "speedup": 1.6736015130573945
+    },
+    "ship": {
+     "native": 512.031,
+     "rewrite": 230.2403,
+     "speedup": 2.223898248916458
+    },
+    "uefn": {
+     "native": 1010.6412,
+     "rewrite": 427.01745,
+     "speedup": 2.3667444972096576
+    }
+   }
+  },
+  {
+   "function": "Lerp",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 19.0589,
+     "rewrite": 19.6404,
+     "speedup": 0.9703926600272907
+    },
+    "ship": {
+     "native": 301.26215,
+     "rewrite": 295.59035,
+     "speedup": 1.019188041828835
+    },
+    "uefn": {
+     "native": 449.95035,
+     "rewrite": 438.1178,
+     "speedup": 1.027007690625672
+    }
+   }
+  },
+  {
+   "function": "ReflectVector",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 71.2868,
+     "rewrite": 29.4387,
+     "speedup": 2.421533559566149
+    },
+    "ship": {
+     "native": 1030.95145,
+     "rewrite": 280.29565,
+     "speedup": 3.678085799761787
+    },
+    "uefn": {
+     "native": 2011.31585,
+     "rewrite": 512.1457,
+     "speedup": 3.927233695411286
+    }
+   }
+  },
+  {
+   "function": "GetLocalForward",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 19.95055,
+     "rewrite": 9.28375,
+     "speedup": 2.148975360172344
+    },
+    "ship": {
+     "native": 277.9096,
+     "rewrite": 14.99185,
+     "speedup": 18.5373786423957
+    },
+    "uefn": {
+     "native": 432.26905,
+     "rewrite": 36.75975,
+     "speedup": 11.75930331408674
+    }
+   }
+  },
+  {
+   "function": "GetLocalRight",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.95695,
+     "rewrite": 10.284849999999999,
+     "speedup": 2.037652469408888
+    },
+    "ship": {
+     "native": 306.831,
+     "rewrite": 14.834,
+     "speedup": 20.684306323311315
+    },
+    "uefn": {
+     "native": 450.98885,
+     "rewrite": 43.7859,
+     "speedup": 10.299864796658285
+    }
+   }
+  },
+  {
+   "function": "GetLocalUp",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 23.1173,
+     "rewrite": 9.267949999999999,
+     "speedup": 2.4943272244671153
+    },
+    "ship": {
+     "native": 326.61995,
+     "rewrite": 14.65505,
+     "speedup": 22.287194516565965
+    },
+    "uefn": {
+     "native": 447.1154,
+     "rewrite": 45.223,
+     "speedup": 9.88690268226345
+    }
+   }
+  },
+  {
+   "function": "ApplyLocalRotationY",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 27.6476,
+     "rewrite": 15.824449999999999,
+     "speedup": 1.7471444505180276
+    },
+    "ship": {
+     "native": 312.2957,
+     "rewrite": 37.67285,
+     "speedup": 8.289675455931793
+    },
+    "uefn": {
+     "native": 511.5137,
+     "rewrite": 108.42904999999999,
+     "speedup": 4.71749683318262
+    }
+   }
+  },
+  {
+   "function": "ApplyLocalRotationZ",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 27.9893,
+     "rewrite": 16.6428,
+     "speedup": 1.6817662893263152
+    },
+    "ship": {
+     "native": 335.45174999999995,
+     "rewrite": 38.4787,
+     "speedup": 8.717855592834475
+    },
+    "uefn": {
+     "native": 516.3057,
+     "rewrite": 122.51645,
+     "speedup": 4.2141745047297725
+    }
+   }
+  },
+  {
+   "function": "TransformVector",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 45.07695,
+     "rewrite": 35.6532,
+     "speedup": 1.264317087947225
+    },
+    "ship": {
+     "native": 591.5446,
+     "rewrite": 347.16675,
+     "speedup": 1.7039206663656585
+    },
+    "uefn": {
+     "native": 899.9766500000001,
+     "rewrite": 517.97315,
+     "speedup": 1.7374967215964765
+    }
+   }
+  },
+  {
+   "function": "TransformVectorNoScale",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 33.3977,
+     "rewrite": 34.907,
+     "speedup": 0.9567622539891714
+    },
+    "ship": {
+     "native": 355.20385,
+     "rewrite": 316.63745,
+     "speedup": 1.1217998692195126
+    },
+    "uefn": {
+     "native": 567.9911,
+     "rewrite": 478.03319999999997,
+     "speedup": 1.1881833730376885
+    }
+   }
+  },
+  {
+   "function": "TransformVector scaled",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 46.1733,
+     "rewrite": 50.2271,
+     "speedup": 0.9192905821757577
+    },
+    "ship": {
+     "native": 603.2951,
+     "rewrite": 606.72795,
+     "speedup": 0.9943420275924326
+    },
+    "uefn": {
+     "native": 902.60385,
+     "rewrite": 961.9852,
+     "speedup": 0.9382720752876448
+    }
+   }
+  },
+  {
+   "function": "Distance (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.045749999999998,
+     "rewrite": 6.471500000000001,
+     "speedup": 3.0975430734760097
+    },
+    "ship": {
+     "native": 213.6828,
+     "rewrite": 17.1416,
+     "speedup": 12.465744154571334
+    },
+    "uefn": {
+     "native": 364.85114999999996,
+     "rewrite": 38.7381,
+     "speedup": 9.418405910460242
+    }
+   }
+  },
+  {
+   "function": "DistanceSquared (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 19.086199999999998,
+     "rewrite": 5.66015,
+     "speedup": 3.372030776569525
+    },
+    "ship": {
+     "native": 211.8253,
+     "rewrite": 10.38365,
+     "speedup": 20.399888285911025
+    },
+    "uefn": {
+     "native": 350.91625,
+     "rewrite": 23.715249999999997,
+     "speedup": 14.797071504622554
+    }
+   }
+  },
+  {
+   "function": "Length (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 6.64925,
+     "rewrite": 5.3767,
+     "speedup": 1.2366786318745702
+    },
+    "ship": {
+     "native": 27.152,
+     "rewrite": 12.006350000000001,
+     "speedup": 2.2614699721397424
+    },
+    "uefn": {
+     "native": 54.51225,
+     "rewrite": 25.4932,
+     "speedup": 2.1383055089200256
+    }
+   }
+  },
+  {
+   "function": "LengthSquared (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 6.321,
+     "rewrite": 5.2857,
+     "speedup": 1.1958680969408024
+    },
+    "ship": {
+     "native": 17.928600000000003,
+     "rewrite": 8.47055,
+     "speedup": 2.116580387342027
+    },
+    "uefn": {
+     "native": 35.2916,
+     "rewrite": 19.0268,
+     "speedup": 1.8548363361153741
+    }
+   }
+  },
+  {
+   "function": "IsFinite (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 14.5891,
+     "rewrite": 6.075,
+     "speedup": 2.4014979423868312
+    },
+    "ship": {
+     "native": 169.99935,
+     "rewrite": 13.038499999999999,
+     "speedup": 13.038259769145224
+    },
+    "uefn": {
+     "native": 344.1617,
+     "rewrite": 28.11435,
+     "speedup": 12.24149589088846
+    }
+   }
+  },
+  {
+   "function": "MakeUnitVector (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 32.712599999999995,
+     "rewrite": 20.9606,
+     "speedup": 1.560670973159165
+    },
+    "ship": {
+     "native": 371.33140000000003,
+     "rewrite": 171.08875,
+     "speedup": 2.1704022035347155
+    },
+    "uefn": {
+     "native": 727.81455,
+     "rewrite": 319.0138,
+     "speedup": 2.28145161745354
+    }
+   }
+  },
+  {
+   "function": "Lerp (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 15.848749999999999,
+     "rewrite": 16.46005,
+     "speedup": 0.9628615951956404
+    },
+    "ship": {
+     "native": 208.55734999999999,
+     "rewrite": 205.74805,
+     "speedup": 1.0136540783740111
+    },
+    "uefn": {
+     "native": 320.35220000000004,
+     "rewrite": 338.18809999999996,
+     "speedup": 0.9472604151358374
+    }
+   }
+  },
+  {
+   "function": "ReflectVector (vector2)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 59.32615,
+     "rewrite": 24.72815,
+     "speedup": 2.399134185129094
+    },
+    "ship": {
+     "native": 699.8809,
+     "rewrite": 186.8132,
+     "speedup": 3.7464210237820454
+    },
+    "uefn": {
+     "native": 1305.0983999999999,
+     "rewrite": 362.11655,
+     "speedup": 3.6040838232883856
+    }
+   }
+  },
+  {
+   "function": "Equals (vector2i)",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 10.36685,
+     "rewrite": 4.45685,
+     "speedup": 2.3260486666591875
+    },
+    "ship": {
+     "native": 102.92734999999999,
+     "rewrite": 17.54665,
+     "speedup": 5.865925974473759
+    },
+    "uefn": {
+     "native": 188.45725,
+     "rewrite": 36.71225,
+     "speedup": 5.133361480159892
+    }
+   }
+  },
+  {
+   "function": "Distance [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 22.428,
+     "rewrite": 7.3073,
+     "speedup": 3.0692595076156723
+    },
+    "ship": {
+     "native": 43.450149999999994,
+     "rewrite": 23.775599999999997,
+     "speedup": 1.8275101364424031
+    },
+    "uefn": {
+     "native": 89.49065,
+     "rewrite": 50.22385,
+     "speedup": 1.7818357214749567
+    }
+   }
+  },
+  {
+   "function": "DistanceSquared [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 22.8258,
+     "rewrite": 6.54465,
+     "speedup": 3.487703696912746
+    },
+    "ship": {
+     "native": 33.6119,
+     "rewrite": 14.54515,
+     "speedup": 2.310866508767527
+    },
+    "uefn": {
+     "native": 71.13225,
+     "rewrite": 32.8082,
+     "speedup": 2.168124127504709
+    }
+   }
+  },
+  {
+   "function": "DistanceForwardLeft [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 24.53255,
+     "rewrite": 6.5194,
+     "speedup": 3.763007331963064
+    },
+    "ship": {
+     "native": 43.5912,
+     "rewrite": 21.0912,
+     "speedup": 2.066795630405098
+    },
+    "uefn": {
+     "native": 99.49555000000001,
+     "rewrite": 53.28905,
+     "speedup": 1.8670918321869128
+    }
+   }
+  },
+  {
+   "function": "DistanceSquaredForwardLeft [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 23.21405,
+     "rewrite": 5.7064,
+     "speedup": 4.068072690312631
+    },
+    "ship": {
+     "native": 32.15275,
+     "rewrite": 12.86585,
+     "speedup": 2.499077013955549
+    },
+    "uefn": {
+     "native": 73.3551,
+     "rewrite": 29.650199999999998,
+     "speedup": 2.474017038670903
+    }
+   }
+  },
+  {
+   "function": "LengthForwardLeft [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 5.902,
+     "rewrite": 5.458,
+     "speedup": 1.0813484792964456
+    },
+    "ship": {
+     "native": 22.5338,
+     "rewrite": 13.67445,
+     "speedup": 1.6478761485836724
+    },
+    "uefn": {
+     "native": 50.5428,
+     "rewrite": 28.6615,
+     "speedup": 1.7634387593112713
+    }
+   }
+  },
+  {
+   "function": "Lerp [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 22.42545,
+     "rewrite": 19.47305,
+     "speedup": 1.1516146674506562
+    },
+    "ship": {
+     "native": 31.790200000000002,
+     "rewrite": 16.579549999999998,
+     "speedup": 1.9174344297643788
+    },
+    "uefn": {
+     "native": 55.7183,
+     "rewrite": 34.10565,
+     "speedup": 1.6336970560596267
+    }
+   }
+  },
+  {
+   "function": "Length [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 6.88235,
+     "rewrite": 6.2888,
+     "speedup": 1.0943820760717464
+    },
+    "ship": {
+     "native": 24.88525,
+     "rewrite": 14.85875,
+     "speedup": 1.6747875830739463
+    },
+    "uefn": {
+     "native": 52.97855,
+     "rewrite": 30.5863,
+     "speedup": 1.7321006463678181
+    }
+   }
+  },
+  {
+   "function": "IsFinite [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 18.91155,
+     "rewrite": 6.65685,
+     "speedup": 2.840915748439577
+    },
+    "ship": {
+     "native": 38.46375,
+     "rewrite": 16.10065,
+     "speedup": 2.388956346482906
+    },
+    "uefn": {
+     "native": 84.1745,
+     "rewrite": 38.588750000000005,
+     "speedup": 2.1813222765702434
+    }
+   }
+  },
+  {
+   "function": "MakeUnitVector [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 23.677750000000003,
+     "rewrite": 20.84255,
+     "speedup": 1.1360294205843338
+    },
+    "ship": {
+     "native": 41.71355,
+     "rewrite": 22.40345,
+     "speedup": 1.861925283829053
+    },
+    "uefn": {
+     "native": 92.16069999999999,
+     "rewrite": 50.66945,
+     "speedup": 1.818861266502794
+    }
+   }
+  },
+  {
+   "function": "ReflectVector [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 60.9871,
+     "rewrite": 35.6028,
+     "speedup": 1.7129860572763937
+    },
+    "ship": {
+     "native": 83.98035,
+     "rewrite": 31.9934,
+     "speedup": 2.624927328761557
+    },
+    "uefn": {
+     "native": 193.48104999999998,
+     "rewrite": 66.45660000000001,
+     "speedup": 2.91138953843561
+    }
+   }
+  },
+  {
+   "function": "GetForwardAxis [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 21.887050000000002,
+     "rewrite": 7.6082,
+     "speedup": 2.876771115375516
+    },
+    "ship": {
+     "native": 23.805149999999998,
+     "rewrite": 14.63415,
+     "speedup": 1.626684843328789
+    },
+    "uefn": {
+     "native": 55.89575,
+     "rewrite": 38.28725,
+     "speedup": 1.4599050597783858
+    }
+   }
+  },
+  {
+   "function": "GetLeftAxis [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 19.873350000000002,
+     "rewrite": 7.4939,
+     "speedup": 2.651936908685731
+    },
+    "ship": {
+     "native": 23.8671,
+     "rewrite": 14.8352,
+     "speedup": 1.6088155198446936
+    },
+    "uefn": {
+     "native": 55.94215,
+     "rewrite": 38.46355,
+     "speedup": 1.4544198338426901
+    }
+   }
+  },
+  {
+   "function": "GetUpAxis [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 20.24175,
+     "rewrite": 7.47985,
+     "speedup": 2.7061705782869976
+    },
+    "ship": {
+     "native": 23.852849999999997,
+     "rewrite": 14.691600000000001,
+     "speedup": 1.6235706117781585
+    },
+    "uefn": {
+     "native": 55.5149,
+     "rewrite": 38.1281,
+     "speedup": 1.4560101342579355
+    }
+   }
+  },
+  {
+   "function": "vector3 * transform [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 44.61325,
+     "rewrite": 35.0828,
+     "speedup": 1.2716559111587444
+    },
+    "ship": {
+     "native": 44.29855,
+     "rewrite": 45.05875,
+     "speedup": 0.9831286930951257
+    },
+    "uefn": {
+     "native": 105.56825,
+     "rewrite": 107.8493,
+     "speedup": 0.9788496541006757
+    }
+   }
+  },
+  {
+   "function": "MakeRotationDegrees [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 8.72615,
+     "rewrite": 7.76705,
+     "speedup": 1.1234831757230868
+    },
+    "ship": {
+     "native": 31.9105,
+     "rewrite": 23.940649999999998,
+     "speedup": 1.3329003180782477
+    },
+    "uefn": {
+     "native": 65.06205,
+     "rewrite": 48.52185,
+     "speedup": 1.3408814791686632
+    }
+   }
+  },
+  {
+   "function": "MakeRotationFromYawPitchRollRadians [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 10.0013,
+     "rewrite": 8.568000000000001,
+     "speedup": 1.167285247432306
+    },
+    "ship": {
+     "native": 40.40885,
+     "rewrite": 21.7928,
+     "speedup": 1.8542293785103339
+    },
+    "uefn": {
+     "native": 74.5973,
+     "rewrite": 40.544799999999995,
+     "speedup": 1.839873423965589
+    }
+   }
+  },
+  {
+   "function": "MakeRotationFromEulerDegrees [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 9.732050000000001,
+     "rewrite": 7.64605,
+     "speedup": 1.272820606718502
+    },
+    "ship": {
+     "native": 39.20975,
+     "rewrite": 20.7194,
+     "speedup": 1.8924172514648108
+    },
+    "uefn": {
+     "native": 73.13380000000001,
+     "rewrite": 38.321200000000005,
+     "speedup": 1.9084423243530995
+    }
+   }
+  },
+  {
+   "function": "AngularDistanceDegrees [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 5.3769,
+     "rewrite": 4.694,
+     "speedup": 1.1454835960801022
+    },
+    "ship": {
+     "native": 25.823,
+     "rewrite": 17.5111,
+     "speedup": 1.474664641284671
+    },
+    "uefn": {
+     "native": 51.147000000000006,
+     "rewrite": 39.759550000000004,
+     "speedup": 1.286407919606736
+    }
+   }
+  },
+  {
+   "function": "GetYawPitchRollRadians [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 10.25975,
+     "rewrite": 7.67555,
+     "speedup": 1.3366794561953215
+    },
+    "ship": {
+     "native": 37.20935,
+     "rewrite": 18.12695,
+     "speedup": 2.0527088120174657
+    },
+    "uefn": {
+     "native": 78.5804,
+     "rewrite": 42.4911,
+     "speedup": 1.8493378613403746
+    }
+   }
+  },
+  {
+   "function": "GetEulerDegrees [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 8.98235,
+     "rewrite": 7.52525,
+     "speedup": 1.193628118667154
+    },
+    "ship": {
+     "native": 37.2314,
+     "rewrite": 18.2021,
+     "speedup": 2.045445305761423
+    },
+    "uefn": {
+     "native": 77.43395000000001,
+     "rewrite": 41.8096,
+     "speedup": 1.8520614882706365
+    }
+   }
+  },
+  {
+   "function": "GetAngleDegrees [Verse.org]",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 5.5797,
+     "rewrite": 5.14845,
+     "speedup": 1.08376307432334
+    },
+    "ship": {
+     "native": 22.64155,
+     "rewrite": 14.74625,
+     "speedup": 1.535410697634992
+    },
+    "uefn": {
+     "native": 49.500299999999996,
+     "rewrite": 35.3245,
+     "speedup": 1.401302212345539
+    }
+   }
+  },
+  {
+   "function": "Add [repr]",
+   "variant": "VerseOrg",
+   "cells": {
+    "new": {
+     "native": 16.993499999999997,
+     "rewrite": 18.11125,
+     "speedup": 0.9382842156118434
+    },
+    "ship": {
+     "native": 278.02315,
+     "rewrite": 15.52645,
+     "speedup": 17.90642097839493
+    },
+    "uefn": {
+     "native": 415.32195,
+     "rewrite": 32.245000000000005,
+     "speedup": 12.88019692975655
+    }
+   }
+  },
+  {
+   "function": "Add [repr]",
+   "variant": "Tuple",
+   "cells": {
+    "new": {
+     "native": 16.993499999999997,
+     "rewrite": 5.7860499999999995,
+     "speedup": 2.936977730921786
+    },
+    "ship": {
+     "native": 278.02315,
+     "rewrite": 10.838149999999999,
+     "speedup": 25.652269990727202
+    },
+    "uefn": {
+     "native": 415.32195,
+     "rewrite": 23.359099999999998,
+     "speedup": 17.779878077494427
+    }
+   }
+  },
+  {
+   "function": "Scale [repr]",
+   "variant": "VerseOrg",
+   "cells": {
+    "new": {
+     "native": 17.41625,
+     "rewrite": 17.99555,
+     "speedup": 0.9678087082639875
+    },
+    "ship": {
+     "native": 297.4315,
+     "rewrite": 14.9367,
+     "speedup": 19.912798677083963
+    },
+    "uefn": {
+     "native": 409.71725000000004,
+     "rewrite": 31.937350000000002,
+     "speedup": 12.828780409144779
+    }
+   }
+  },
+  {
+   "function": "Scale [repr]",
+   "variant": "Tuple",
+   "cells": {
+    "new": {
+     "native": 17.41625,
+     "rewrite": 5.1944,
+     "speedup": 3.352889650392731
+    },
+    "ship": {
+     "native": 297.4315,
+     "rewrite": 10.4374,
+     "speedup": 28.496704160039858
+    },
+    "uefn": {
+     "native": 409.71725000000004,
+     "rewrite": 23.2506,
+     "speedup": 17.621792555891034
+    }
+   }
+  },
+  {
+   "function": "Cross [repr]",
+   "variant": "VerseOrg",
+   "cells": {
+    "new": {
+     "native": 21.91275,
+     "rewrite": 21.932949999999998,
+     "speedup": 0.9990790112593153
+    },
+    "ship": {
+     "native": 323.8499,
+     "rewrite": 19.26305,
+     "speedup": 16.811974220074184
+    },
+    "uefn": {
+     "native": 418.35495000000003,
+     "rewrite": 41.3511,
+     "speedup": 10.11714198654933
+    }
+   }
+  },
+  {
+   "function": "Cross [repr]",
+   "variant": "Tuple",
+   "cells": {
+    "new": {
+     "native": 21.91275,
+     "rewrite": 8.4786,
+     "speedup": 2.584477390135164
+    },
+    "ship": {
+     "native": 323.8499,
+     "rewrite": 14.6275,
+     "speedup": 22.139798325072636
+    },
+    "uefn": {
+     "native": 418.35495000000003,
+     "rewrite": 29.7562,
+     "speedup": 14.059421229861341
+    }
+   }
+  },
+  {
+   "function": "Lerp [repr]",
+   "variant": "VerseOrg",
+   "cells": {
+    "new": {
+     "native": 20.83925,
+     "rewrite": 19.0445,
+     "speedup": 1.0942398067683583
+    },
+    "ship": {
+     "native": 318.661,
+     "rewrite": 32.86505,
+     "speedup": 9.69604488658925
+    },
+    "uefn": {
+     "native": 515.4345000000001,
+     "rewrite": 62.61085,
+     "speedup": 8.232351102085342
+    }
+   }
+  },
+  {
+   "function": "Lerp [repr]",
+   "variant": "Tuple",
+   "cells": {
+    "new": {
+     "native": 20.83925,
+     "rewrite": 6.6768,
+     "speedup": 3.1211433620896236
+    },
+    "ship": {
+     "native": 318.661,
+     "rewrite": 15.00805,
+     "speedup": 21.232671799467617
+    },
+    "uefn": {
+     "native": 515.4345000000001,
+     "rewrite": 32.843199999999996,
+     "speedup": 15.693796584985632
+    }
+   }
+  },
+  {
+   "function": "HomingStep",
+   "variant": "VerseOrg",
+   "cells": {
+    "new": {
+     "native": 111.63385,
+     "rewrite": 115.5893,
+     "speedup": 0.9657801370888136
+    },
+    "ship": {
+     "native": 2243.90105,
+     "rewrite": 116.33665,
+     "speedup": 19.287997806366263
+    },
+    "uefn": {
+     "native": 3154.4532,
+     "rewrite": 380.64195,
+     "speedup": 8.287192727969158
+    }
+   }
+  },
+  {
+   "function": "HomingStep",
+   "variant": "Tuple",
+   "cells": {
+    "new": {
+     "native": 111.63385,
+     "rewrite": 23.7168,
+     "speedup": 4.706952455643257
+    },
+    "ship": {
+     "native": 2243.90105,
+     "rewrite": 69.9326,
+     "speedup": 32.086624120939305
+    },
+    "uefn": {
+     "native": 3154.4532,
+     "rewrite": 175.3407,
+     "speedup": 17.990422075422305
+    }
+   }
+  },
+  {
+   "function": "HomingStep",
+   "variant": "Scalar",
+   "cells": {
+    "new": {
+     "native": 111.63385,
+     "rewrite": 26.19595,
+     "speedup": 4.261492711659627
+    },
+    "ship": {
+     "native": 2243.90105,
+     "rewrite": 345.02705000000003,
+     "speedup": 6.503551098384894
+    },
+    "uefn": {
+     "native": 3154.4532,
+     "rewrite": 496.8741,
+     "speedup": 6.348596555948479
+    }
+   }
+  },
+  {
+   "function": "Sin",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.08165,
+     "rewrite": 13.53895,
+     "speedup": 0.22761366280250683
+    },
+    "ship": {
+     "native": 7.0192499999999995,
+     "rewrite": 61.62155,
+     "speedup": 0.11390901397319605
+    },
+    "uefn": {
+     "native": 13.1809,
+     "rewrite": 127.65195,
+     "speedup": 0.10325655033080183
+    }
+   }
+  },
+  {
+   "function": "Cos",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.33415,
+     "rewrite": 14.88175,
+     "speedup": 0.2240428713020982
+    },
+    "ship": {
+     "native": 7.10255,
+     "rewrite": 53.8997,
+     "speedup": 0.13177346070571822
+    },
+    "uefn": {
+     "native": 13.226849999999999,
+     "rewrite": 110.69380000000001,
+     "speedup": 0.11949043216512575
+    }
+   }
+  },
+  {
+   "function": "Tan",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.10915,
+     "rewrite": 15.78875,
+     "speedup": 0.19692185891853375
+    },
+    "ship": {
+     "native": 7.22595,
+     "rewrite": 64.0911,
+     "speedup": 0.11274498331281567
+    },
+    "uefn": {
+     "native": 12.84195,
+     "rewrite": 126.0523,
+     "speedup": 0.10187795066016249
+    }
+   }
+  },
+  {
+   "function": "Exp",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 2.9564,
+     "rewrite": 58.31705,
+     "speedup": 0.05069529408637782
+    },
+    "ship": {
+     "native": 7.054399999999999,
+     "rewrite": 123.881,
+     "speedup": 0.05694497138382802
+    },
+    "uefn": {
+     "native": 12.66205,
+     "rewrite": 248.9731,
+     "speedup": 0.050857100626533557
+    }
+   }
+  },
+  {
+   "function": "Ln",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 2.9682500000000003,
+     "rewrite": 62.8699,
+     "speedup": 0.047212577083787316
+    },
+    "ship": {
+     "native": 6.88835,
+     "rewrite": 128.2751,
+     "speedup": 0.0536998217113064
+    },
+    "uefn": {
+     "native": 12.997399999999999,
+     "rewrite": 246.92385000000002,
+     "speedup": 0.052637280683903144
+    }
+   }
+  },
+  {
+   "function": "ArcTan",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.13055,
+     "rewrite": 14.57155,
+     "speedup": 0.21483987633436388
+    },
+    "ship": {
+     "native": 7.057499999999999,
+     "rewrite": 49.17725,
+     "speedup": 0.14351148142687928
+    },
+    "uefn": {
+     "native": 12.6537,
+     "rewrite": 109.61484999999999,
+     "speedup": 0.11543782617045047
+    }
+   }
+  },
+  {
+   "function": "ArcTan2",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.5956,
+     "rewrite": 32.5752,
+     "speedup": 0.110378447407844
+    },
+    "ship": {
+     "native": 8.408000000000001,
+     "rewrite": 120.94290000000001,
+     "speedup": 0.06952041004474013
+    },
+    "uefn": {
+     "native": 14.491150000000001,
+     "rewrite": 230.712,
+     "speedup": 0.06281056035230072
+    }
+   }
+  },
+  {
+   "function": "ArcSin",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.1878,
+     "rewrite": 45.4063,
+     "speedup": 0.07020611677234216
+    },
+    "ship": {
+     "native": 7.1255500000000005,
+     "rewrite": 137.01245,
+     "speedup": 0.05200658772250259
+    },
+    "uefn": {
+     "native": 12.8208,
+     "rewrite": 267.7354,
+     "speedup": 0.04788608454466611
+    }
+   }
+  },
+  {
+   "function": "ArcCos",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.19555,
+     "rewrite": 41.57135,
+     "speedup": 0.07686904562878039
+    },
+    "ship": {
+     "native": 6.9426000000000005,
+     "rewrite": 136.2735,
+     "speedup": 0.05094607535581019
+    },
+    "uefn": {
+     "native": 12.9632,
+     "rewrite": 269.66155000000003,
+     "speedup": 0.04807211113338182
+    }
+   }
+  },
+  {
+   "function": "Sinh",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.218,
+     "rewrite": 113.4511,
+     "speedup": 0.02836464344550207
+    },
+    "ship": {
+     "native": 7.11445,
+     "rewrite": 274.84245,
+     "speedup": 0.025885557343852814
+    },
+    "uefn": {
+     "native": 13.265049999999999,
+     "rewrite": 551.8675499999999,
+     "speedup": 0.02403665517206076
+    }
+   }
+  },
+  {
+   "function": "Cosh",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.16875,
+     "rewrite": 65.42845,
+     "speedup": 0.048430766738322556
+    },
+    "ship": {
+     "native": 7.07015,
+     "rewrite": 130.96724999999998,
+     "speedup": 0.05398410671370133
+    },
+    "uefn": {
+     "native": 12.827549999999999,
+     "rewrite": 273.47785,
+     "speedup": 0.046905261248762924
+    }
+   }
+  },
+  {
+   "function": "Tanh",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.08345,
+     "rewrite": 147.43975,
+     "speedup": 0.02091328830929244
+    },
+    "ship": {
+     "native": 7.28855,
+     "rewrite": 281.57045,
+     "speedup": 0.0258853512504597
+    },
+    "uefn": {
+     "native": 12.91335,
+     "rewrite": 568.2655,
+     "speedup": 0.022724149187307693
+    }
+   }
+  },
+  {
+   "function": "ArSinh",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.1872499999999997,
+     "rewrite": 46.52055,
+     "speedup": 0.06851273254507953
+    },
+    "ship": {
+     "native": 6.8949,
+     "rewrite": 119.41035,
+     "speedup": 0.057741225949006936
+    },
+    "uefn": {
+     "native": 12.8698,
+     "rewrite": 243.5617,
+     "speedup": 0.05283999906389223
+    }
+   }
+  },
+  {
+   "function": "ArCosh",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.0695,
+     "rewrite": 65.54435000000001,
+     "speedup": 0.04683088626250775
+    },
+    "ship": {
+     "native": 6.7978000000000005,
+     "rewrite": 154.9644,
+     "speedup": 0.04386684941831801
+    },
+    "uefn": {
+     "native": 12.7775,
+     "rewrite": 320.7688,
+     "speedup": 0.03983398634779941
+    }
+   }
+  },
+  {
+   "function": "ArTanh",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.10055,
+     "rewrite": 101.72415,
+     "speedup": 0.030479979434578714
+    },
+    "ship": {
+     "native": 7.7186,
+     "rewrite": 124.5185,
+     "speedup": 0.06198757614330401
+    },
+    "uefn": {
+     "native": 13.3836,
+     "rewrite": 262.0328,
+     "speedup": 0.051076048494692265
+    }
+   }
+  },
+  {
+   "function": "PowCube",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 3.1566,
+     "rewrite": 24.3759,
+     "speedup": 0.12949675704281688
+    },
+    "ship": {
+     "native": 7.930400000000001,
+     "rewrite": 116.37559999999999,
+     "speedup": 0.06814486885567078
+    },
+    "uefn": {
+     "native": 14.58995,
+     "rewrite": 215.8598,
+     "speedup": 0.06758993568973935
+    }
+   }
+  },
+  {
+   "function": "SortBy",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 37.22165,
+     "rewrite": 83.4168,
+     "speedup": 0.44621287318621666
+    },
+    "ship": {
+     "native": 207.2246,
+     "rewrite": 334.6818,
+     "speedup": 0.619169013672091
+    },
+    "uefn": {
+     "native": 442.0939,
+     "rewrite": 624.0712000000001,
+     "speedup": 0.7084029835057282
+    }
+   }
+  },
+  {
+   "function": "SortBy",
+   "variant": "Inlined",
+   "cells": {
+    "new": {
+     "native": 37.22165,
+     "rewrite": 75.49465000000001,
+     "speedup": 0.4930369238085082
+    },
+    "ship": {
+     "native": 207.2246,
+     "rewrite": 179.55125,
+     "speedup": 1.1541250757095816
+    },
+    "uefn": {
+     "native": 442.0939,
+     "rewrite": 347.37064999999996,
+     "speedup": 1.272686394201698
+    }
+   }
+  },
+  {
+   "function": "EaseInOut",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 6.45475,
+     "rewrite": 34.464,
+     "speedup": 0.18728963556174558
+    },
+    "ship": {
+     "native": 15.93945,
+     "rewrite": 127.73935,
+     "speedup": 0.12478104828308584
+    },
+    "uefn": {
+     "native": 29.3624,
+     "rewrite": 263.21410000000003,
+     "speedup": 0.11155329444737191
+    }
+   }
+  },
+  {
+   "function": "CubicBezier",
+   "variant": "Fast",
+   "cells": {
+    "new": {
+     "native": 7.21305,
+     "rewrite": 37.302,
+     "speedup": 0.19336898825800225
+    },
+    "ship": {
+     "native": 17.4804,
+     "rewrite": 136.2785,
+     "speedup": 0.1282696830387772
+    },
+    "uefn": {
+     "native": 31.3382,
+     "rewrite": 279.62845000000004,
+     "speedup": 0.11207085688169424
+    }
+   }
+  }
+ ]
+}
