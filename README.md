@@ -1,12 +1,62 @@
 # verse-native-bench
 
-Hand-written Verse rewrites of Fortnite's native functions, benchmarked against the natives on three runtimes:
+Hand-written Verse rewrites of Fortnite's native functions, benchmarked against the natives on three runtimes.
+
+## What it is
+
+Each rewrite and its native are timed on three runtimes:
 
 - **New VM**: Epic's new VerseVM (`VerseCmd`), local;
 - **BPVM local**: the Blueprint VM backend that Fortnite runs (`VerseCLR`, Shipping build), local;
 - **BPVM UEFN**: the same code on the server of a UEFN play session.
 
 107 comparisons, every rewrite checked against its native on the same inputs. Full table with the code behind each row: [results page](https://claude.ai/artifact/QMYzfUfhG92REekDU8S97A) (also in [`results/bench-results.html`](results/bench-results.html), data in [`results/table.json`](results/table.json)).
+
+## Features
+
+- Drop-in Verse rewrites of native functions in [`bench/lib`](bench/lib) (`FastMath`, `FastArray`, `FastSpatial`, `FastVerseSpatial`, `TupleMath`, `FastTranscendental`, `FastSort`, `FastEasing`), same signatures and effects as the natives
+- A harness that checks every rewrite against its native (edge cases and random inputs) before timing it with `profile` blocks
+- One launcher (`verse.cmd`, `tools/verse-run.sh`) for the new VerseVM and the BPVM (Development and Shipping builds)
+- A UEFN device (`bench_device`) and a sync script to run the same benchmarks in a UEFN session
+- Python tools that build the comparison table (`results/table.json`) and the results page from raw profile output or the UEFN editor log
+- Experiments on struct construction cost and SpatialMath
+
+## Getting started
+
+### Prerequisites
+
+- Windows with WSL (Ubuntu 24.04), for the local runtimes
+- The new VerseVM and BPVM runtimes built from Unreal Engine source (needs access to Epic's GitHub), installed under `~/verse-bench/{new,bpvm,ship}` in WSL
+- Python (`py`), for the table and page tools
+- A UEFN project, for the UEFN run
+
+### Configure
+
+`tools/verse-run.sh` looks for the runtimes in `$VERSE_RUNTIMES` (default `~/verse-bench`).
+
+### Run on the local runtimes
+
+The runtimes live in WSL (Ubuntu 24.04) under `~/verse-bench/{new,bpvm,ship}`; they are built from Unreal Engine source, which needs access to Epic's GitHub. Then, from Windows:
+
+```bat
+verse.cmd --vm=all bench                         :: new, bpvm, ship, with a comparison table
+verse.cmd --vm=new,ship experiments\struct_cost.verse
+```
+
+`--vm` takes `new`, `bpvm`, `ship`, `both` (new and bpvm) or `all`. A folder is concatenated in the order `lib`, `harness`, `cli`. A full `--vm=all` run takes a few GB of memory: never run two at once.
+
+To rebuild the table and the page from raw outputs:
+
+```sh
+py tools/bench-table.py results/table.json new=results/raw/new.txt ship=results/raw/ship.txt uefn=results/raw/uefn.txt
+py tools/bench-page.py results/table.json bench results/bench-results.html
+```
+
+### Run in UEFN
+
+1. `bash tools/uefn-sync.sh <uefn-project-dir>` copies `lib`, `harness` and `uefn` into `Content/NativeBench`, one folder so one module. The `lib` files get an `a_` prefix: UEFN compiles a folder in name order, and a type alias (`verse_vector3`, `vec3`) cannot be used before its file.
+2. Place `bench_device` in the level and start a session. Correctness checks are off by default (`RunChecks`, ~100 s).
+3. Profile lines land in the editor log (`%LOCALAPPDATA%\UnrealEditorFortnite\Saved\Logs\UnrealEditorFortnite.log`) as `LogVerse: VerseProfile: <tag> <ms> ms`; `bench-table.py` reads that file directly (`--uefn-since=<timestamp>` keeps one session).
 
 ## Findings
 
@@ -18,7 +68,7 @@ Speed-up = native time / rewrite time (above 1 means the rewrite is faster). Med
 |---|---|---|
 | Temporary `vector3{...}` | 14 ms | 190 ms |
 | Verse.org `vector3{...}` | 18 ms | 6.8 ms |
-| user struct | 7–8 ms | 133–222 ms |
+| user struct | 7 to 8 ms | 133 to 222 ms |
 | tuple `(X, Y, Z)` | 3.8 ms | 3.9 ms |
 
 So anything that builds intermediate vectors gains a lot when rewritten:
@@ -40,7 +90,7 @@ So anything that builds intermediate vectors gains a lot when rewritten:
 
 **UEFN confirms the local BPVM.** 103 of 107 comparisons get the same verdict; the other 4 are borderline (`Min`/`Max` float, `Insert`, `TransformVectorNoScale`). Large gains are a bit smaller in UEFN, losses are the same. The UEFN run's checksum matches the local one bit for bit.
 
-**On the new VM the gaps mostly disappear.** Verse.org vectors are on par with Temporary ones and tuples gain 2.5–5×, so this is mostly a BPVM matter for now.
+**On the new VM the gaps mostly disappear.** Verse.org vectors are on par with Temporary ones and tuples gain 2.5 to 5×, so this is mostly a BPVM matter for now.
 
 What it means for hot UEFN code:
 1. Compute with tuples, or at least with `/Verse.org/SpatialMath`, rather than `/UnrealEngine.com/Temporary/SpatialMath`.
@@ -57,7 +107,7 @@ What it means for hot UEFN code:
 4. **Timing.** Each block times 10,000 calls (arrays: 100 operations on 1,000 elements, 25 for `Concatenate` and `ReplaceAll`; sorting: 50 sorts of 200 floats), 4 rounds, median. Inputs are built once, outside the `profile` blocks.
 5. **UEFN.** The same files run from a Verse device in a UEFN session, with `Sleep(0.0)` between blocks to stay under UEFN's ~10 s limit for code that runs without suspending.
 
-## Layout
+## Project structure
 
 | Path | Contents | In UEFN |
 |---|---|---|
@@ -66,38 +116,12 @@ What it means for hot UEFN code:
 | [`bench/cli`](bench/cli) | `Main` for the local runtimes | no |
 | [`bench/uefn`](bench/uefn) | `bench_device`: the same calls from `OnBegin` | yes |
 | [`experiments`](experiments) | struct construction cost, SpatialMath smoke test | no |
-| [`tools`](tools) | launcher, UEFN sync, results table and page | — |
-| [`results`](results) | `raw/` profile lines of each runtime, `table.json`, the results page | — |
+| [`tools`](tools) | launcher, UEFN sync, results table and page | no |
+| [`results`](results) | `raw/` profile lines of each runtime, `table.json`, the results page | no |
 
 Profile tags are `Native <Name>` and `<Variant> <Name>` with `Fast`, `Inline`, `Inlined`, `VerseOrg`, `Tuple` or `Scalar` as variant.
 
-## Running
-
-### Local runtimes
-
-The runtimes live in WSL (Ubuntu 24.04) under `~/verse-bench/{new,bpvm,ship}`; they are built from Unreal Engine source, which needs access to Epic's GitHub. Then, from Windows:
-
-```bat
-verse.cmd --vm=all bench                         :: new, bpvm, ship, with a comparison table
-verse.cmd --vm=new,ship experiments\struct_cost.verse
-```
-
-`--vm` takes `new`, `bpvm`, `ship`, `both` (new and bpvm) or `all`. A folder is concatenated in the order `lib`, `harness`, `cli`. A full `--vm=all` run takes a few GB of memory: never run two at once.
-
-To rebuild the table and the page from raw outputs:
-
-```sh
-py tools/bench-table.py results/table.json new=results/raw/new.txt ship=results/raw/ship.txt uefn=results/raw/uefn.txt
-py tools/bench-page.py results/table.json bench results/bench-results.html
-```
-
-### UEFN
-
-1. `bash tools/uefn-sync.sh <uefn-project-dir>` copies `lib`, `harness` and `uefn` into `Content/NativeBench`, one folder so one module. The `lib` files get an `a_` prefix: UEFN compiles a folder in name order, and a type alias (`verse_vector3`, `vec3`) cannot be used before its file.
-2. Place `bench_device` in the level and start a session. Correctness checks are off by default (`RunChecks`, ~100 s).
-3. Profile lines land in the editor log (`%LOCALAPPDATA%\UnrealEditorFortnite\Saved\Logs\UnrealEditorFortnite.log`) as `LogVerse: VerseProfile: <tag> <ms> ms`; `bench-table.py` reads that file directly (`--uefn-since=<timestamp>` keeps one session).
-
-### Adding a benchmark
+## Adding a benchmark
 
 Write the rewrite in `bench/lib`, add `bench/harness/bench_<name>.verse` with a `Check<Name>` and a `Bench<Name>`, and give each one an index in `RunCheck` and `RunBench` ([`bench/harness/all.verse`](bench/harness/all.verse)). Keep each `RunBench` item under ~2 s on the local Shipping BPVM so it stays under UEFN's limit.
 
@@ -115,3 +139,10 @@ Write the rewrite in `bench/lib`, add `bench/harness/bench_<name>.verse` with a 
 - In UEFN a `using` only applies to its own file; in a single concatenated file a top-level `using` also applies inside modules, hence the `verse_vector3`/`verse_rotation`/`verse_transform` aliases.
 - `VerseCLR` cannot call a `<suspends>` target directly, so the launcher starts `Main` with `spawn{}`; on the new VM a file with `@editable` fields cannot run.
 - On Windows, editing `.verse` files with PowerShell 5.1 `Get-Content`/`Set-Content` breaks UTF-8 and the compiler fails with V3100.
+
+## Tech stack
+
+- Verse (UEFN, new VerseVM, BPVM)
+- Bash and a Windows batch launcher through WSL
+- Python for the results table and page generator
+- HTML results page
